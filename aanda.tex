@@ -286,6 +286,14 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
    Contrary to the GHIGLS data, the high noise level of the DHIGLS data enables to only recover the signal from the CNM. Moreover, the Gaussian decomposition method fits noise peaks. Therefore we had to clean the Gaussians catalogue we obtained for the CNM. \textbf{Develop the cleaning method}
 \textit{To do so, we selected the Gaussians with an amplitude higher than three times the rms. Then we calculated the distance between Gaussians and estimated the number of neighbours within a given distance in the PPV space. We finally kept the Gaussians that have more than 10 neighbours, in a $3^3$ cube. The left panel of figure \ref{Draco_HI} shows the resulting H\rmnum{1} integrated intensity map of the IVC. The black contours emphasised a rather good correlation between the H\rmnum{1} and dust emission.}
 
+\begin{figure*}[h]
+  \centering
+  \includegraphics[page=1,height=6.5cm,trim=10 55 60 90,clip=true]{Figures/Test_decomposition.pdf}
+  \hspace{3mm}
+  \includegraphics[page=3,height=6.5cm,trim=10 55 60 90,clip=true]{Figures/Test_decomposition.pdf}
+  \caption{Comparison of the flux reconstructed by the coherent gaussian decomposition for GHIGLS and DHIGLS. The blue line is the 1:1 slope.}
+\end{figure*}
+
 
       \subsubsection{Phase separation}
 
@@ -293,32 +301,6 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 
 
 \textbf{Present the two phases separation in the IVC and the LVC}
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_CNM_LVC+IVC.png}
-  \hspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_WNM_LVC+IVC.png} \\
-  \vspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_CNM_LVC.png}
-  \hspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_WNM_LVC.png} \\
-  \vspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_CNM_IVC.png}
-  \hspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_WNM_IVC.png}
-  \caption{\label{Phases_HI} Column density maps of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
-\end{figure*}
-
-
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[height=6.5cm,trim=10 55 60 90,clip=true]{Figures/DHIGLS_IVC_intensity_CNM.png}
-  \hspace{3mm}
-  \includegraphics[height=6.5cm,trim=129 55 35 90,clip=true]{Figures/DHIGLS_IVC_velocity_CNM.png}
-  \caption{\label{Draco_HI} \emph{Left:} Integrated intensity map in $K.km.s^{-1}$ of the H\rmnum{1} emission in the velocity range $-73.1<v<-8.8\: km.s^{-1}$, corresponding to the IVC. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE. \emph{Right:} Velocity map of the H\rmnum{1}-CNM within the IVC.}
-\end{figure*}
 
    As said above, the high noise level of the DHIGLS data does not enable to recover the warm H\rmnum{1} phase. We therefore used a combination of the DHIGLS and GHIGLS data in order to estimate the contribution of the WNM at $1'$ resolution. To do so, we subtracted the CNM observed in DHIGLS, smoothed at $9'$ resolution, from GHIGLS. This provides an estimation of the WNM phase contribution. We then assumed that the warm phase does not spatially varies at scales smaller than $9'$ and projected the WNM phase on the DHIGLS grid.
 
@@ -461,7 +443,101 @@ Surprisingly, the bright structure in the south has velocities larger than the r
 \bibliography{Biblio}
 \bibliographystyle{aa}
 
+\begin{figure*}[h]
+  \centering
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/NHI_CNM_LVC+IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/NHI_WNM_LVC+IVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/NHI_CNM_LVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/NHI_WNM_LVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/NHI_CNM_IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/NHI_WNM_IVC.png}
+  \caption{\label{Phases_GHIGLS} Column density maps of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
+\end{figure*}
 
+\begin{figure*}[h]
+  \centering
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/velo_CNM_LVC+IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/velo_WNM_LVC+IVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/velo_CNM_LVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/velo_WNM_LVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/velo_CNM_IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/velo_WNM_IVC.png}
+  \caption{Maps of the central velocity of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
+\end{figure*}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/disp_CNM_LVC+IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/disp_WNM_LVC+IVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/disp_CNM_LVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/disp_WNM_LVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/disp_CNM_IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/disp_WNM_IVC.png}
+  \caption{Maps of velocity dispersion of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
+\end{figure*}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/NHI_CNM_LVC+IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/NHI_WNM_LVC+IVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/NHI_CNM_LVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/NHI_WNM_LVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/NHI_CNM_IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/NHI_WNM_IVC.png}
+  \caption{\label{Phases_DHIGLS} Column density maps of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
+\end{figure*}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/velo_CNM_LVC+IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/velo_WNM_LVC+IVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/velo_CNM_LVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/velo_WNM_LVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/velo_CNM_IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/velo_WNM_IVC.png}
+  \caption{Maps of the central velocity of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
+\end{figure*}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/disp_CNM_LVC+IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/disp_WNM_LVC+IVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/disp_CNM_LVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/disp_WNM_LVC.png} \\
+  \vspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/disp_CNM_IVC.png}
+  \hspace{5mm}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/disp_WNM_IVC.png}
+  \caption{Maps of velocity dispersion of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
+\end{figure*}
 
 \end{document}
 
