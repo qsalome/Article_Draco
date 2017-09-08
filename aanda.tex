@@ -98,7 +98,7 @@ The analysis of the dust emission revealed several interesting facts about the c
 
 \begin{figure*}[h!]
   \centering
-  \includegraphics[width=0.7\linewidth,trim=165 85 135 85,clip=true]{/home/qsalome/Draco/CO-data/Pictures/Draco_overview.png}
+  \includegraphics[width=0.7\linewidth,trim=165 85 135 85,clip=true]{Figures/Draco_overview.png}
   \caption{\label{overview} \emph{Herschel}-SPIRE map at $250\: \mu m$ map. The regions observed with the IRAM 30m are represented by the boxes.}
 \end{figure*}
 
@@ -138,74 +138,40 @@ The analysis of the dust emission revealed several interesting facts about the c
 
    Data reduction was done using the IRAM package CLASS. For each spectra, a linear baseline was subtracted at velocities outside the range of the emission line ($-40$ to $-10\: km.s^{-1}$). The last step consists in the creation of the datacube by gridding the spectra and applying a convolution with a Gaussian kernel. The resulting data cubes have median noise levels of $350-620\: mK$ for CO(1-0) and $0.6-1.2\: K$ for CO(2-1) at a resolution of $\sim 0.13\: km.s^{-1}$.
 
-%\begin{figure*}[h]
-%  \centering
-%  \includegraphics[height=5.5cm,trim=10 35 75 85,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco1_intensity.png}
-%  \hspace{3mm}
-%  \includegraphics[height=5.5cm,trim=10 70 75 125,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco2_intensity.png} \\
-%  \includegraphics[height=5.5cm,trim=130 35 50 85,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco1_intensity.png}
-%  \hspace{3mm}
-%  \includegraphics[height=5.5cm,trim=130 70 50 125,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco2_intensity.png} \\
-%  \includegraphics[height=5.5cm,trim=130 35 50 85,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco1_intensity.png}
-%  \hspace{3mm}
-%  \includegraphics[height=5.5cm,trim=130 70 50 125,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco2_intensity.png} \\
-%  \includegraphics[height=5.5cm,trim=130 35 50 85,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco1_intensity.png}
-%  \hspace{3mm}
-%  \includegraphics[height=5.5cm,trim=130 70 50 125,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco2_intensity.png} \\
-%  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
-%\end{figure*}
-%
-%\begin{figure*}[h]
-%  \centering
-%  \includegraphics[height=5.5cm,trim=10 35 75 85,clip=true]{/home/qsalome/Draco/CO-data/CO21-IRAM30m/Moments/Draco1_intensity.png}
-%  \hspace{3mm}
-%  \includegraphics[height=5.5cm,trim=10 70 75 125,clip=true]{/home/qsalome/Draco/CO-data/CO21-IRAM30m/Moments/Draco2_intensity.png} \\
-%  \includegraphics[height=5.5cm,trim=130 35 50 85,clip=true]{/home/qsalome/Draco/CO-data/CO21-IRAM30m/Moments/Draco1_intensity.png}
-%  \hspace{3mm}
-%  \includegraphics[height=5.5cm,trim=130 70 50 125,clip=true]{/home/qsalome/Draco/CO-data/CO21-IRAM30m/Moments/Draco2_intensity.png} \\
-%  \includegraphics[height=5.5cm,trim=130 35 50 85,clip=true]{/home/qsalome/Draco/CO-data/CO21-IRAM30m/Moments/Draco1_intensity.png}
-%  \hspace{3mm}
-%  \includegraphics[height=5.5cm,trim=130 70 50 125,clip=true]{/home/qsalome/Draco/CO-data/CO21-IRAM30m/Moments/Draco2_intensity.png} \\
-%  \includegraphics[height=5.5cm,trim=130 35 50 85,clip=true]{/home/qsalome/Draco/CO-data/CO21-IRAM30m/Moments/Draco1_intensity.png}
-%  \hspace{3mm}
-%  \includegraphics[height=5.5cm,trim=130 70 50 125,clip=true]{/home/qsalome/Draco/CO-data/CO21-IRAM30m/Moments/Draco2_intensity.png} \\
-%  \caption{\label{Draco_CO21} Intensity maps in $K.km.s^{-1}$ of the CO(2-1) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
-%\end{figure*}
-
 \begin{figure*}[h]
   \centering
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/data/Draco/CO-IRAM30m/FITS/Draco1_stack.png}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco1_stack.png}
   \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/data/Draco/CO-IRAM30m/FITS/Draco4_stack.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/data/Draco/CO-IRAM30m/FITS/Draco2+9_stack.png}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco4_stack.png} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_stack.png}
   \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/data/Draco/CO-IRAM30m/FITS/Draco5_stack.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/data/Draco/CO-IRAM30m/FITS/Draco3_stack.png}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco5_stack.png} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco3_stack.png}
   \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/data/Draco/CO-IRAM30m/FITS/Draco6_stack.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/data/Draco/CO-IRAM30m/FITS/Draco2+9_rot_stack.png}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco6_stack.png} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_rot_stack.png}
   \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 \end{figure*}
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco1_intensity.png}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco1_intensity.png}
   \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco4_intensity.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco2+9_intensity.png}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco4_intensity.png} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_intensity.png}
   \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco5_intensity.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco3_intensity.png}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco5_intensity.png} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco3_intensity.png}
   \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco6_intensity.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco2+9_rot_intensity.png}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco6_intensity.png} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_rot_intensity.png}
   \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 \end{figure*}
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{/home/qsalome/data/Draco/CO-IRAM30m/FITS/Draco_FRONT_stack.png} \\
-  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{/home/qsalome/Draco/CO-data/CO10-IRAM30m/Moments/Draco_FRONT_intensity.png}
+  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_stack.png} \\
+  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_intensity.png}
   \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 \end{figure*}
 
@@ -272,9 +238,9 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 
 \begin{figure*}[h!]
   \centering
-  \includegraphics[page=1,width=0.48\linewidth,trim=30 10 50 30,clip=true]{/home/qsalome/Draco/dust-CO-HI_comparison/Pictures/dust-CO_comparison.pdf}
+  \includegraphics[page=1,width=0.48\linewidth,trim=30 10 50 30,clip=true]{Figures/dust-CO_comparison.pdf}
   \hspace{3mm}
-  \includegraphics[page=2,width=0.48\linewidth,trim=30 10 50 30,clip=true]{/home/qsalome/Draco/dust-CO-HI_comparison/Pictures/dust-CO_comparison.pdf}
+  \includegraphics[page=2,width=0.48\linewidth,trim=30 10 50 30,clip=true]{Figures/dust-CO_comparison.pdf}
   \caption{\label{Xco} Correlation between the total column density derived from dust emission and the CO integrated intensity in Draco1 (\emph{left}) and Draco2 (\emph{right}). The slope of the best fitting model (blue line) gives the value of the $X_{CO}$ factor. The red dashed line corresponds to the value found by \cite{Moritz_1998}.}
 \end{figure*}
 
@@ -301,9 +267,9 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 
 \begin{figure*}[h!]
   \centering
-  \includegraphics[page=2,height=7.3cm,trim=60 30 90 75,clip=true]{/home/qsalome/Draco/CO-data/Line_ratios/Draco1_CO21-CO10.pdf}
+  \includegraphics[page=2,height=7.3cm,trim=60 30 90 75,clip=true]{Figures/Draco1_CO21-CO10.pdf}
   \hspace{3mm}
-  \includegraphics[page=2,height=7.3cm,trim=70 30 90 75,clip=true]{/home/qsalome/Draco/CO-data/Line_ratios/Draco2_CO21-CO10.pdf}
+  \includegraphics[page=2,height=7.3cm,trim=70 30 90 75,clip=true]{Figures/Draco2_CO21-CO10.pdf}
   \caption{\label{ratio} Histogram of the line ratio CO(2-1)/CO(1-0) in Draco1 (\emph{left}) and Draco2 (\emph{right}). The best fitting Gaussian indicates a line ratio of the order to what is commonly found in the interstellar medium (about 0.7; \textbf{ref!}). \textbf{Is it relevant to show these histograms?}}
 \end{figure*}
 
@@ -330,17 +296,17 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{/home/qsalome/Draco/HI-data/GHIGLS/Phases_decomposition/NHI_CNM_LVC+IVC.png}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_CNM_LVC+IVC.png}
   \hspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{/home/qsalome/Draco/HI-data/GHIGLS/Phases_decomposition/NHI_WNM_LVC+IVC.png} \\
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_WNM_LVC+IVC.png} \\
   \vspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{/home/qsalome/Draco/HI-data/GHIGLS/Phases_decomposition/NHI_CNM_LVC.png}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_CNM_LVC.png}
   \hspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{/home/qsalome/Draco/HI-data/GHIGLS/Phases_decomposition/NHI_WNM_LVC.png} \\
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_WNM_LVC.png} \\
   \vspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{/home/qsalome/Draco/HI-data/GHIGLS/Phases_decomposition/NHI_CNM_IVC.png}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_CNM_IVC.png}
   \hspace{5mm}
-  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{/home/qsalome/Draco/HI-data/GHIGLS/Phases_decomposition/NHI_WNM_IVC.png}
+  \includegraphics[height=7.5cm,trim=110 35 105 75,clip=true]{Figures/GHIGLS_WNM_IVC.png}
   \caption{\label{Phases_HI} Column density maps of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
 \end{figure*}
 
@@ -348,9 +314,9 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[height=6.5cm,trim=10 55 60 90,clip=true]{/home/qsalome/Draco/HI-data/DHIGLS/Moments/IVC_intensity_CNM.png}
+  \includegraphics[height=6.5cm,trim=10 55 60 90,clip=true]{Figures/DHIGLS_IVC_intensity_CNM.png}
   \hspace{3mm}
-  \includegraphics[height=6.5cm,trim=129 55 35 90,clip=true]{/home/qsalome/Draco/HI-data/DHIGLS/Moments/IVC_velocity_CNM.png}
+  \includegraphics[height=6.5cm,trim=129 55 35 90,clip=true]{Figures/DHIGLS_IVC_velocity_CNM.png}
   \caption{\label{Draco_HI} \emph{Left:} Integrated intensity map in $K.km.s^{-1}$ of the H\rmnum{1} emission in the velocity range $-73.1<v<-8.8\: km.s^{-1}$, corresponding to the IVC. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE. \emph{Right:} Velocity map of the H\rmnum{1}-CNM within the IVC.}
 \end{figure*}
 
@@ -387,9 +353,9 @@ Surprisingly, the bright structure in the south has velocities larger than the r
 
 \begin{figure*}[h!]
   \centering
-  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{/home/qsalome/Draco/dust-CO-HI_comparison/Pictures/PV_diagram_HI.pdf}
+  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{Figures/PV_diagram_HI.pdf}
   \hspace{3mm}
-  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{/home/qsalome/Draco/dust-CO-HI_comparison/Pictures/PV_diagram_CO.pdf}
+  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{Figures/PV_diagram_CO.pdf}
   \caption{\label{PV-diag} Position-velocity diagrams of the H\rmnum{1} (\emph{left}) and CO (\emph{right}) in Draco2. The PV diagrams are centred in $\alpha=16^h 51^m 13.3^s$, $\delta=+$60:55:23.7 over a slit oriented at 45\degree with a width of $8.5'$, to include all the region observed in CO. They were computed at $1'$ and $0.8\: km.s^{-1}$ resolution.}
 \end{figure*}
 
@@ -400,15 +366,15 @@ Surprisingly, the bright structure in the south has velocities larger than the r
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=\linewidth,trim=30 10 55 35,clip=true]{/home/qsalome/Draco/dust-CO-HI_comparison/Pictures/Column_density_profiles.pdf}
+  \includegraphics[width=\linewidth,trim=30 10 55 35,clip=true]{Figures/Column_density_profiles.pdf}
   \caption{\label{Col_density} Density profiles of the total column density $N_H$ (black line), derived from the \emph{Herschel}-SPIRE $250\: \mu m$ emission, the atomic column density $N_{H\rmnum{1}}$ (red line) and the molecular column density $N_{H_2}$ (blue line), derived from the CO emission, along a "slit" oriented at 45\degree. The slit width is $8.5'$, to include all the region observed in CO.}
 \end{figure}
 
 \begin{figure*}[h!]
   \centering
-  \includegraphics[width=0.48\linewidth,trim=65 35 115 75,clip=true]{/home/qsalome/Draco/HI-data/Pictures/DHIGLS-Draco1_CO.png}
+  \includegraphics[width=0.48\linewidth,trim=65 35 115 75,clip=true]{Figures/DHIGLS-Draco1_CO.png}
   \hspace{3mm}
-  \includegraphics[width=0.48\linewidth,trim=65 35 115 75,clip=true]{/home/qsalome/Draco/HI-data/Pictures/DHIGLS-Draco2_CO.png}
+  \includegraphics[width=0.48\linewidth,trim=65 35 115 75,clip=true]{Figures/DHIGLS-Draco2_CO.png}
   \caption{\label{DRAO-CO} Map of the H\rmnum{1} emission from DHIGLS, smoothed at a resolution of $1.7'$. The black contours show the CO(1-0) emission observed with the IRAM 30m telescope in the region represented by the dashed boxes. H\rmnum{1} and CO seem to be slightly shifted in projection.}
 \end{figure*}
 
@@ -511,34 +477,6 @@ Surprisingly, the bright structure in the south has velocities larger than the r
 %
 %   We ran grids of model, varying the distances $d_1$ and $d_2$. $d_1$ varies from a few hundred parsecs to 10 kpc, and $d_2$ varies from 0 to a few tens parsecs below $d_1$ ($d_2=0$ corresponds to a disc). Both $d_1$ and $d_2$ have influence on the morphology of gas. For small values of $d_1$, the gas is distributed in a narrow dense ring, whereas for larger distances, the ring is broad with broadness of a few kiloparsecs. In addition, for inner radii larger than $\sim 2\: kpc$, the gas ring extends far enough to be slightly resolved by the IRAM 30m telescope. \\
 %The inclination angle will also influence the spectra characteristics. As the radial velocity is proportional to the sine of the angle, the peaks go closer to each other as the inclination decreases. The depth does not change significantly with inclination, except for very low angles, when the peaks start overlapping.
-
-
-%   \subsection{A compact molecular ring in 3C 285 and NGC 541}
-%
-%   \cite{Roche_2000} used  V- and R-band data to investigate the radial profiles of radio galaxies. For 3C 285, the best fitting model gives a half-light radius of $\sim 8.3\: kpc$, with a stellar mass of $\sim 4.2\times 10^{11}\: M_\odot$. To compare the models with the data, we used the peak velocity and the relative well depth (see in figure \ref{model_3C285}).
-%
-%   The observational spectrum presents peak velocities of $\sim 160-175\: km.s^{-1}$ and a relative well depth of 1/3. The range of parameters that fit the observations are $d_1=0.7-1.0\: kpc$ and $d_2=0.5-0.7\: kpc$ for an inclination angle larger than 70\degree (see left panel of figure \ref{model_results}), which is consistent with the optical image. Figure \ref{model_3C285} represents the spectra for a ring of $1.03\times 10^{10}\: M_\odot$ with $d_1=0.9\: kpc$ and $d_2=0.5\: kpc$. The density profile (figure \ref{sketch_ring}) indicates that the gas is distributed in a narrow ring that extends at distances up to $\sim 2\: kpc$ with an average radius $\sim 0.7\: kpc$, but this needs to be confirmed by interferometric data.
-%
-%\begin{figure}[h]
-%  \centering
-%  \includegraphics[page=7,width=0.49\linewidth,trim=70 0 100 10,clip=true]{/home/qsalome/3C285/Pictures/grid_output.pdf}
-%  \includegraphics[page=11,width=0.49\linewidth,trim=70 0 100 10,clip=true]{/home/qsalome/Minkowski_Object/Pictures/grid_output.pdf}
-%  \caption{\label{model_results} Parameter space of the model for 3C 285 (\emph{left}) and NGC 541 (\emph{right}). The axes indicate the value of $d_1$ and $d_2$. The black dashed line refers to the explored parameters and the blue surface indicates the values of $d_1$ and $d_2$ that fit the data.}
-%\end{figure}
-%
-%\begin{figure}[h]
-%  \centering
-%  \includegraphics[width=\linewidth]{/home/qsalome/3C285/Pictures/Spectra.png}
-%  \caption{\label{model_3C285} Velocity spectra computed from the model for inclination angle of 70\degree, 80\degree and 90\degree. The vertical blue and red lines indicate the position of the double-horned profile peaks in the data.}
-%\end{figure}
-%\smallskip
-%
-%   For NGC 541, the half-light radius is $\sim 5-8\: kpc$ (Loubser et al. 2012), with a stellar mass of $\sim 4.7\times 10^{11}\: M_\odot$ \citep{Bell_2001}.
-
-%   The observational spectrum presents a peak velocity of $\sim 100\: km.s^{-1}$ and a relative well depth of $1/4-1/3$. The range of parameters that fit the observations are $d_1=0.4-1.1\: kpc$ and $d_2=0.2-0.4\: kpc$ for an inclination angle between 30\degree and 40\degree (see right panel of figure \ref{model_results}), which is consistent with the optical image. The gas is distributed in a narrow ring that extends at distances up to $\sim 2\: kpc$ with an average radius $\sim 0.5\: kpc$, but this also needs to be confirmed by interferometric data.
-%\medskip
-%
-%   Using the equation of the dynamical mass given by \cite{Evans_2005}: $M_{dyn}\approx \frac{2.35\times 10^5}{\sin^2 i}\cbra{\frac{v_{rot}}{km.s^{-1}}}^2 \cbra{\frac{R_{CO}}{kpc}}\: M_\odot$ , with the inclination angle i, the model calculate the $M_{H_2}/M_{dyn}$ ratio as a function of radius. Due to the single dish observations, the observed mass may come from all over the beam. Therefore, the $M_{H_2}/M_{dyn}$ ratio is calculated at a radius of $\sim 18\: kpc$ (resp. $\sim 2\: kpc$) for 3C 285 (resp. NGC 541). The $M_{H_2}/M_{dyn}$ ratio is equal to $8\times 10^{-2}$ for 3C 285 and $2\times 10^{-3}$ for NGC 541.
 
 
 
