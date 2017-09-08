@@ -1,0 +1,77 @@
+% ***********************************************************
+% ******************* PHYSICS HEADER ************************
+% ***********************************************************
+%\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{txfonts}
+\usepackage[a]{esvect}
+\usepackage{tikz}
+
+
+% Units
+\newcommand{\degree}[0]{$^{\circ}$}
+\newcommand{\angstrom}[0]{\AA\;}
+
+
+% Fractions with brackets
+\newcommand{\cbra}[1]{\left( #1 \right)}      % put the argument between parentheses (curve brackets)
+\newcommand{\sbra}[1]{\left[ #1 \right]}      % put the argument between square brackets
+\newcommand{\abra}[1]{\langle #1 \rangle}     % put the argument between angle brackets
+\newcommand{\acbra}[1]{\left\{ #1 \right\}}   % put the argument between curly brackets
+
+
+% Vectors
+\let\vaccent=\v % rename builtin command \v{} to \vaccent{}
+\renewcommand{\v}[1]{\ensuremath{\vv{#1}}}                 % vectors with arrow
+\newcommand{\gvec}[1]{\ensuremath{\mbox{\boldmath$ #1 $}}} % vectors without arrow
+\newcommand{\uvec}[1]{\ensuremath{\mathbf{\hat{#1}}}}      % unit vector
+
+
+% Statistics
+\newcommand{\abs}[1]{\left| #1 \right|}         % absolute value
+\newcommand{\avg}[1]{\left< #1 \right>}         % average
+\newcommand{\mean}[1]{\overline{#1}}            % mean
+\newcommand{\rms}[1]{\left< #1^2 \right>^{1/2}} % root mean square
+
+
+% Derivative
+\let\underdot=\d % rename builtin command \d{} to \underdot{}
+\renewcommand{\d}[2]{\frac{d #1}{d #2}}    % derivatives
+\newcommand{\dd}[2]{\frac{d^2 #1}{d #2^2}} % double derivatives
+
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}      % partial derivatives
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}} % double partial derivatives
+
+\newcommand{\pdc}[3]{\left( \frac{\partial #1}{\partial #2}\right)_{#3}} % thermodynamic derivatives
+
+
+% Bras-kets
+\newcommand{\ket}[1]{\left| #1 \right>} % Dirac bras
+\newcommand{\bra}[1]{\left< #1 \right|} % Dirac kets
+\newcommand{\braket}[2]{\left< #1 \right| \left. #2 \right>} % Dirac brackets
+\newcommand{\matrixel}[3]{\left< #1 \right|  #2 \left| #3 \right>} % Dirac matrix elements
+
+% Nabla
+\newcommand{\grad}[1]{\gv{\nabla} #1} % gradient
+
+\let\divsymb=\div % rename builtin command \div to \divsymb
+\renewcommand{\div}[1]{\v{\nabla} \cdot #1} % divergence
+\newcommand{\curl}[1]{\v{\nabla} \times #1} % curl
+
+
+\let\baraccent=\=
+\renewcommand{\=}[1]{\stackrel{#1}{=}} % for putting numbers above =
+\let\arrowaccent=\>
+\renewcommand{\>}[1]{\stackrel{#1}{\Rightarrow}} % for putting numbers above =>
+
+% Roman numbers
+\makeatletter
+\newcommand{\rmnum}[1]{{\footnotesize{\expandafter\@slowromancap\romannumeral #1@}}}
+\newcommand{\Rmnum}[1]{{\expandafter\@slowromancap\romannumeral #1@}}
+\makeatother
+
+\newcommand{\circled}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt](char){#1};}}
+
+% ***********************************************************
+% ********************** END HEADER *************************
+% ***********************************************************
