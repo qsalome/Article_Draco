@@ -181,16 +181,17 @@ The analysis of the dust emission revealed several interesting facts about the c
 %  \caption{\label{Draco_large} Large scale map of the integrated intensity in $K.km.s^{-1}$ of the CO(1-0) emission. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 %\end{figure*}
 
-
-   \subsection{H\rmnum{1} emission}
-
-   Draco was observed at 21 cm with the Green Bank Telescope (GBT) and the interferometer of the Dominion Radio Astrophysical Observatory (DRAO) as part of the GHIGLS and DHIGLS surveys \citep{Martin_2015,Blagrave_2017}.
-A 5\degree$\times $5\degree region was observed with the GBT at a resolution of $9'$. The datacube we got from the archive of GHIGLS data\footnote{\url{www.cita.utoronto.ca/GHIGLS}} covers the velocity range $-450\leq v_{LSR}\leq 400\: km.s^{-1}$. The average noise level of the map is 60 mK at $0.8\: km.s^{-1}$ resolution.
-The GHIGLS data were then used by \cite{Blagrave_2017} for the low spacing of the DRAO data. A region of $12.5\: deg^2$ was covered with the DRAO at a resolution of $61''\times 53.7''$. The datacube from the archive of DHIGLS data\footnote{\url{www.cita.utoronto.ca/DHIGLS}} covers the velocity range $-165\leq v_{LSR}\leq 45\: km.s^{-1}$. The typical rms is 105 mK at $0.8\: km.s^{-1}$ resolution.
+\subsection{H\rmnum{1} emission}
+Draco was observed at 21 cm with the Green Bank Telescope (GBT) and the interferometer of the Dominion Radio Astrophysical 
+Observatory (DRAO) as part of the GHIGLS and DHIGLS surveys \citep{Martin_2015,Blagrave_2017}.
+A 5\degree$\times $5\degree region was observed with the GBT at a resolution of $9'$. The datacube we got from the archive 
+of GHIGLS data\footnote{\url{www.cita.utoronto.ca/GHIGLS}} covers the velocity range $-450\leq v_{LSR}\leq 400\: km.s^{-1}$. 
+The average noise level of the map is 60 mK at $0.8\: km.s^{-1}$ resolution.
+The GHIGLS data were then used by \cite{Blagrave_2017} for the low spacing of the DRAO data. A region of $12.5\: deg^2$ 
+was covered with the DRAO at a resolution of $61''\times 53.7''$. The datacube from the archive of 
+DHIGLS data\footnote{\url{www.cita.utoronto.ca/DHIGLS}} covers the velocity range $-165\leq v_{LSR}\leq 45\: km.s^{-1}$. 
+The typical rms is 105 mK at $0.8\: km.s^{-1}$ resolution.
 We refer to \cite{Martin_2015} and \cite{Blagrave_2017} for more details.
-
-
-
 
 \section{Results}
 \label{sec:Res}
@@ -275,44 +276,51 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 
 \textbf{Use gaussian decomposition to separate the different component? Diffuse vs. dense? Histogram of the sigma?}
 
+%__________________________________________________________________________________________________________________________________
+\subsection{H\rmnum{1} emission}
+\label{sec:HI-data}
+\subsubsection{Gaussian decomposition}
+Using the H\rmnum{1} observations, we aim to separate the warm and cold H\rmnum{1} phases. To do so, we first applied a coherent 
+multi-Gaussian decomposition (see Marchal et al. in prep. for the details). 
+When applied to the GHIGLS data, the Gaussian decomposition method well recovers the signal in the data. 
+In particular, the distribution of the width $\sigma$ indicates that both CNM and WNM phases are recovered.
 
-   \subsection{H\rmnum{1} emission}
-   \label{sec:HI-data}
-
-      \subsubsection{Gaussian decomposition}
-
-   Using the H\rmnum{1} observations, we aim to separate the warm and cold H\rmnum{1} phases. To do so, we first applied a coherent multi-Gaussian decomposition (see Marchal et al. in prep. for the details). When applied to the GHIGLS data, the Gaussian decomposition method well recovers the signal in the data. In particular, the distribution of the width $\sigma$ indicates that both CNM and WNM phases are recovered.
-
-   Contrary to the GHIGLS data, the high noise level of the DHIGLS data enables to only recover the signal from the CNM. Moreover, the Gaussian decomposition method fits noise peaks. Therefore we had to clean the Gaussians catalogue we obtained for the CNM. \textbf{Develop the cleaning method}
-\textit{To do so, we selected the Gaussians with an amplitude higher than three times the rms. Then we calculated the distance between Gaussians and estimated the number of neighbours within a given distance in the PPV space. We finally kept the Gaussians that have more than 10 neighbours, in a $3^3$ cube. The left panel of figure \ref{Draco_HI} shows the resulting H\rmnum{1} integrated intensity map of the IVC. The black contours emphasised a rather good correlation between the H\rmnum{1} and dust emission.}
+Contrary to the GHIGLS data, the high noise level of the DHIGLS data enables to only recover the signal from the CNM. 
+Moreover, the Gaussian decomposition method fits noise peaks. Therefore we had to clean the Gaussians catalogue we obtained 
+for the CNM. \textbf{Develop the cleaning method}
+\textit{To do so, we selected the Gaussians with an amplitude higher than three times the rms. 
+Then we calculated the distance between Gaussians and estimated the number of neighbours within a given distance in the PPV space. 
+We finally kept the Gaussians that have more than 10 neighbours, in a $3^3$ cube. The left panel of figure \ref{Draco_HI} shows 
+the resulting H\rmnum{1} integrated intensity map of the IVC. The black contours emphasised a rather good correlation between 
+the H\rmnum{1} and dust emission.}
 
 \begin{figure*}[h]
   \centering
   \includegraphics[page=1,height=6.5cm,trim=10 55 60 90,clip=true]{Figures/Test_decomposition.pdf}
   \hspace{3mm}
   \includegraphics[page=3,height=6.5cm,trim=10 55 60 90,clip=true]{Figures/Test_decomposition.pdf}
-  \caption{Comparison of the flux reconstructed by the coherent gaussian decomposition for GHIGLS and DHIGLS. The blue line is the 1:1 slope.}
+  \caption{Comparison of the flux reconstructed by the coherent gaussian decomposition for GHIGLS and DHIGLS. The blue line is the 
+    1:1 slope.}
 \end{figure*}
 
-
-      \subsubsection{Phase separation}
-
-   Plotting the PDF of the Gaussian width $\sigma$ weighted by the Gaussian integral $\sqrt{\pi A\sigma}$, we found a break that we interpret as the separation between the two phases.
-
+\subsubsection{Phase separation}
+Plotting the PDF of the Gaussian width $\sigma$ weighted by the Gaussian integral $\sqrt{\pi A\sigma}$, we found a break 
+that we interpret as the separation between the two phases.
 
 \textbf{Present the two phases separation in the IVC and the LVC}
+As said above, the high noise level of the DHIGLS data does not enable to recover the warm H\rmnum{1} phase. 
+We therefore used a combination of the DHIGLS and GHIGLS data in order to estimate the contribution of the WNM at $1'$ resolution. 
+To do so, we subtracted the CNM observed in DHIGLS, smoothed at $9'$ resolution, from GHIGLS. This provides an estimation 
+of the WNM phase contribution. We then assumed that the warm phase does not spatially varies at scales smaller than $9'$ 
+and projected the WNM phase on the DHIGLS grid.
 
-   As said above, the high noise level of the DHIGLS data does not enable to recover the warm H\rmnum{1} phase. We therefore used a combination of the DHIGLS and GHIGLS data in order to estimate the contribution of the WNM at $1'$ resolution. To do so, we subtracted the CNM observed in DHIGLS, smoothed at $9'$ resolution, from GHIGLS. This provides an estimation of the WNM phase contribution. We then assumed that the warm phase does not spatially varies at scales smaller than $9'$ and projected the WNM phase on the DHIGLS grid.
-
-
-   \subsection{Dynamics}
-
-   The multi-Gaussian decomposition method from Marchal et al. (in prep.) provides a list of Gaussians. Each Gaussian is characterised by its position $\mathnormal{x}$,$\mathnormal{y}$, its amplitude $\mathnormal{A}$, its position $\mathnormal{\mu}$, and its width $\mathnormal{\sigma}$. In order to compute the velocity map, we first reconstruct the signal in each pixel:
+\subsection{Dynamics}
+The multi-Gaussian decomposition method from Marchal et al. (in prep.) provides a list of Gaussians. Each Gaussian is characterised by its position $\mathnormal{x}$,$\mathnormal{y}$, its amplitude $\mathnormal{A}$, its position $\mathnormal{\mu}$, and its width $\mathnormal{\sigma}$. In order to compute the velocity map, we first reconstruct the signal in each pixel:
 \begin{equation}
   \mathnormal{T_b(v)=\sum_{i=1}^{N_{comp}} A_i \exp\cbra{(v-v_i)^2/2\sigma_i^2}}
 \end{equation}
 
-   We then computed the emission-weighted mean velocity $\avg{v}$ and the velocity dispersion $\sigma_v$:
+We then computed the emission-weighted mean velocity $\avg{v}$ and the velocity dispersion $\sigma_v$:
 \begin{equation}
   \mathnormal{\avg{v}=\frac{\sum_v v\, S_{CO}^{tot}(v)\, dv}{\sum_v S_{CO}^{tot}(v)}}
 \end{equation}
@@ -321,13 +329,12 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 \end{equation} 
 where $\mathnormal{dv}$ is the channel width.
 
-      \subsubsection{Large scale dynamics (HI)}
-
-   The resulting velocity map is represented in figure \ref{Draco_HI}. The velocity gradient observed in H\rmnum{1} at the interface with the Rayleigh-Taylor instability strengthens the scenario of a shock between the cloud at the origin of Draco and the warm neutral medium (WNM) of the Galactic disc.
+\subsubsection{Large scale dynamics (HI)}
+The resulting velocity map is represented in figure \ref{Draco_HI}. The velocity gradient observed in H\rmnum{1} at the interface with the Rayleigh-Taylor instability strengthens the scenario of a shock between the cloud at the origin of Draco and the warm neutral medium (WNM) of the Galactic disc.
 Surprisingly, the bright structure in the south has velocities larger than the rest of the nebula.
 
-
-      \subsubsection{CO-H\rmnum{1} comparison}
+%___________________________________________________________________________________________________________________________________
+\subsubsection{CO-H\rmnum{1} comparison}
 
    We now aim to compare the dynamics of the CO and H\rmnum{1} emission. First, we compared the velocity of the CO(1-0) and CO(2-1). As expected both CO lines have rather the same velocity, with a relative difference of $2.4-3.3\%$. We then compared the velocity maps of the CO(1-0) and H\rmnum{1} emission at the resolution of the DHIGLS data. The CO and H\rmnum{1} velocity are rather similar, indicating that the atomic and molecular gas are well mixed in the two regions observed in CO with the IRAM 30m.
 
