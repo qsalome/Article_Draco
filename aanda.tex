@@ -223,7 +223,7 @@ We refer to \cite{Martin_2015} and \cite{Blagrave_2017} for more details.
 
       \subsubsection{CO-to-H$_2$ conversion factor}
 
-   We used the CO-dust coherence to estimate a CO-to-$H_2$ conversion factor $X_{CO}$ in both regions. To do so, we compared the CO intensity $I_{CO}$ with the total column density $N(H)$, derived from the \emph{Herschel} dust emission, and the H\rmnum{1} column density $N(H\rmnum{1})$. As explain below, the H\rmnum{1} column density map is a combination of the DHIGLS and GHIGLS surveys. \cite{MAMD_2017b} shows that the $250\: \mu m$ intensity is strongly correlated with the optical depth at $353\: GHz$ from \emph{Planck}. The authors concluded that the total column density is given by:
+   We used the CO-dust coherence to estimate a CO-to-$H_2$ conversion factor $X_{CO}$ in both regions. To do so, we compared the CO intensity $I_{CO}$ with the total column density $N(H)$, derived from the \emph{Herschel} dust emission, and the H\rmnum{1} column density $N(H\rmnum{1})$. \cite{MAMD_2017b} shows that the $250\: \mu m$ intensity is strongly correlated with the optical depth at $353\: GHz$ from \emph{Planck}. The authors concluded that the total column density is given by:
 \begin{equation}
   N(H)=2.49\times 10^{20}\, I_{250\: \mu m}
 \end{equation}
@@ -234,6 +234,22 @@ We smoothed the so-done total column density and the CO intensity maps at the re
 In Draco1, we found a $X_{CO}$ factor of $(1.97\pm 0.01)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, typical of what is observed in the Galactic disc\citep{Bolatto_2013}. On the opposite, molecular gas in Draco2 seems to be CO-bright. The plot of $I_{CO}$ vs. $N_{H_2}$ shows two regimes: at $I_{CO}\leq 5\: K.km.s^{-1}$ where $X_{CO}=(1.92\pm 0.03)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, and at $I_{CO}>5\: K.km.s^{-1}$ with an average value of $(0.55\pm 0.04)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$.
 Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those previously found by \cite{Herbstmeier_1993} and \cite{Moritz_1998}.
 %Intercept ($N_{H_2}^0$) is about $6.1-5.9\times 10^{20}\: cm^{-2}$ \textbf{(???; due to optically thin hypothesis \citep{Okamoto_arXiv}?)}.
+
+\begin{table}[h]
+  \centering
+  \footnotesize
+  \caption{\label{table:Xco} Values of the $X_{CO}$ factor estimation.}
+  \begin{tabular}{lc}
+    \hline \hline
+    Region &       $X_{CO}$       \\ \hline 
+    Draco1 & $1.98\times 10^{20}$ \\
+    Draco2 & $1.16\times 10^{20}$ \\
+    Draco3 & $1.94\times 10^{20}$ \\
+    Draco4 & $1.70\times 10^{20}$ \\
+    Draco5 & $0.77\times 10^{20}$ \\
+    Draco6 & $1.22\times 10^{20}$ \\ \hline
+  \end{tabular}
+\end{table}
 
 \begin{figure*}[h!]
   \centering
@@ -294,9 +310,8 @@ the H\rmnum{1} and dust emission.}
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=1,height=6.5cm,trim=10 55 60 90,clip=true]{Figures/Test_decomposition.pdf}
-  \hspace{3mm}
-  \includegraphics[page=3,height=6.5cm,trim=10 55 60 90,clip=true]{Figures/Test_decomposition.pdf}
+  \includegraphics[page=1,width=0.49\linewidth,trim=0 0 0 0,clip=true]{Figures/Test_decomposition.pdf}
+  \includegraphics[page=3,width=0.49\linewidth,trim=0 0 0 0,clip=true]{Figures/Test_decomposition.pdf}
   \caption{Comparison of the flux reconstructed by the coherent gaussian decomposition for GHIGLS and DHIGLS. The blue line is the 
     1:1 slope.}
 \end{figure*}
