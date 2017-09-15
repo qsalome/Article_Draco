@@ -175,11 +175,11 @@ the range of the emission line ($-40$ to $-10\: km.s^{-1}$). The last step consi
 gridding the spectra and applying a convolution with a Gaussian kernel. The resulting data cubes have median noise levels of 
 $350-620\: mK$ for CO(1-0) and $0.6-1.2\: K$ for CO(2-1) at a resolution of $\sim 0.13\: km.s^{-1}$.
 
-%\begin{figure*}[h]
-%  \centering
-%  \includegraphics[height=6cm,trim=10 35 75 85,clip=true]{/home/qsalome/Draco/CO-data/Pictures/Draco_intensity.png}
-%  \caption{\label{Draco_large} Large scale map of the integrated intensity in $K.km.s^{-1}$ of the CO(1-0) emission. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
-%\end{figure*}
+%% \begin{figure*}[h]
+%%  \centering
+%%  \includegraphics[height=6cm,trim=10 35 75 85,clip=true]{/home/qsalome/Draco/CO-data/Pictures/Draco_intensity.png}
+%%  \caption{\label{Draco_large} Large scale map of the integrated intensity in $K.km.s^{-1}$ of the CO(1-0) emission. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
+%% \end{figure*}
 %_______________________________________________________________________________________________________________________________________
 %_______________________________________________________________________________________________________________________________________
 \subsection{H\rmnum{1} emission with GBT and DRAO}
@@ -315,24 +315,30 @@ dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \tex
 \newpage
 \subsection{CO emission}
 \subsubsection{Morphology}
-For such a diffuse high latitude cloud, CO is very bright in the regions observed with the IRAM 30m telescope. 
-The CO(1-0) line peaks between 3 K and 10 K, while the CO(2-1) line peaks around 5-8 K. In all the regions, CO emission 
-shows small structures embedded within more extended, diffuse molecular gas. Moreover, CO emission is spatially correlated 
-to the $250\: \mu m$ dust emission from Herschel (figure \ref{Draco_CO10}), indicating that both components are likely related. 
-Below, we quickly present the CO morphology in the different regions we observed.
+
+For such a diffuse high latitude cloud, CO is very bright in the regions observed with the IRAM 30m telescope. The CO(1-0) line peaks between 1 K and 12 K, while the CO(2-1) line peaks between 0.5 and 9 K. In all the regions, CO emission shows small structures embedded within more extended, diffuse molecular gas. Moreover, the peaks of CO emission are spatially correlated to the $250\: \mu m$ dust emission from Herschel (figure \ref{Draco_CO10}), indicating that both components are likely related. Below, we quickly present the CO morphology in the different regions we observed.
 \medskip
-\noindent \textit{Draco1} - Located in the southern part of the Draco nebula, this region covers one of the bright dusty structures seen with Herschel. It corresponds to the CO-clumps referred as Drop by \cite{Mebold_1985}. Our integrated intensity map shows three bright, extended structures in the north. One of these seems to contains four bright CO clumps that are aligned with the dust emission. Finally, in the southern part of the map, there is two faint, extended structures that are co-spatial with dust emission.
+
+\noindent \textit{Draco1} - Located in the southern part of the Draco nebula, this region covers one of the bright dusty structures seen with Herschel. It corresponds to the CO-clumps referred as Drop by \cite{Mebold_1985}. Our integrated intensity map shows three bright, extended structures. One of these seems to contains four bright CO clumps that are aligned with the dust emission. Finally, in the southern part of the map, there is two faint, extended structures that are co-spatial with dust emission.
 \medskip
-\noindent \textit{Draco2} - This region is located about at the center of the shock front. It corresponds to some vertical dusty structure. So far, we only mapped the northern part of this structure. CO emission two separated extended structures co-spatial with dust emission. \textbf{Continue when the observations are finished}
+
+\noindent \textit{Draco2} - This region is located about at the center of the shock front. It corresponds to some flat dusty front structure. CO emission reveals four bright and one fainter separated structures co-spatial with dust emission.
 \medskip
-\noindent \textit{Draco3} - Part of the Wart
+
+\noindent \textit{Draco3} - Focused on the northern part of the Wart clump of \cite{Mebold_1985}, the CO observations reveal a very bright, large structure at the centre and two fainter, smaller structures in the north. The three structures are co-spatial with a peak of dust emission.
 \medskip
-\noindent \textit{Draco4} - Fang from \cite{Mebold_1985}
+
+\noindent \textit{Draco4} - We mapped the entire clumps referred as Fang by \cite{Mebold_1985}. This structure lies at the edge of the shock front. CO is mostly emitted by a diffuse structure that follows dust emission. There is also a bright structure where the structure is thinner on the sky.
 \medskip
-\noindent \textit{Draco5} - 
+
+\noindent \textit{Draco5} - Dust emission in this region has a very peculiar shape. Dust emission is bright at the centre, extended in the north and shows a tail-like structure in the south. CO was detected along the entire structure, including in the tail. CO emission is brighter in the centre and presents some clumpy structures bathed in diffuse, extended molecular gas.
 \medskip
-\noindent \textit{Draco6} - 
-\textbf{Present the morphology of each regions}
+
+\noindent \textit{Draco6} - The last region present a few bright structures in both CO and dust emission. In particular there is an elongated bright structure in the north.
+
+
+\subsubsection{CO-to-H$_2$ conversion factor}
+We used the CO-dust coherence to estimate a CO-to-$H_2$ conversion factor $X_{CO}$ in both regions. To do so, we compared the CO intensity $I_{CO}$ with the total column density $N(H)$, derived from the \emph{Herschel} dust emission, and the H\rmnum{1} column density $N(H\rmnum{1})$. \cite{MAMD_2017b} shows that the $250\: \mu m$ intensity is strongly correlated with the optical depth at $353\: GHz$ from \emph{Planck}. The authors concluded that the total column density is given by:
 
 \begin{figure*}[h]
   \centering
@@ -371,8 +377,6 @@ Below, we quickly present the CO morphology in the different regions we observed
   \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 \end{figure*}
 
-\subsubsection{CO-to-H$_2$ conversion factor}
-We used the CO-dust coherence to estimate a CO-to-$H_2$ conversion factor $X_{CO}$ in both regions. To do so, we compared the CO intensity $I_{CO}$ with the total column density $N(H)$, derived from the \emph{Herschel} dust emission, and the H\rmnum{1} column density $N(H\rmnum{1})$. As explain below, the H\rmnum{1} column density map is a combination of the DHIGLS and GHIGLS surveys. \cite{MAMD_2017b} shows that the $250\: \mu m$ intensity is strongly correlated with the optical depth at $353\: GHz$ from \emph{Planck}. The authors concluded that the total column density is given by:
 \begin{equation}
   N(H)=2.49\times 10^{20}\, I_{250\: \mu m}
 \end{equation}
@@ -384,6 +388,22 @@ In Draco1, we found a $X_{CO}$ factor of $(1.97\pm 0.01)\times 10^{20}\: cm^{-1}
 Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those previously found by \cite{Herbstmeier_1993} and \cite{Moritz_1998}.
 %Intercept ($N_{H_2}^0$) is about $6.1-5.9\times 10^{20}\: cm^{-2}$ \textbf{(???; due to optically thin hypothesis \citep{Okamoto_arXiv}?)}.
 
+\begin{table}[h]
+  \centering
+  \footnotesize
+  \caption{\label{table:Xco} Values of the $X_{CO}$ factor estimation.}
+  \begin{tabular}{lc}
+    \hline \hline
+    Region &       $X_{CO}$       \\ \hline 
+    Draco1 & $1.98\times 10^{20}$ \\
+    Draco2 & $1.16\times 10^{20}$ \\
+    Draco3 & $1.94\times 10^{20}$ \\
+    Draco4 & $1.70\times 10^{20}$ \\
+    Draco5 & $0.77\times 10^{20}$ \\
+    Draco6 & $1.22\times 10^{20}$ \\ \hline
+  \end{tabular}
+\end{table}
+
 \begin{figure*}[h!]
   \centering
   \includegraphics[page=1,width=0.48\linewidth,trim=30 10 50 30,clip=true]{Figures/dust-CO_comparison.pdf}
@@ -393,9 +413,9 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 \end{figure*}
 
 
-      \subsubsection{CO line ratios}
+\subsubsection{CO line ratios}
 
-   We smoothed the CO(2-1) map to the resolution of the CO(1-0) map in order to look at the CO(2-1)/CO(1-0) ratio. The line ratio is rather spatially uniform, with values of $0.67\pm 0.11$ in Draco1 and $0.73\pm 0.11$ in Draco2. Such values is typical to what is found for molecular clouds in the Milky Way and nearby galaxies \textbf{(ref!)}. \textbf{Variations in the CO(2-1)/CO(1-0) line ratio?}
+We smoothed the CO(2-1) map to the resolution of the CO(1-0) map in order to look at the CO(2-1)/CO(1-0) ratio. The line ratio is rather spatially uniform, with values of $0.67\pm 0.11$ in Draco1 and $0.73\pm 0.11$ in Draco2. Such values is typical to what is found for molecular clouds in the Milky Way and nearby galaxies \textbf{(ref!)}. \textbf{Variations in the CO(2-1)/CO(1-0) line ratio?}
 
 \begin{table}[h]
   \centering
@@ -438,7 +458,7 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 \end{figure*}
 
 
-   \subsection{Molecular gas fraction}
+\subsection{Molecular gas fraction}
 
 \textbf{Discuss the spatial distribution of CO compare to H\rmnum{1} (figure \ref{DRAO-CO})}
 
@@ -538,7 +558,6 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 
 \bibliography{Biblio}
 \bibliographystyle{aa}
-
 %% \begin{figure*}[h]
 %%   \centering
 %%   \includegraphics[page=1,height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_GHIGLS/GHIGLS_NHI.pdf}
@@ -634,7 +653,6 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 %%   \includegraphics[page=6,height=7.5cm,trim=110 35 105 75,clip=true]{Figures/Phases_DHIGLS/DHIGLS_disp.pdf}
 %%   \caption{Maps of velocity dispersion of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
 %% \end{figure*}
-
 \end{document}
 
 
