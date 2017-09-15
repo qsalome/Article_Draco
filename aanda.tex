@@ -168,9 +168,9 @@ simultaneously with the FTS and WILMA backends. In this article, we only present
 Observations were obtained in on-the-fly mode, with a scanning speed of $\sim 7''/sec$ and a sampling of one scan taken every 0.5s. 
 A calibration was done every 10-15 minutes. We scanned the region in two orthogonal directions, with a shift of $\sim 10''$ 
 between two scanning lines. Pointing was checked every few hours by observing standard continuum sources and was generally 
-determined to be accurate to within a few arcseconds.
+determined to be accurate to within a few arc-seconds.
 Data reduction was done using the IRAM package CLASS. For each spectra, a linear baseline was subtracted at velocities outside 
-the range of the emission line ($-40$ to $-10\: km.s^{-1}$). The last step consists in the creation of the datacube by 
+the range of the emission line ($-40$ to $-10\: km.s^{-1}$). The last step consists in the creation of the data-cube by 
 gridding the spectra and applying a convolution with a Gaussian kernel. The resulting data cubes have median noise levels of 
 $350-620\: mK$ for CO(1-0) and $0.6-1.2\: K$ for CO(2-1) at a resolution of $\sim 0.13\: km.s^{-1}$.
 
@@ -184,11 +184,11 @@ $350-620\: mK$ for CO(1-0) and $0.6-1.2\: K$ for CO(2-1) at a resolution of $\si
 \subsection{H\rmnum{1} emission with GBT and DRAO}
 Draco was observed at 21 cm with the Green Bank Telescope (GBT) and the interferometer of the Dominion Radio Astrophysical 
 Observatory (DRAO) as part of the GHIGLS and DHIGLS surveys \citep{Martin_2015,Blagrave_2017}.
-A 5\degree$\times $5\degree region was observed with the GBT at a resolution of $9'$. The datacube we got from the archive 
+A 5\degree$\times $5\degree region was observed with the GBT at a resolution of $9'$. The data-cube we got from the archive 
 of GHIGLS data\footnote{\url{www.cita.utoronto.ca/GHIGLS}} covers the velocity range $-450\leq v_{LSR}\leq 400\: km.s^{-1}$. 
 The average noise level of the map is 60 mK at $0.8\: km.s^{-1}$ resolution.
 The GHIGLS data were then used by \cite{Blagrave_2017} for the low spacing of the DRAO data. A region of $12.5\: deg^2$ 
-was covered with the DRAO at a resolution of $61''\times 53.7''$. The datacube from the archive of 
+was covered with the DRAO at a resolution of $61''\times 53.7''$. The data-cube from the archive of 
 DHIGLS data\footnote{\url{www.cita.utoronto.ca/DHIGLS}} covers the velocity range $-165\leq v_{LSR}\leq 45\: km.s^{-1}$. 
 The typical rms is 105 mK at $0.8\: km.s^{-1}$ resolution.
 We refer to \cite{Martin_2015} and \cite{Blagrave_2017} for more details.
@@ -258,22 +258,22 @@ where $T_B(u)$ is the brightness temperature at velocity $u$.
 \subsubsection{Data processing}
 We applied a coherent multi-Gaussian decomposition (see Marchal et al. in prep. for details) in order to separate them. 
 The high noise level of \textit{DR} enables to only recover the signal from the CNM. Moreover, the Gaussian decomposition 
-method fits noise peaks that makes the result unusable. We nevertheless succeed to infer the two phase componant of the Draco Nebula 
+method fits noise peaks that makes the result unusable. We nevertheless succeed to infer the two phase component of the Draco Nebula 
 using \textit{DRACO} as a first step. Indeed, when applied to the GHIGLS data, the Gaussian decomposition method well 
 recovers the two phases. In particular, the distribution of the width $\sigma$ (see figure \ref{fig::PDF_sigma_over_A}), indicates 
-that both cold and warm phases are recovered. With the set of Gaussian obtained from \textit{DRACO} we reproject them on the DR grid 
-in order to refit the solution while constraining the parameter space of each gaussian with +/- ten percent of the intial solution. 
-Therefore, we ajust the coherent decomposition while avoiding to fit noise in the data. Futhermore, as shown in figure 
+that both cold and warm phases are recovered. With the set of Gaussian obtained from \textit{DRACO} we re-project them on the DR grid 
+in order to refit the solution while constraining the parameter space of each Gaussian with +/- ten percent of the initial solution. 
+Therefore, we adjusted the coherent decomposition while avoiding to fit noise in the data. Furthermore, as shown in figure 
 \ref{fig::PDF_sigma_over_A} we choosed $\sigma_{lim, \, \textit{DRACO}} = 4 \, km.s^{-1}$ to be the quantitative separation between 
 cold and warm phases. We note that, by construction, $\sigma_{lim, \, \textit{DRACO}} = \sigma_{lim, \, \textit{DR}}$. Then, for every 
-line-of-sight, we infer each new hyperspectral cube summing all Gaussian lower than $\sigma_{lim, \, \textit{DRACO}}$ for the CNM 
+line-of-sight, we infer each new hyper-spectral cube summing all Gaussian lower than $\sigma_{lim, \, \textit{DRACO}}$ for the CNM 
 and greater than $\sigma_{lim, \, \textit{DRACO}}$ for the WNM. Finally, we can integrate each of them, using equation \ref{eq::NHI} 
-to obtain the integrated colomn density maps of each phases, $N_{HI, \, CNM, \, \textit{DRACO}, \, IVC}$, 
+to obtain the integrated column density maps of each phases, $N_{HI, \, CNM, \, \textit{DRACO}, \, IVC}$, 
 $N_{HI, \, WNM, \, \textit{DRACO}, \, IVC}$, $N_{HI, \, CNM, \, \textit{DRACO}, \, LVC}$, 
 $N_{HI, \, WNM, \, \textit{DRACO}, \, LVC}$ which are presented figure \ref{fig::NHI_obs_CNM_IVC}, \ref{fig::NHI_obs_WNM_IVC}, 
 \ref{fig::NHI_obs_CNM_LVC} and \ref{fig::NHI_obs_CNM_LVC}. Note that we used the values of \color{red} ref Planck paper \color{black}
-to separate the local velocity componant (LVC) to the itermediete velocity componant (IVC). The total integrated column density map of \textit{DR} for the LVC+IVC 
-is presented figure \ref{fig::NHI_obs_DRAO}. Futhermore, in order to understang the dynamics of the gas, an histogram of the 
+to separate the local velocity component (LVC) to the intermediate velocity component (IVC). The total integrated column density map of \textit{DR} for the LVC+IVC 
+is presented figure \ref{fig::NHI_obs_DRAO}. Furthermore, in order to understand the dynamics of the gas, an histogram of the 
 dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \textit{DR} is shown figure \ref{fig::heatmap}.
 
 \subsubsection{Data analysis}
@@ -479,9 +479,6 @@ We smoothed the CO(2-1) map to the resolution of the CO(1-0) map in order to loo
 
 \textbf{Estimate the mass of molecular gas produced during the shock?}
 
-
-
-
 \section{Discussion}
 \label{sec:discussion}
 
@@ -492,9 +489,7 @@ We smoothed the CO(2-1) map to the resolution of the CO(1-0) map in order to loo
   \sigma_{CO}^2         &=& \sigma_{turb}^2+\frac{k T_{CO}}{\mu_{CO} m_H}
 \end{eqnarray}
 
-
-   \subsection{Statistical properties of turbulence}
-
+\subsection{Statistical properties of turbulence}
 \textit{VCS (Lazarian et al.)?}
 
 %
@@ -521,9 +516,6 @@ We smoothed the CO(2-1) map to the resolution of the CO(1-0) map in order to loo
 %   We ran grids of model, varying the distances $d_1$ and $d_2$. $d_1$ varies from a few hundred parsecs to 10 kpc, and $d_2$ varies from 0 to a few tens parsecs below $d_1$ ($d_2=0$ corresponds to a disc). Both $d_1$ and $d_2$ have influence on the morphology of gas. For small values of $d_1$, the gas is distributed in a narrow dense ring, whereas for larger distances, the ring is broad with broadness of a few kiloparsecs. In addition, for inner radii larger than $\sim 2\: kpc$, the gas ring extends far enough to be slightly resolved by the IRAM 30m telescope. \\
 %The inclination angle will also influence the spectra characteristics. As the radial velocity is proportional to the sine of the angle, the peaks go closer to each other as the inclination decreases. The depth does not change significantly with inclination, except for very low angles, when the peaks start overlapping.
 
-
-
-
 \section{Conclusions}
 \label{sec:conclusion}
 
@@ -538,9 +530,6 @@ We smoothed the CO(2-1) map to the resolution of the CO(1-0) map in order to loo
 %   MO and 09.6 have not been detected in CO by the 30m-telescope. However, we reached  interesting rms for these two sources, leading to upper limits of molecular gas amount of $\sim 10^8\: M_\odot$. This means that 09.6 and MO have a depletion time of $\le 0.8\: Gyr$ and $\le 0.2\: Gyr$ respectively. In a KS-diagram, these two regions lie with the normal star forming galaxies and even closer to the highly efficient star forming objects for MO. This result shows that the star formation observed in the radio-lobes of 3C 285 and NGC 541 is at least as efficient as inside spiral galaxies and even boosted in the case of the MO.
 %
 %   The origin of the molecular gas in 09.6 and MO is still an open question. However, the differences in the molecular-to-atomic gas fraction, the gas-to-dust ratio or the specific star formation rate in this two objects indicate different scenarios. 09.6 could be the remnant of a small galaxy that has lost most of its gas in a tidal interaction and that is being compressed by the interaction with the 3C 285 radio-lobe. In the case of MO, the presence of atomic gas, the short depletion time scale and the very high sSFR may indicate a recent star forming event that has not produced many stars yet. While 09.6 has a stellar mass of $\sim 10^9\: M_\odot$, typical of a small galaxy, the MO is 100 time smaller with a stellar mass that only reaches  $\sim 10^7\: M_\odot$. The small amounts of molecular gas in MO could be explained if the gas is mainly atomic or if the metallicity is too low to keep the standard conversion factor valid. In such a case, the MO could have condensed, after the interaction with the radio-lobes, from the low-metallicity intergalactic medium surrounding NGC 541, as already suggested in the filaments of several brightest cluster galaxies.
-
-
-
 
 \begin{acknowledgements}
    We thank Fr\'ed\'eric Damour and Victor Peula for their support during the observations. We also thank Jérome Pety for his help about the data reduction. \\
