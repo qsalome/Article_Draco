@@ -220,21 +220,10 @@ We thus adjusted the coherent decomposition avoiding to fit noise in the data. T
   \includegraphics[width=0.8\linewidth,trim=45 55 65 105,clip=true]{Figures/DHIGLS_NHI_tot.png}
   \caption{\label{NHI_DHIGLS} Map of the H\rmnum{1} column density recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data.}
 \end{figure*}
- 
-\begin{figure*}
-  \centering
-  \includegraphics[width=0.7\linewidth,trim=105 30 75 70,clip=true]{Figures/heatmap_png.png}
-  \caption{\label{fig::heatmap} 2D histogram of the velocity dispersion $\sigma$ and the central position $v_0$ of the Gaussian sample of \textit{DR}.}
-\end{figure*}
 
-   The cold phase of the intermediate-velocity component shows a similar morphology to the dust emission observed with \emph{Herschel} \citep{MAMD_2017b}. On the opposite, WNM is present everywhere, while the H\rmnum{1} column density is higher in the north. While the column density of the two phases peaks around $N_{H\rmnum{1}}\sim 2\times 10^{20}\: cm^{-2}$, the mass of the WNM $M_{WNM}\sim 2.0\times 10^3\: M_\odot$ is about three times higher than that of the CNM $M_{CNM}\sim 6.5\times 10^2\: M_\odot$.
-
-Total gas mass from dust emission: $1.8\times 10^4\: M_\odot$
-
-In order to make a clear distinction between GBT field and DRAO field we will use the name given by \cite{Martin_2015} and \cite{Blagrave_2017} namely respectively \textit{DRACO} and \textit{DR}.
-
-Furthermore, in order to understand the dynamics of the gas, an histogram of the 
-dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \textit{DR} is shown figure \ref{fig::heatmap}.
+   The cold phase of the intermediate-velocity component shows a similar morphology to the dust emission observed with \emph{Herschel} \citep{MAMD_2017b}. On the opposite, WNM is present everywhere, while the H\rmnum{1} column density is higher in the north. While the column density of the two phases peaks around $N_{H\rmnum{1}}\sim 2\times 10^{20}\: cm^{-2}$, the mass of the WNM ($M_{WNM}\sim 2.0\times 10^3\: M_\odot$) is about three times higher than that of the CNM ($M_{CNM}\sim 6.5\times 10^2\: M_\odot$).
+Contrary to the IVC, the local H\rmnum{1} component does not show cold neutral medium, except a tail-like structure at the bottom left. However, the WNM is rather homogeneous with column densities of $0.5-1\times 10^{20}\: cm^{-2}$. In particular, at the bottom left, the WNM shows a bubble-like feature. The mass of the WNM is $M_{WNM}\sim 1.4\times 10^3\: M_\odot$, of the same order than that of the WNM in the IVC.
+From the \emph{Herschel} data presented in \cite{MAMD_2017b}, we derived a total gas mass of $1.8\times 10^4\: M_\odot$, about 4-5 times larger than the total H\rmnum{1} mass $M_{H\rmnum{1}}\sim 4\times 10^3\: M_\odot$.
 
 
 %We applied a coherent multi-Gaussian decomposition (see Marchal et al. in prep. for details) in order to separate them. 
@@ -258,64 +247,52 @@ dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \tex
 %dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \textit{DR} is shown figure \ref{fig::heatmap}.
 
 
-\subsubsection{Data analysis}
+   \subsection{Dynamics}
 
+   The multi-Gaussian decomposition method provides a list of Gaussians. Each Gaussian is characterised by five parameters (its coordinates $\mathnormal{\alpha_i}$,$\mathnormal{\delta_i}$ and its spectral parameters $\mathnormal{A_i}$, $\mathnormal{v_i}$, $\mathnormal{\sigma_i}$). We used these Gaussians to compute maps of the velocity and velocity dispersion. To do so, we first reconstructed the signal in each pixel:
+\begin{equation}
+  \mathnormal{T_b(v)=\sum_{i=1}^{N_{comp}} A_i \exp\cbra{(v-v_i)^2/2\sigma_i^2}}
+\end{equation}
+%
+We then computed the emission-weighted mean velocity $\avg{v}$ and the velocity dispersion $\sigma_v$:
+\begin{equation}
+  \mathnormal{\avg{v}=\frac{\sum_v v\, T_b(v)\, dv}{\sum_v S_{CO}^{tot}(v)}}
+\end{equation}
+\begin{equation}
+  \mathnormal{\sigma_v=\sqrt{\frac{\sum_v v^2\, T_b(v)\, dv}{\sum_v T_b(v)}-\avg{v}^2}}
+\end{equation} 
+where $\mathnormal{dv}$ is the channel width.
 
-%% \subsection{Dynamics}
-%% The multi-Gaussian decomposition method from Marchal et al. (in prep.) provides a list of Gaussians. Each Gaussian is characterised 
-%% by its position $\mathnormal{x}$,$\mathnormal{y}$, its amplitude $\mathnormal{A}$, its position $\mathnormal{\mu}$, and its width 
-%% $\mathnormal{\sigma}$. In order to compute the velocity map, we first reconstruct the signal in each pixel:
+   The resulting velocity maps for the GHIGLS data are represented in figure \ref{velo_HI}.
 
-%% \begin{equation}
-%%   \mathnormal{T_b(v)=\sum_{i=1}^{N_{comp}} A_i \exp\cbra{(v-v_i)^2/2\sigma_i^2}}
-%% \end{equation}
+\begin{figure*}[h]
+  \centering
+  \includegraphics[page=1,height=6.5cm,trim=45 50 55 95,clip=true]{Figures/DHIGLS_velo.pdf}
+  \hspace{3mm}                                
+  \includegraphics[page=3,height=6.5cm,trim=45 50 55 95,clip=true]{Figures/DHIGLS_velo.pdf} \\
+  \vspace{3mm}                                
+  \includegraphics[page=4,height=7.5cm,trim=110 30 120 75,clip=true]{Figures/GHIGLS_velo.pdf}
+  \hspace{3mm}                                
+  \includegraphics[page=5,height=7.5cm,trim=110 30 130 75,clip=true]{Figures/GHIGLS_velo.pdf}
+  \caption{\label{velo_HI} Maps of the H\rmnum{1} central velocity derived for the CNM from DHIGLS (\emph{top}) and the WNM from GHIGLS (\emph{bottom}). For the cold phase, the two maps show the IVC (\emph{left}) and the LVC+IVC (\emph{right}). For the warm phase, the two maps show the intermediate- (\emph{left}) and low-velocity (\emph{right}) components.}
+\end{figure*}
 
-%% We then computed the emission-weighted mean velocity $\avg{v}$ and the velocity dispersion $\sigma_v$:
-%% \begin{equation}
-%%   \mathnormal{\avg{v}=\frac{\sum_v v\, S_{CO}^{tot}(v)\, dv}{\sum_v S_{CO}^{tot}(v)}}
-%% \end{equation}
-%% \begin{equation}
-%%   \mathnormal{\sigma_v=\sqrt{\frac{\sum_v v^2\, S_{CO}^{tot}(v)\, dv}{\sum_v S_{CO}^{tot}(v)}-\avg{v}^2}}
-%% \end{equation} 
-%% where $\mathnormal{dv}$ is the channel width.
+-----------
 
-%% \subsubsection{Large scale dynamics (HI)}
-%% The resulting velocity map is represented in figure \ref{Draco_HI}. The velocity gradient observed in H\rmnum{1} at the interface 
-%% with the Rayleigh-Taylor instability strengthens the scenario of a shock between the cloud at the origin of Draco and the warm neutral 
-%% medium (WNM) of the Galactic disc. Surprisingly, the bright structure in the south has velocities larger than the rest of the nebula.
-%___________________________________________________________________________________________________________________________________
-%___________________________________________________________________________________________________________________________________
-\newpage
+    The velocity gradient observed in H\rmnum{1} at the interface  with the Rayleigh-Taylor instability strengthens the scenario of a shock between the cloud at the origin of Draco and the warm neutral 
+ medium (WNM) of the Galactic disc. Surprisingly, the bright structure in the south has velocities larger than the rest of the nebula.
+
+Furthermore, in order to understand the dynamics of the gas, an histogram of the 
+dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \textit{DR} is shown figure \ref{heatmap}.
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=0.7\linewidth,trim=105 30 75 70,clip=true]{Figures/heatmap_png.png}
+  \caption{\label{heatmap} 2D histogram of the velocity dispersion $\sigma$ and the central position $v_0$ of the Gaussian sample of \textit{DR}.}
+\end{figure*}
 
 
    \subsection{CO emission}
-
-      \subsubsection{Morphology}
-
-   For such a diffuse high latitude cloud, CO is very bright in the regions observed with the IRAM 30m telescope. The CO(1-0) line peaks between 1 K and 12 K, while the CO(2-1) line peaks between 0.5 and 9 K. In all the regions, CO emission shows small structures embedded within more extended, diffuse molecular gas. Moreover, the peaks of CO emission are spatially correlated to the $250\: \mu m$ dust emission from Herschel (figure \ref{Draco_CO10}), indicating that both components are likely related. Below, we quickly present the CO morphology in the different regions we observed.
-\medskip
-
-\noindent \textit{Draco1} - Located in the southern part of the Draco nebula, this region covers one of the bright dusty structures seen with Herschel. It corresponds to the CO-clumps referred as Drop by \cite{Mebold_1985}. Our integrated intensity map shows three bright, extended structures. One of these seems to contains four bright CO clumps that are aligned with the dust emission. Finally, in the southern part of the map, there is two faint, extended structures that are co-spatial with dust emission.
-\medskip
-
-\noindent \textit{Draco2} - This region is located about at the center of the shock front. It corresponds to some flat dusty front structure. CO emission reveals four bright and one fainter separated structures co-spatial with dust emission.
-\medskip
-
-\noindent \textit{Draco3} - Focused on the northern part of the Wart clump of \cite{Mebold_1985}, the CO observations reveal a very bright, large structure at the centre and two fainter, smaller structures in the north. The three structures are co-spatial with a peak of dust emission.
-\medskip
-
-\noindent \textit{Draco4} - We mapped the entire clumps referred as Fang by \cite{Mebold_1985}. This structure lies at the edge of the shock front. CO is mostly emitted by a diffuse structure that follows dust emission. There is also a bright structure where the structure is thinner on the sky.
-\medskip
-
-\noindent \textit{Draco5} - Dust emission in this region has a very peculiar shape. Dust emission is bright at the centre, extended in the north and shows a tail-like structure in the south. CO was detected along the entire structure, including in the tail. CO emission is brighter in the centre and presents some clumpy structures bathed in diffuse, extended molecular gas.
-\medskip
-
-\noindent \textit{Draco6} - The last region present a few bright structures in both CO and dust emission. In particular there is an elongated bright structure in the north.
-
-
-      \subsubsection{CO-to-H$_2$ conversion factor}
-
-   We used the CO-dust coherence to estimate a CO-to-$H_2$ conversion factor $X_{CO}$ in both regions. To do so, we compared the CO intensity $I_{CO}$ with the total column density $N(H)$, derived from the \emph{Herschel} dust emission, and the H\rmnum{1} column density $N(H\rmnum{1})$. \cite{MAMD_2017b} shows that the $250\: \mu m$ intensity is strongly correlated with the optical depth at $353\: GHz$ from \emph{Planck}. The authors concluded that the total column density is given by:
 
 \begin{figure*}[h]
   \centering
@@ -354,6 +331,32 @@ dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \tex
   \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 \end{figure*}
 
+      \subsubsection{Morphology}
+
+   For such a diffuse high latitude cloud, CO is very bright in the regions observed with the IRAM 30m telescope. The CO(1-0) line peaks between 1 K and 12 K, while the CO(2-1) line peaks between 0.5 and 9 K. In all the regions, CO emission shows small structures embedded within more extended, diffuse molecular gas. Moreover, the peaks of CO emission are spatially correlated to the $250\: \mu m$ dust emission from Herschel (figure \ref{Draco_CO10}), indicating that both components are likely related. Below, we quickly present the CO morphology in the different regions we observed.
+\medskip
+
+\noindent \textit{Draco1} - Located in the southern part of the Draco nebula, this region covers one of the bright dusty structures seen with Herschel. It corresponds to the CO-clumps referred as Drop by \cite{Mebold_1985}. Our integrated intensity map shows three bright, extended structures. One of these seems to contains four bright CO clumps that are aligned with the dust emission. Finally, in the southern part of the map, there is two faint, extended structures that are co-spatial with dust emission.
+\medskip
+
+\noindent \textit{Draco2} - This region is located about at the center of the shock front. It corresponds to some flat dusty front structure. CO emission reveals four bright and one fainter separated structures co-spatial with dust emission.
+\medskip
+
+\noindent \textit{Draco3} - Focused on the northern part of the Wart clump of \cite{Mebold_1985}, the CO observations reveal a very bright, large structure at the centre and two fainter, smaller structures in the north. The three structures are co-spatial with a peak of dust emission.
+\medskip
+
+\noindent \textit{Draco4} - We mapped the entire clumps referred as Fang by \cite{Mebold_1985}. This structure lies at the edge of the shock front. CO is mostly emitted by a diffuse structure that follows dust emission. There is also a bright structure where the structure is thinner on the sky.
+\medskip
+
+\noindent \textit{Draco5} - Dust emission in this region has a very peculiar shape. Dust emission is bright at the centre, extended in the north and shows a tail-like structure in the south. CO was detected along the entire structure, including in the tail. CO emission is brighter in the centre and presents some clumpy structures bathed in diffuse, extended molecular gas.
+\medskip
+
+\noindent \textit{Draco6} - The last region present a few bright structures in both CO and dust emission. In particular there is an elongated bright structure in the north.
+
+
+      \subsubsection{CO-to-H$_2$ conversion factor}
+
+   We used the spatial coherence of CO and H\rmnum{1} emission with dust emission from \emph{Herschel} to estimate a CO-to-$H_2$ conversion factor $X_{CO}$ in the regions observed in CO. To do so, we compared the CO intensity $I_{CO}$ with the total column density $N(H)$, derived from the \emph{Herschel} dust emission, and the H\rmnum{1} column density $N(H\rmnum{1})$ derived from the decomposition method of the DHIGLS data. \cite{MAMD_2017b} showed that the $250\: \mu m$ intensity is strongly correlated with the optical depth at $353\: GHz$ from \emph{Planck}. The authors concluded that the total column density is given by:
 \begin{equation}
   N(H)=2.49\times 10^{20}\, I_{250\: \mu m}
 \end{equation}
@@ -361,7 +364,10 @@ We smoothed the so-done total column density and the CO intensity maps at the re
 \begin{equation}
   N(H)-N(H\rmnum{1})=2\times X_{CO}\, I_{CO}
 \end{equation}
-In Draco1, we found a $X_{CO}$ factor of $(1.97\pm 0.01)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, typical of what is observed in the Galactic disc\citep{Bolatto_2013}. On the opposite, molecular gas in Draco2 seems to be CO-bright. The plot of $I_{CO}$ vs. $N_{H_2}$ shows two regimes: at $I_{CO}\leq 5\: K.km.s^{-1}$ where $X_{CO}=(1.92\pm 0.03)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, and at $I_{CO}>5\: K.km.s^{-1}$ with an average value of $(0.55\pm 0.04)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$.
+In the southern structure of the Draco nebula, we found $X_{CO}$ factors between $1.9-20\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, typical of what is observed in the Galactic disc\citep{Bolatto_2013}.
+On the opposite, molecular gas along the shock front seems to be CO-bright.
+
+On the opposite, molecular gas in Draco2 seems to be CO-bright. The plot of $I_{CO}$ vs. $N_{H_2}$ shows two regimes: at $I_{CO}\leq 5\: K.km.s^{-1}$ where $X_{CO}=(1.92\pm 0.03)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, and at $I_{CO}>5\: K.km.s^{-1}$ with an average value of $(0.55\pm 0.04)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$.
 Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those previously found by \cite{Herbstmeier_1993} and \cite{Moritz_1998}.
 %Intercept ($N_{H_2}^0$) is about $6.1-5.9\times 10^{20}\: cm^{-2}$ \textbf{(???; due to optically thin hypothesis \citep{Okamoto_arXiv}?)}.
 
