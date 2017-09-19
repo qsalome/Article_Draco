@@ -166,9 +166,12 @@ We refer to \cite{Martin_2015} and \cite{Blagrave_2017} for more details.
 
 \section{Results}
 \label{sec:Res}
-\subsection{A new distance constraint}
+
+   \subsection{A new distance constraint}
+
 We used the three-dimensional map of Milky Way dust obtained by \cite{Green_2015ApJ...810...25G} in order to determine 
 a new distance contraint of the Draco Nebula. 
+
 
    \subsection{H\rmnum{1} emission}
    \label{sec:HI-data}
@@ -181,7 +184,7 @@ cold and warm phases (figure \ref{Phases_GHIGLS}).
 
 \begin{figure}
   \includegraphics[width=\linewidth]{Figures/PDF_sigma_over_A.pdf}
-  \caption{\label{PDF_sigma} PDF of the dispersion $\sigma_v$ of the Gaussian sample weighted by the amplitude times the dispersion $A\sigma_v$ after the coherent decomposition of \textit{DRACO}. \textbf{GHIGLS}}
+  \caption{\label{PDF_sigma} PDF of the Gaussian width $\sigma$ weighted by the integral $\sqrt(2\pi)A\sigma$ after the coherent decomposition for the GHIGLS data.}
 \end{figure}
 
 %\begin{figure*}[h]
@@ -249,7 +252,7 @@ From the \emph{Herschel} data presented in \cite{MAMD_2017b}, we derived a total
 %dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \textit{DR} is shown figure \ref{fig::heatmap}.
 
 
-   \subsection{Dynamics}
+      \subsubsection{Dynamics}
 
    The multi-Gaussian decomposition method provides a list of Gaussians. Each Gaussian is characterised by five parameters (its coordinates $\mathnormal{\alpha_i}$,$\mathnormal{\delta_i}$ and its spectral parameters $\mathnormal{A_i}$, $\mathnormal{v_i}$, $\mathnormal{\sigma_i}$). We used these Gaussians to compute maps of the velocity and velocity dispersion. To do so, we first reconstructed the signal in each pixel:
 \begin{equation}
@@ -281,6 +284,13 @@ where $\mathnormal{dv}$ is the channel width.
 
 -----------
 
+\begin{itemize}
+  \item Velocity gradient from the shock front to the back
+  \item Bubble seen in the WNM in intensity (LVC) and velocity (IVC)
+  \item Different regions in the heat map
+  \item Scenario of formation
+\end{itemize}
+
     The velocity gradient observed in H\rmnum{1} at the interface  with the Rayleigh-Taylor instability strengthens the scenario of a shock between the cloud at the origin of Draco and the warm neutral 
  medium (WNM) of the Galactic disc. Surprisingly, the bright structure in the south has velocities larger than the rest of the nebula.
 
@@ -296,7 +306,9 @@ dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \tex
 
    \subsection{CO emission}
 
-\begin{figure*}[h]
+%\begin{figure}
+
+\end{figure}{figure*}[h]
   \centering
   \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco1_stack.png}
   \hspace{3mm}
@@ -333,6 +345,7 @@ dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \tex
   \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 \end{figure*}
 
+
       \subsubsection{Morphology}
 
    For such a diffuse high latitude cloud, CO is very bright in the regions observed with the IRAM 30m telescope. The CO(1-0) line peaks between 1 K and 12 K, while the CO(2-1) line peaks between 0.5 and 9 K. In all the regions, CO emission shows small structures embedded within more extended, diffuse molecular gas. Moreover, the peaks of CO emission are spatially correlated to the $250\: \mu m$ dust emission from Herschel (figure \ref{Draco_CO10}), indicating that both components are likely related. Below, we quickly present the CO morphology in the different regions we observed.
@@ -366,27 +379,24 @@ We smoothed the so-done total column density and the CO intensity maps at the re
 \begin{equation}
   N(H)-N(H\rmnum{1})=2\times X_{CO}\, I_{CO}
 \end{equation}
-In the southern structure of the Draco nebula, we found $X_{CO}$ factors between $1.9-20\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, typical of what is observed in the Galactic disc\citep{Bolatto_2013}.
-On the opposite, molecular gas along the shock front seems to be CO-bright.
-
-On the opposite, molecular gas in Draco2 seems to be CO-bright. The plot of $I_{CO}$ vs. $N_{H_2}$ shows two regimes: at $I_{CO}\leq 5\: K.km.s^{-1}$ where $X_{CO}=(1.92\pm 0.03)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, and at $I_{CO}>5\: K.km.s^{-1}$ with an average value of $(0.55\pm 0.04)\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$.
-Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those previously found by \cite{Herbstmeier_1993} and \cite{Moritz_1998}.
-%Intercept ($N_{H_2}^0$) is about $6.1-5.9\times 10^{20}\: cm^{-2}$ \textbf{(???; due to optically thin hypothesis \citep{Okamoto_arXiv}?)}.
+In the southern structure of the Draco nebula, we found $X_{CO}$ factors between $1.9-20\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, typical of what is observed in the Galactic disc\citep{Bolatto_2013}. Note that the plot for Draco1 shows a drop of the slope at $I_{CO}\sim 2.5\: K.km.s^{-1}$. Fitting a second linear regression for $I_{CO}>2.5\: K.km.s^{-1}$ we found $Xco=1.36\times 10^{20}$, indicating that CO may be optically thin.
+On the opposite, molecular gas along the shock front seems to be CO-bright. The plots of $I_{CO}$ vs. $N_{H_2}$ show two regimes, with a change at $I_{CO}\sim 2.5\: K.km.s^{-1}$. For $I_{CO}$ above this limit, the $X_{CO}$ factor varies between $0.5-1.2\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$.
+Such values of the $X_{CO}$ factor are a factor of 3-4 times higher than those previously found by \cite{Herbstmeier_1993} and \cite{Moritz_1998}.
 
 \begin{table}[h]
   \centering
   \footnotesize
-  \caption{\label{table:Xco} Values of the $X_{CO}$ factor estimation.}
-  \begin{tabular}{lc}
+  \begin{tabular}{lcc}
     \hline \hline
-    Region &       $X_{CO}$       \\ \hline 
-    Draco1 & $1.98\times 10^{20}$ \\
-    Draco2 & $1.16\times 10^{20}$ \\
-    Draco3 & $1.94\times 10^{20}$ \\
-    Draco4 & $1.70\times 10^{20}$ \\
-    Draco5 & $0.77\times 10^{20}$ \\
-    Draco6 & $1.22\times 10^{20}$ \\ \hline
+    Region &  Single regression   &  Double regression   \\ \hline 
+    Draco1 & $1.98\times 10^{20}$ & $1.36\times 10^{20}$ \\
+    Draco2 & $1.16\times 10^{20}$ & $0.88\times 10^{20}$ \\
+    Draco3 & $1.94\times 10^{20}$ &          -           \\
+    Draco4 & $1.70\times 10^{20}$ & $1.17\times 10^{20}$ \\
+    Draco5 & $0.77\times 10^{20}$ & $0.52\times 10^{20}$ \\
+    Draco6 & $1.22\times 10^{20}$ & $0.93\times 10^{20}$ \\ \hline
   \end{tabular}
+  \caption{\label{table:Xco} Values of the $X_{CO}$ factor estimated using a single or a double linear regression. For Draco3, the $I_{CO}$ vs. $N_{H_2}$ plot does not show a change of the slope therefore we only made a single regression. With a double regression, the $X_{CO}$ factor is estimated for $I_{CO}>2.5\: K.km.s^{-1}$.}
 \end{table}
 
 \begin{figure*}[h!]
@@ -400,7 +410,9 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 
       \subsubsection{CO line ratios}
 
-   We smoothed the CO(2-1) map to the resolution of the CO(1-0) map in order to look at the CO(2-1)/CO(1-0) ratio. The line ratio is rather spatially uniform, with values of $0.67\pm 0.11$ in Draco1 and $0.73\pm 0.11$ in Draco2. Such values is typical to what is found for molecular clouds in the Milky Way and nearby galaxies \textbf{(ref!)}. \textbf{Variations in the CO(2-1)/CO(1-0) line ratio?}
+   We simultaneously observed the CO(1-0) and CO(2-1) maps therefore we are able to estimate the intensity line ratio. To do so, we spectrally and spatially smoothed the CO(2-1) maps to the resolution of the CO(1-0) ones. We then computed the CO(2-1)/CO(1-0) ratio of the integrated intensity. The line ratio is rather spatially uniform, except in the eastern part of Draco 5 and the center of Draco 2 where the molecular gas is more excited, maybe due to shocks.
+On average, the ratio CO(2-1)/CO(1-0) of the integrated intensity is $0.72\pm 0.16$, typical to what is found for molecular clouds in the Milky Way and nearby galaxies \textbf{(ref!)}.
+Note that we can distinguish between the nose of the Draco nebula (Draco1+Draco3) and the shock front. The CO(2-1)/CO(1-0) is slightly higher along the shock front (about 0.77) than in the nose (about 0.69).
 
 \begin{table}[h]
   \centering
@@ -418,35 +430,17 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
   \end{tabular}
 \end{table}
 
-\begin{figure*}[h!]
-  \centering
-  \includegraphics[page=2,height=7.3cm,trim=60 30 90 75,clip=true]{Figures/Draco1_CO21-CO10.pdf}
-  \hspace{3mm}
-  \includegraphics[page=2,height=7.3cm,trim=70 30 90 75,clip=true]{Figures/Draco2_CO21-CO10.pdf}
-  \caption{\label{ratio} Histogram of the line ratio CO(2-1)/CO(1-0) in Draco1 (\emph{left}) and Draco2 (\emph{right}). The best fitting Gaussian indicates a line ratio of the order to what is commonly found in the interstellar medium (about 0.7; \textbf{ref!}). \textbf{Is it relevant to show these histograms?}}
-\end{figure*}
-
-\textbf{Use gaussian decomposition to separate the different component? Diffuse vs. dense? Histogram of the sigma?}
-
-
-      \subsubsection{CO-H\rmnum{1} comparison}
-
-   We now aim to compare the dynamics of the CO and H\rmnum{1} emission. First, we compared the velocity of the CO(1-0) and CO(2-1). As expected both CO lines have rather the same velocity, with a relative difference of $2.4-3.3\%$. We then compared the velocity maps of the CO(1-0) and H\rmnum{1} emission at the resolution of the DHIGLS data. The CO and H\rmnum{1} velocity are rather similar, indicating that the atomic and molecular gas are well mixed in the two regions observed in CO with the IRAM 30m.
-
-   In a second time, we looked at the position-velocity (PV) diagrams of both H\rmnum{1} and CO(1-0) emission at the shock interface in Draco2. The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\degree, the orientation we chose to compute the PV diagrams. To do so, we decreased the spatial and spectral resolution of the CO data to those of the HI data ($1'$ in space and $0.8\: km.s^{-1}$ in velocity). For both emission, we focused on the region where CO has been observed ($300''\times 420''$). We finally stacked all the pixels in the direction orthogonal to the "slit". The resulting PV diagrams are shown in figure \ref{PV-diag}.
-
-\begin{figure*}[h!]
-  \centering
-  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{Figures/PV_diagram_HI.pdf}
-  \hspace{3mm}
-  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{Figures/PV_diagram_CO.pdf}
-  \caption{\label{PV-diag} Position-velocity diagrams of the H\rmnum{1} (\emph{left}) and CO (\emph{right}) in Draco2. The PV diagrams are centred in $\alpha=16^h 51^m 13.3^s$, $\delta=+$60:55:23.7 over a slit oriented at 45\degree with a width of $8.5'$, to include all the region observed in CO. They were computed at $1'$ and $0.8\: km.s^{-1}$ resolution.}
-\end{figure*}
-
 
    \subsection{Molecular gas fraction}
 
-\textbf{Discuss the spatial distribution of CO compare to H\rmnum{1} (figure \ref{DRAO-CO})}
+\begin{itemize}
+  \item spatial distribution of HI compare to dust $\rightarrow$ maps of $N(H\rmnum{1})/N(H)$
+  \item spatial distribution of CO compare to H\rmnum{1} $\rightarrow$ maps of H\rmnum{1} with CO contours (figure \ref{DRAO-CO})+ratio $N(H_2)/N(H\rmnum{1})$
+  \item density profiles?
+  \item Estimate the mass of molecular gas produced during the shock?
+\end{itemize}
+
+   We used the CO(1-0) and H\rmnum{1} intensity maps to derive the ratio between the molecular and atomic column density. We smoothed the CO maps at the resolution of the DHIGLS map ($1'$). We found a ratio $N(H_2)/N(H\rmnum{1},CNM)$ of $4.0\pm 4.5$ in Draco1 and $2.4\pm 2.0$ in Draco2
 
 \begin{figure}[h!]
   \centering
@@ -462,9 +456,22 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
   \caption{\label{DRAO-CO} Map of the H\rmnum{1} emission from DHIGLS, smoothed at a resolution of $1.7'$. The black contours show the CO(1-0) emission observed with the IRAM 30m telescope in the region represented by the dashed boxes. H\rmnum{1} and CO seem to be slightly shifted in projection.}
 \end{figure*}
 
-   We used the CO(1-0) and H\rmnum{1} intensity maps to derive the ratio between the molecular and atomic column density. We smoothed the CO maps at the resolution of the DHIGLS map ($1'$). We found a ratio $N(H_2)/N(H\rmnum{1},CNM)$ of $4.0\pm 4.5$ in Draco1 and $2.4\pm 2.0$ in Draco2
 
-\textbf{Estimate the mass of molecular gas produced during the shock?}
+      \subsubsection{CO-H\rmnum{1} dynamics}
+
+\textbf{Use gaussian decomposition to separate the different component? Diffuse vs. dense? Histogram of the sigma?}
+
+   We now aim to compare the dynamics of the CO and H\rmnum{1} emission. First, we compared the velocity of the CO(1-0) and CO(2-1). As expected both CO lines have rather the same velocity, with a relative difference of $2.4-3.3\%$. We then compared the velocity maps of the CO(1-0) and H\rmnum{1} emission at the resolution of the DHIGLS data. The CO and H\rmnum{1} velocity are rather similar, indicating that the atomic and molecular gas are well mixed in the two regions observed in CO with the IRAM 30m.
+
+   In a second time, we looked at the position-velocity (PV) diagrams of both H\rmnum{1} and CO(1-0) emission at the shock interface in Draco2. The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\degree, the orientation we chose to compute the PV diagrams. To do so, we decreased the spatial and spectral resolution of the CO data to those of the HI data ($1'$ in space and $0.8\: km.s^{-1}$ in velocity). For both emission, we focused on the region where CO has been observed ($300''\times 420''$). We finally stacked all the pixels in the direction orthogonal to the "slit". The resulting PV diagrams are shown in figure \ref{PV-diag}.
+
+\begin{figure*}[h!]
+  \centering
+  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{Figures/PV_diagram_HI.pdf}
+  \hspace{3mm}
+  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{Figures/PV_diagram_CO.pdf}
+  \caption{\label{PV-diag} Position-velocity diagrams of the H\rmnum{1} (\emph{left}) and CO (\emph{right}) in Draco2. The PV diagrams are centred in $\alpha=16^h 51^m 13.3^s$, $\delta=+$60:55:23.7 over a slit oriented at 45\degree with a width of $8.5'$, to include all the region observed in CO. They were computed at $1'$ and $0.8\: km.s^{-1}$ resolution.}
+\end{figure*}
 
 
 
@@ -479,32 +486,9 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
   \sigma_{CO}^2         &=& \sigma_{turb}^2+\frac{k T_{CO}}{\mu_{CO} m_H}
 \end{eqnarray}
 
+
    \subsection{Statistical properties of turbulence}
    \textit{VCS (Lazarian et al.)?}
-
-%
-%
-%   \subsection{A model to compute velocity spectra}
-%   \label{sec:model}
-%
-%   In order to interpret the kinematics of our CO data, we used a simple analytical model which computes the velocity spectrum from the rotation velocity profile of the galaxy \citep{Wiklind_1997}. The rotation velocity profile is determined from the stellar mass distribution, assuming it follows a Plumer distribution.
-%
-%   The gas distribution was assumed to be axisymmetric of surface density $n(r)$ in a disc with negligible thickness. For each velocity dv, the code calculates the density contained in the isovelocity (equation \ref{eq:dndv}). The velocity spectrum corresponds to the histogram of the velocities. To take into account the gas dispersion, the computed spectrum was then convolved with a gaussian of standard $\sigma=10\: km.s^{-1}$.
-%\begin{equation} \label{eq:dndv}
-%  \frac{dN}{dv}(v)=\int \frac{n(r)\, rdr}{v_{rot}(r)\sin i \cbra{1-\frac{v}{v_{rot}(r)\sin i}}^2}
-%\end{equation}
-%
-%   We wanted to study the concentration of gas in the galaxy, and determine if the gas is distributed in a disc or a ring. The disc was modelled with a Toomre disc of order 2: $n(r)=n_0\cbra{1+\frac{r^2}{d^2}}^{-5/2}$ \citep{Toomre_1964}. A ring is the difference between two Toomre discs (see sketch in figure \ref{sketch_ring}).
-%
-%\begin{figure}[h]
-%  \centering
-%  \includegraphics[width=0.49\linewidth]{/home/qsalome/3C285/Pictures/Sketch_ring.png}
-%  \includegraphics[width=0.49\linewidth]{/home/qsalome/3C285/Pictures/Density_profile.png}
-%  \caption{\label{sketch_ring} \emph{Left:} Sketch of a ring with the characteristic distances $d_1$ and $d_2$. \emph{Right:} Surface density profile as derived by the model for a Toomre ring of mass $1.03\times 10^{10}\: M_\odot$ with $d_1=0.9\: kpc$ and $d_2=0.5\: kpc$. The vertical blue line represents the size of the CO(2-1) beam for 3C 285.}
-%\end{figure}
-%
-%   We ran grids of model, varying the distances $d_1$ and $d_2$. $d_1$ varies from a few hundred parsecs to 10 kpc, and $d_2$ varies from 0 to a few tens parsecs below $d_1$ ($d_2=0$ corresponds to a disc). Both $d_1$ and $d_2$ have influence on the morphology of gas. For small values of $d_1$, the gas is distributed in a narrow dense ring, whereas for larger distances, the ring is broad with broadness of a few kiloparsecs. In addition, for inner radii larger than $\sim 2\: kpc$, the gas ring extends far enough to be slightly resolved by the IRAM 30m telescope. \\
-%The inclination angle will also influence the spectra characteristics. As the radial velocity is proportional to the sine of the angle, the peaks go closer to each other as the inclination decreases. The depth does not change significantly with inclination, except for very low angles, when the peaks start overlapping.
 
 
 
@@ -537,7 +521,7 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher to those pre
 \end{acknowledgements}
 
 
-\bibliography{Biblio}
+\bibliography{Biblio,Biblio_Antoine}
 \bibliographystyle{aa}
 
 
