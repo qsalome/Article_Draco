@@ -208,7 +208,7 @@ cold and warm phases (figure \ref{Phases_GHIGLS}).
   \includegraphics[page=2,height=8cm,trim=110 35 130 75,clip=true]{Figures/GHIGLS_NHI.pdf}
   \hspace{3mm}
   \includegraphics[page=5,height=8cm,trim=110 35 130 75,clip=true]{Figures/GHIGLS_NHI.pdf}
-  \caption{\label{Phases_GHIGLS} Maps of the H\rmnum{1} column density recovered by the coherent multi-Gaussian decomposition applied on the GHIGLS data. We separated the cold (\emph{left}) and warm (\emph{right}) phases for the IVC (\emph{top}) and the LVC (\emph{bottom}).}
+  \caption{\label{Phases_GHIGLS} Maps of the H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the GHIGLS data. We separated the cold (\emph{left}) and warm (\emph{right}) phases for the IVC (\emph{top}) and the LVC (\emph{bottom}).}
 \end{figure*}
 
    The DHIGLS data have a high noise level that enables to only recover the signal from the CNM. Moreover, the decomposition method fits noise peaks so that the results are unusable for the DHIGLS data. However, we succeed to infer the two phases using the previous decomposition of the GHIGLS data. To do so, we re-projected the Gaussians on the grid of DHIGLS. This is then provide as the guest parameters for the DHIGLS decomposition. We constrained the parameter space of each Gaussian with $\pm 10\%$ of the initial parameters.
@@ -223,7 +223,7 @@ We thus adjusted the coherent decomposition avoiding to fit noise in the data. T
 \begin{figure*}[h!]
   \centering
   \includegraphics[width=0.8\linewidth,trim=45 55 65 105,clip=true]{Figures/DHIGLS_NHI_tot.png}
-  \caption{\label{NHI_DHIGLS} Map of the H\rmnum{1} column density recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data.}
+  \caption{\label{NHI_DHIGLS} Map of the H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data.}
 \end{figure*}
 
    The cold phase of the intermediate-velocity component shows a similar morphology to the dust emission observed with \emph{Herschel} \citep{MAMD_2017b}. On the opposite, WNM is present everywhere, while the H\rmnum{1} column density is higher in the north. While the column density of the two phases peaks around $N_{H\rmnum{1}}\sim 2\times 10^{20}\: cm^{-2}$, the mass of the WNM ($M_{WNM}\sim 2.0\times 10^3\: M_\odot$) is about three times higher than that of the CNM ($M_{CNM}\sim 6.5\times 10^2\: M_\odot$).
@@ -279,7 +279,7 @@ where $\mathnormal{dv}$ is the channel width.
   \includegraphics[page=4,height=7.5cm,trim=110 30 120 75,clip=true]{Figures/GHIGLS_velo.pdf}
   \hspace{3mm}                                
   \includegraphics[page=5,height=7.5cm,trim=110 30 130 75,clip=true]{Figures/GHIGLS_velo.pdf}
-  \caption{\label{velo_HI} Maps of the H\rmnum{1} central velocity derived for the CNM from DHIGLS (\emph{top}) and the WNM from GHIGLS (\emph{bottom}). For the cold phase, the two maps show the IVC (\emph{left}) and the LVC+IVC (\emph{right}). For the warm phase, the two maps show the intermediate- (\emph{left}) and low-velocity (\emph{right}) components.}
+  \caption{\label{velo_HI} Maps of the H\rmnum{1} central velocity in $km.s^{-1}$ derived for the CNM from DHIGLS (\emph{top}) and the WNM from GHIGLS (\emph{bottom}). For the cold phase, the two maps show the IVC (\emph{left}) and the LVC+IVC (\emph{right}). For the warm phase, the two maps show the intermediate- (\emph{left}) and low-velocity (\emph{right}) components.}
 \end{figure*}
 
 -----------
@@ -306,9 +306,21 @@ dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \tex
 
    \subsection{CO emission}
 
-%\begin{figure}
+%\begin{figure*}[h]
+%  \centering
+%  \includegraphics[page=1,height=8cm,trim=25 30 90 75,clip=true]{Figures/CO10_intensity.pdf}
+%  \hspace{3mm}
+%  \includegraphics[page=4,height=8cm,trim=195 30 260 75,clip=true]{Figures/CO10_intensity.pdf} \\
+%  \includegraphics[page=2,height=8cm,trim=55 30 120 75,clip=true]{Figures/CO10_intensity.pdf}
+%  \hspace{3mm}
+%  \includegraphics[page=5,height=8cm,trim=165 30 230 75,clip=true]{Figures/CO10_intensity.pdf} \\
+%  \includegraphics[page=3,height=8cm,trim=55 30 120 75,clip=true]{Figures/CO10_intensity.pdf}
+%  \hspace{3mm}
+%  \includegraphics[page=6,height=8cm,trim=215 30 280 75,clip=true]{Figures/CO10_intensity.pdf}
+%  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The white contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE and convolved at the resolution of the CO data.}
+%\end{figure*}
 
-\end{figure}{figure*}[h]
+\begin{figure*}[h]
   \centering
   \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco1_stack.png}
   \hspace{3mm}
@@ -401,9 +413,15 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher than those p
 
 \begin{figure*}[h!]
   \centering
-  \includegraphics[page=1,width=0.48\linewidth,trim=30 10 50 30,clip=true]{Figures/dust-CO_comparison.pdf}
+  \includegraphics[page=2,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
   \hspace{3mm}
-  \includegraphics[page=2,width=0.48\linewidth,trim=30 10 50 30,clip=true]{Figures/dust-CO_comparison.pdf}
+  \includegraphics[page=4,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf} \\
+  \includegraphics[page=6,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
+  \hspace{3mm}
+  \includegraphics[page=8,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf} \\
+  \includegraphics[page=10,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
+  \hspace{3mm}
+  \includegraphics[page=12,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
   \caption{\label{Xco} Correlation between the total column density derived from dust emission and the CO integrated intensity in Draco1 (\emph{left}) and Draco2 (\emph{right}). The slope of the best fitting model (blue line) gives the value of the $X_{CO}$ factor. The red dashed line corresponds to the value found by \cite{Moritz_1998}.}
 \end{figure*}
 
@@ -411,7 +429,7 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher than those p
       \subsubsection{CO line ratios}
 
    We simultaneously observed the CO(1-0) and CO(2-1) maps therefore we are able to estimate the intensity line ratio. To do so, we spectrally and spatially smoothed the CO(2-1) maps to the resolution of the CO(1-0) ones. We then computed the CO(2-1)/CO(1-0) ratio of the integrated intensity. The line ratio is rather spatially uniform, except in the eastern part of Draco 5 and the center of Draco 2 where the molecular gas is more excited, maybe due to shocks.
-On average, the ratio CO(2-1)/CO(1-0) of the integrated intensity is $0.72\pm 0.16$, typical to what is found for molecular clouds in the Milky Way and nearby galaxies \textbf{(ref!)}.
+On average, the ratio CO(2-1)/CO(1-0) of the integrated intensity is $0.72\pm 0.08$, typical to what is found for molecular clouds in the Milky Way and nearby galaxies \textbf{(ref!)}.
 Note that we can distinguish between the nose of the Draco nebula (Draco1+Draco3) and the shock front. The CO(2-1)/CO(1-0) is slightly higher along the shock front (about 0.77) than in the nose (about 0.69).
 
 \begin{table}[h]
@@ -421,56 +439,86 @@ Note that we can distinguish between the nose of the Draco nebula (Draco1+Draco3
   \begin{tabular}{lcccccc}
     \hline \hline
     Region & $I_{CO21}/I_{CO10}$ \\ \hline
-    Draco1 &   $0.67\pm 0.11$    \\
-    Draco2 &   $0.75\pm 0.14$    \\
-    Draco3 &   $0.73\pm 0.07$    \\
-    Draco4 &   $0.75\pm 0.12$    \\
-    Draco5 &   $0.84\pm 0.12$    \\
-    Draco6 &   $0.70\pm 0.11$    \\ \hline
+    Draco1 &   $0.67\pm 0.05$    \\
+    Draco2 &   $0.75\pm 0.07$    \\
+    Draco3 &   $0.73\pm 0.03$    \\
+    Draco4 &   $0.75\pm 0.06$    \\
+    Draco5 &   $0.84\pm 0.06$    \\
+    Draco6 &   $0.70\pm 0.05$    \\ \hline
   \end{tabular}
 \end{table}
 
 
    \subsection{Molecular gas fraction}
 
+   At a resolution of $1'$, dust and H\rmnum{1} emission are spatially coherent (figure \ref{NHI_DHIGLS}). In particular, the DHIGLS shows the Rayleigh-Taylor structure seen by \cite{MAMD_2017b}. We produced a map of the atomic gas fraction $N(H\rmnum{1})/N(H)$. While on average the atomic gas fraction peaks between 0.4 and 0.5, this fraction drops to 0.15-0.2 where the column density of the CNM is higher than $8\times 10^{19}\: cm^{-2}$. This result strengthen the scenario of a intermediate-velocity cloud of WNM that interacted with the WNM of the Galactic plane, producing CNM through the thermal instability at the shock front.
+
+   In order to compare the spatial distribution of CO and H\rmnum{1} emission, we overlaid the CO contours on the column density map of the CNM in the IVC (figure \ref{DRAO-CO}). Along the shock front, CO and H\rmnum{1} are spatially correlated, even though the peak of H\rmnum{1} is located slightly before the peak of CO emission. This result suggests that the shock of the Draco nebula progenitor and the WNM of the Milky Way favoured a phase transition between the atomic CNM and the molecular gas.
+Such shift is also observed in Draco1, at the edge of the nose of the nebula. On the opposite, CO and H\rmnum{1} seem to be well mixed in Draco3. We conclude that the nose of the nebula is independant to the shock front.
+We used the CO(1-0) intensity and H\rmnum{1}-CNM column density maps to derive a ratio between the molecular and atomic column density in the IVC. As previously shown by \cite{Planck_XXIV_2011,MAMD_2017b}, the Draco nebula is mostly molecular. We found a ratio $N(H_2)/N(H\rmnum{1},CNM)\sim 1.2-1.3$ along the shock front, while this ratio is about 2.0 in Draco1 and 8.9 in Draco3.
+
+\begin{figure*}[h!]
+  \centering
+  \includegraphics[page=1,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
+  \hspace{3mm}
+  \includegraphics[page=2,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf} \\
+  \includegraphics[page=3,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
+  \hspace{3mm}
+  \includegraphics[page=4,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf} \\
+  \includegraphics[page=5,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
+  \hspace{3mm}
+  \includegraphics[page=6,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
+  \caption{\label{DRAO-CO} Map of the H\rmnum{1} emission from DHIGLS, smoothed at a resolution of $1.7'$. The black contours show the CO(1-0) emission observed with the IRAM 30m telescope in the region represented by the dashed boxes. H\rmnum{1} and CO seem to be slightly shifted in projection.}
+\end{figure*}
+
+--------------------------------------
+
 \begin{itemize}
-  \item spatial distribution of HI compare to dust $\rightarrow$ maps of $N(H\rmnum{1})/N(H)$
-  \item spatial distribution of CO compare to H\rmnum{1} $\rightarrow$ maps of H\rmnum{1} with CO contours (figure \ref{DRAO-CO})+ratio $N(H_2)/N(H\rmnum{1})$
   \item density profiles?
   \item Estimate the mass of molecular gas produced during the shock?
 \end{itemize}
 
-   We used the CO(1-0) and H\rmnum{1} intensity maps to derive the ratio between the molecular and atomic column density. We smoothed the CO maps at the resolution of the DHIGLS map ($1'$). We found a ratio $N(H_2)/N(H\rmnum{1},CNM)$ of $4.0\pm 4.5$ in Draco1 and $2.4\pm 2.0$ in Draco2
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=\linewidth,trim=30 10 55 35,clip=true]{Figures/Column_density_profiles.pdf}
-  \caption{\label{Col_density} Density profiles of the total column density $N_H$ (black line), derived from the \emph{Herschel}-SPIRE $250\: \mu m$ emission, the atomic column density $N_{H\rmnum{1}}$ (red line) and the molecular column density $N_{H_2}$ (blue line), derived from the CO emission, along a "slit" oriented at 45\degree. The slit width is $8.5'$, to include all the region observed in CO.}
-\end{figure}
-
 \begin{figure*}[h!]
   \centering
-  \includegraphics[page=1,width=0.48\linewidth,trim=65 35 115 75,clip=true]{Figures/HI-CO.pdf}
-  \hspace{3mm}
-  \includegraphics[page=2,width=0.48\linewidth,trim=65 35 115 75,clip=true]{Figures/HI-CO.pdf}
-  \caption{\label{DRAO-CO} Map of the H\rmnum{1} emission from DHIGLS, smoothed at a resolution of $1.7'$. The black contours show the CO(1-0) emission observed with the IRAM 30m telescope in the region represented by the dashed boxes. H\rmnum{1} and CO seem to be slightly shifted in projection.}
+  \includegraphics[page=1,width=0.49\linewidth,trim=25 10 55 25,clip=true]{Figures/Column_density_profiles.pdf}
+  \includegraphics[page=4,width=0.49\linewidth,trim=25 10 55 25,clip=true]{Figures/Column_density_profiles.pdf}
+  \caption{\label{Col_density} Density profiles of the total column density $N_H$ (black line), derived from the \emph{Herschel}-SPIRE $250\: \mu m$ emission, the atomic column density $N_{H\rmnum{1}}$ (red line) and the molecular column density $N_{H_2}$ (blue line), derived from the CO emission, along a "slit" oriented at 45\degree. The slit width is $8.5'$, to include all the region observed in CO.}
 \end{figure*}
 
 
       \subsubsection{CO-H\rmnum{1} dynamics}
 
-\textbf{Use gaussian decomposition to separate the different component? Diffuse vs. dense? Histogram of the sigma?}
+   We now aim to compare the dynamics of the CO and H\rmnum{1} emission. First, we compared the velocity of the CO(1-0) and CO(2-1). As expected both CO lines have rather the same velocity, with a relative difference of $2.8-3.8\%$. We then compared the velocity maps of the CO(1-0) and H\rmnum{1} emission at the resolution of the DHIGLS data. The CO and H\rmnum{1} velocity are rather similar with difference of less than $0.5\: km.s^{-1}$, except in Draco4 where this difference is $\sim 2\: km.s^{-1}$. This indicates that the atomic and molecular gas are well mixed in all the regions observed with the IRAM 30m.
 
-   We now aim to compare the dynamics of the CO and H\rmnum{1} emission. First, we compared the velocity of the CO(1-0) and CO(2-1). As expected both CO lines have rather the same velocity, with a relative difference of $2.4-3.3\%$. We then compared the velocity maps of the CO(1-0) and H\rmnum{1} emission at the resolution of the DHIGLS data. The CO and H\rmnum{1} velocity are rather similar, indicating that the atomic and molecular gas are well mixed in the two regions observed in CO with the IRAM 30m.
+   In a second time, we looked at the position-velocity (PV) diagrams of both H\rmnum{1} and CO(1-0) emission at the shock front.
 
-   In a second time, we looked at the position-velocity (PV) diagrams of both H\rmnum{1} and CO(1-0) emission at the shock interface in Draco2. The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\degree, the orientation we chose to compute the PV diagrams. To do so, we decreased the spatial and spectral resolution of the CO data to those of the HI data ($1'$ in space and $0.8\: km.s^{-1}$ in velocity). For both emission, we focused on the region where CO has been observed ($300''\times 420''$). We finally stacked all the pixels in the direction orthogonal to the "slit". The resulting PV diagrams are shown in figure \ref{PV-diag}.
+-------
+
+The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\degree, the orientation we chose to compute the PV diagrams. To do so, we decreased the spatial and spectral resolution of the CO data to those of the HI data ($1'$ in space and $0.8\: km.s^{-1}$ in velocity). For both emission, we focused on the region where CO has been observed ($300''\times 420''$). We finally stacked all the pixels in the direction orthogonal to the "slit". The resulting PV diagrams are shown in figure \ref{PV-diag}.
+
+\textbf{Use gaussian decomposition to separate the different components? Diffuse vs. dense? Histogram of the sigma?}
+
 
 \begin{figure*}[h!]
   \centering
-  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{Figures/PV_diagram_HI.pdf}
+  \includegraphics[page=2,width=0.48\linewidth,trim=30 90 50 145,clip=true]{Figures/PV_diagram_HI.pdf}
   \hspace{3mm}
-  \includegraphics[width=0.48\linewidth,trim=70 10 95 40,clip=true]{Figures/PV_diagram_CO.pdf}
-  \caption{\label{PV-diag} Position-velocity diagrams of the H\rmnum{1} (\emph{left}) and CO (\emph{right}) in Draco2. The PV diagrams are centred in $\alpha=16^h 51^m 13.3^s$, $\delta=+$60:55:23.7 over a slit oriented at 45\degree with a width of $8.5'$, to include all the region observed in CO. They were computed at $1'$ and $0.8\: km.s^{-1}$ resolution.}
+  \includegraphics[page=3,width=0.48\linewidth,trim=30 90 55 110,clip=true]{Figures/PV_diagram_HI.pdf} \\
+  \includegraphics[page=2,width=0.48\linewidth,trim=30 90 50 145,clip=true]{Figures/PV_diagram_CO.pdf}
+  \hspace{3mm}
+  \includegraphics[page=3,width=0.48\linewidth,trim=30 90 55 110,clip=true]{Figures/PV_diagram_CO.pdf}
+  \caption{\label{PV-diag} Position-velocity diagrams of the H\rmnum{1} (\emph{top}) and CO (\emph{bottom}) in Draco4-6 (\emph{left}) and Draco2 (\emph{right}). The PV diagrams are centred in $\alpha=16^h 53^m 50.8^s$, $\delta=+$61:11:04.5 over a slit oriented along the shock front \textit{with a width of $8.5'$, to include all the region observed in CO}. They were computed at $1'$ and $0.8\: km.s^{-1}$ resolution.}
+\end{figure*}
+
+\begin{figure*}[h!]
+  \centering
+  \includegraphics[page=5,width=0.48\linewidth,trim=30 105 55 120,clip=true]{Figures/PV_diagram_HI.pdf}
+  \hspace{3mm}
+  \includegraphics[page=6,width=0.48\linewidth,trim=30 105 55 120,clip=true]{Figures/PV_diagram_HI.pdf} \\
+  \includegraphics[page=5,width=0.48\linewidth,trim=30 105 55 120,clip=true]{Figures/PV_diagram_CO.pdf}
+  \hspace{3mm}
+  \includegraphics[page=6,width=0.48\linewidth,trim=30 105 55 120,clip=true]{Figures/PV_diagram_CO.pdf}
+  \caption{\label{PV-diag} Position-velocity diagrams of the H\rmnum{1} (\emph{top}) and CO (\emph{bottom}) in Draco4-6 (\emph{left}) and Draco2 (\emph{right}). The PV diagrams are centred in $\alpha=16^h 53^m 50.8^s$, $\delta=+$61:11:04.5 over a slit oriented perpendicular to the shock front (\emph{right}) \textit{with a width of $8.5'$, to include all the region observed in CO}. They were computed at $1'$ and $0.8\: km.s^{-1}$ resolution.}
 \end{figure*}
 
 
