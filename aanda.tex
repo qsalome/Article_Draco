@@ -141,12 +141,6 @@ Draco shows remarkably high-contrast small-scale structures for such a diffuse h
 
 Data reduction was done using the IRAM package CLASS. For each spectra, a linear baseline was subtracted at velocities outside the range of the emission line ($-40$ to $-10\: km.s^{-1}$). The last step consists in the creation of the data-cube by gridding the spectra and applying a convolution with a Gaussian kernel. The resulting data cubes have median noise levels of $350-620\: mK$ for CO(1-0) and $0.6-1.2\: K$ for CO(2-1) at a resolution of $\sim 0.13\: km.s^{-1}$.
 
-%% \begin{figure*}[h]
-%%  \centering
-%%  \includegraphics[height=6cm,trim=10 35 75 85,clip=true]{/home/qsalome/Draco/CO-data/Pictures/Draco_intensity.png}
-%%  \caption{\label{Draco_large} Large scale map of the integrated intensity in $K.km.s^{-1}$ of the CO(1-0) emission. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
-%% \end{figure*}
-
 \begin{figure*}
   \includegraphics[page=1,width=0.49\linewidth]{Figures/Test_decomposition.pdf}
   \includegraphics[page=3,width=0.49\linewidth]{Figures/Test_decomposition.pdf}
@@ -187,18 +181,6 @@ cold and warm phases (figure \ref{Phases_GHIGLS}).
   \caption{\label{PDF_sigma} PDF of the Gaussian width $\sigma$ weighted by the integral $\sqrt(2\pi)A\sigma$ after the coherent decomposition for the GHIGLS data.}
 \end{figure}
 
-%\begin{figure*}[h]
-%  \centering
-%  \includegraphics[height=7.5cm,trim=0 0 0 0,clip=true]{Figures/NHI_obs_CNM_IVC.pdf}
-%  \hspace{3mm}
-%  \includegraphics[height=7.5cm,trim=0 0 0 0,clip=true]{Figures/NHI_obs_WNM_IVC.pdf} \\
-%  \vspace{3mm}
-%  \includegraphics[height=7.5cm,trim=0 0 0 0,clip=true]{Figures/NHI_obs_CNM_LVC.pdf}
-%  \hspace{3mm}
-%  \includegraphics[height=7.5cm,trim=0 0 0 0,clip=true]{Figures/NHI_obs_WNM_LVC.pdf}
-%  \caption{\label{Phases_GHIGLS} Maps of the H\rmnum{1} column density recovered by the coherent multi-Gaussian decomposition applied on the GHIGLS data. We separated the cold (\emph{left}) and warm (\emph{right}) phases for the IVC (\emph{top}) and the LVC (\emph{bottom}).}
-%\end{figure*}
-
 \begin{figure*}[h]
   \centering
   \includegraphics[page=1,height=8cm,trim=110 35 130 75,clip=true]{Figures/GHIGLS_NHI.pdf}
@@ -213,12 +195,6 @@ cold and warm phases (figure \ref{Phases_GHIGLS}).
 
    The DHIGLS data have a high noise level that enables to only recover the signal from the CNM. Moreover, the decomposition method fits noise peaks so that the results are unusable for the DHIGLS data. However, we succeed to infer the two phases using the previous decomposition of the GHIGLS data. To do so, we re-projected the Gaussians on the grid of DHIGLS. This is then provide as the guest parameters for the DHIGLS decomposition. We constrained the parameter space of each Gaussian with $\pm 10\%$ of the initial parameters.
 We thus adjusted the coherent decomposition avoiding to fit noise in the data. The total H\rmnum{1} column density map reconstructed with the Gaussian decomposition of the DHIGLS data for the combination of the LVC and the IVC (hereafter LVC+IVC) is presented figure \ref{NHI_DHIGLS}. By construction, the limit in the gaussian width $\sigma_{lim}$ is the same for GHIGLS and DHIGLS so we also choosed $\sigma_{lim}=4\: km.s^{-1}$ to quantitatively separate between the cold and warm phases.
-
-%\begin{figure*}[h!]
-%  \centering
-%  \includegraphics[width=0.8\linewidth,trim=35 35 60 70,clip=true]{Figures/NHI_obs_DRAO.pdf}
-%  \caption{\label{NHI_DHIGLS} Map of the H\rmnum{1} column density recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data.}
-%\end{figure*}
 
 \begin{figure*}[h!]
   \centering
@@ -297,62 +273,31 @@ where $\mathnormal{dv}$ is the channel width.
 Furthermore, in order to understand the dynamics of the gas, an histogram of the 
 dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \textit{DR} is shown figure \ref{heatmap}.
 
-\begin{figure*}
-  \centering
-  \includegraphics[width=0.7\linewidth,trim=105 30 75 70,clip=true]{Figures/heatmap_png.png}
-  \caption{\label{heatmap} 2D histogram of the velocity dispersion $\sigma$ and the central position $v_0$ of the Gaussian sample of \textit{DR}.}
-\end{figure*}
+%\begin{figure*}
+%  \centering
+%  \includegraphics[width=0.7\linewidth,trim=105 30 75 70,clip=true]{Figures/heatmap_png.png}
+%  \caption{\label{heatmap} 2D histogram of the velocity dispersion $\sigma$ and the central position $v_0$ of the Gaussian sample of \textit{DR}.}
+%\end{figure*}
 
 
    \subsection{CO emission}
 
-%\begin{figure*}[h]
-%  \centering
-%  \includegraphics[page=1,height=8cm,trim=25 30 90 75,clip=true]{Figures/CO10_intensity.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=4,height=8cm,trim=195 30 260 75,clip=true]{Figures/CO10_intensity.pdf} \\
-%  \includegraphics[page=2,height=8cm,trim=55 30 120 75,clip=true]{Figures/CO10_intensity.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=5,height=8cm,trim=165 30 230 75,clip=true]{Figures/CO10_intensity.pdf} \\
-%  \includegraphics[page=3,height=8cm,trim=55 30 120 75,clip=true]{Figures/CO10_intensity.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=6,height=8cm,trim=215 30 280 75,clip=true]{Figures/CO10_intensity.pdf}
-%  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The white contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE and convolved at the resolution of the CO data.}
-%\end{figure*}
-
 \begin{figure*}[h]
   \centering
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco1_stack.png}
+  \includegraphics[page=1,height=7.8cm,trim=25 30 90 75,clip=true]{Figures/CO10_intensity.pdf}
   \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco4_stack.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_stack.png}
+  \includegraphics[page=4,height=7.8cm,trim=195 30 260 75,clip=true]{Figures/CO10_intensity.pdf} \\
+  \includegraphics[page=2,height=7.8cm,trim=55 30 120 75,clip=true]{Figures/CO10_intensity.pdf}
   \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco5_stack.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco3_stack.png}
+  \includegraphics[page=5,height=7.8cm,trim=165 30 230 75,clip=true]{Figures/CO10_intensity.pdf} \\
+  \includegraphics[page=3,height=7.8cm,trim=55 30 120 75,clip=true]{Figures/CO10_intensity.pdf}
   \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco6_stack.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_rot_stack.png}
-  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
+  \includegraphics[page=6,height=7.8cm,trim=215 30 280 75,clip=true]{Figures/CO10_intensity.pdf}
+  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The white contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE and convolved at the resolution of the CO data.}
 \end{figure*}
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=1,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf}
-  \hspace{3mm}
-  \includegraphics[page=4,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf} \\
-  \includegraphics[page=2,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf}
-  \hspace{3mm}
-  \includegraphics[page=5,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf} \\
-  \includegraphics[page=3,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf}
-  \hspace{3mm}
-  \includegraphics[page=6,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_rot_intensity.png}
-  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
-\end{figure*}
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_stack.png} \\
   \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_intensity.png}
   \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 \end{figure*}
@@ -366,7 +311,7 @@ dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \tex
 \noindent \textit{Draco1} - Located in the southern part of the Draco nebula, this region covers one of the bright dusty structures seen with Herschel. It corresponds to the CO-clumps referred as Drop by \cite{Mebold_1985}. Our integrated intensity map shows three bright, extended structures. One of these seems to contains four bright CO clumps that are aligned with the dust emission. Finally, in the southern part of the map, there is two faint, extended structures that are co-spatial with dust emission.
 \medskip
 
-\noindent \textit{Draco2} - This region is located about at the center of the shock front. It corresponds to some flat dusty front structure. CO emission reveals four bright and one fainter separated structures co-spatial with dust emission.
+\noindent \textit{Draco2} - This region is located about at the center of the shock front. It corresponds to some flat dusty front structure. CO emission reveals four bright and one fainter separated structures co-spatial with dust emission. This map is the combination of two sub-maps: (1) one centred on a dust-bright structure in the north, (2) the other along a shock front-like structure.
 \medskip
 
 \noindent \textit{Draco3} - Focused on the northern part of the Wart clump of \cite{Mebold_1985}, the CO observations reveal a very bright, large structure at the centre and two fainter, smaller structures in the north. The three structures are co-spatial with a peak of dust emission.
@@ -490,7 +435,9 @@ We used the CO(1-0) intensity and H\rmnum{1}-CNM column density maps to derive a
 
    We now aim to compare the dynamics of the CO and H\rmnum{1} emission. First, we compared the velocity of the CO(1-0) and CO(2-1). As expected both CO lines have rather the same velocity, with a relative difference of $2.8-3.8\%$. We then compared the velocity maps of the CO(1-0) and H\rmnum{1} emission at the resolution of the DHIGLS data. The CO and H\rmnum{1} velocity are rather similar with difference of less than $0.5\: km.s^{-1}$, except in Draco4 where this difference is $\sim 2\: km.s^{-1}$. This indicates that the atomic and molecular gas are well mixed in all the regions observed with the IRAM 30m.
 
-   In a second time, we looked at the position-velocity (PV) diagrams of both H\rmnum{1} and CO(1-0) emission at the shock front.
+   In a second time, we computed position-velocity (PV) diagrams for the H\rmnum{1} and CO(1-0) emission in the different regions along the shock front.
+
+   For region Draco2, we combuted PV diagrams along four slits: the vertical and horizontal directions, and the $\pm 45$\degree directions. The four PV diagrams show a good correlation between the CO and H\rmnum{1}
 
 -------
 
@@ -499,41 +446,41 @@ The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\d
 \textbf{Use gaussian decomposition to separate the different components? Diffuse vs. dense? Histogram of the sigma?}
 
 
-%\begin{figure*}[h!]
-%  \centering
-%  \includegraphics[page=2,width=0.48\linewidth,trim=30 90 50 145,clip=true]{Figures/PV_diagram_HI.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=3,width=0.48\linewidth,trim=30 90 55 110,clip=true]{Figures/PV_diagram_HI.pdf} \\
-%  \includegraphics[page=2,width=0.48\linewidth,trim=30 90 50 145,clip=true]{Figures/PV_diagram_CO.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=3,width=0.48\linewidth,trim=30 90 55 110,clip=true]{Figures/PV_diagram_CO.pdf}
-%  \caption{\label{PV-diag} Position-velocity diagrams of the H\rmnum{1} (\emph{top}) and CO (\emph{bottom}) in Draco4-6 (\emph{left}) and Draco2 (\emph{right}). The PV diagrams are centred in $\alpha=16^h 53^m 50.8^s$, $\delta=+$61:11:04.5 over a slit oriented along the shock front \textit{with a width of $8.5'$, to include all the region observed in CO}. They were computed at $1'$ and $0.8\: km.s^{-1}$ resolution.}
-%\end{figure*}
-%
-%\begin{figure*}[h!]
-%  \centering
-%  \includegraphics[page=5,width=0.48\linewidth,trim=30 105 55 120,clip=true]{Figures/PV_diagram_HI.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=6,width=0.48\linewidth,trim=30 105 55 120,clip=true]{Figures/PV_diagram_HI.pdf} \\
-%  \includegraphics[page=5,width=0.48\linewidth,trim=30 105 55 120,clip=true]{Figures/PV_diagram_CO.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=6,width=0.48\linewidth,trim=30 105 55 120,clip=true]{Figures/PV_diagram_CO.pdf}
-%  \caption{\label{PV-diag} Position-velocity diagrams of the H\rmnum{1} (\emph{top}) and CO (\emph{bottom}) in Draco4-6 (\emph{left}) and Draco2 (\emph{right}). The PV diagrams are centred in $\alpha=16^h 53^m 50.8^s$, $\delta=+$61:11:04.5 over a slit oriented perpendicular to the shock front (\emph{right}) \textit{with a width of $8.5'$, to include all the region observed in CO}. They were computed at $1'$ and $0.8\: km.s^{-1}$ resolution.}
-%\end{figure*}
-
 \clearpage
 
-%\begin{figure}
-
-\end{figure}
+%\begin{figure*}[h]
+%%  \centering
+%  \hspace{5mm}
+%  \includegraphics[page=2,height=7cm,trim=180 85 185 80,clip=true]{Figures/CO10_intensity.pdf}
+%  \hspace{3mm}
+%  \includegraphics[page=4,height=7cm,trim=205 10 200 40,clip=true]{Figures/PV_diagram_CO_vertical.pdf}
+%  \includegraphics[page=4,height=7cm,trim=205 10 200 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
+%  \includegraphics[page=4,width=7.7cm,trim=30 100 60 100,clip=true]{Figures/PV_diagram_CO_horizontal.pdf} \\
+%  \includegraphics[page=4,width=7.7cm,trim=30 100 60 100,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
+%  \caption{}
+%\end{figure*}
 
 \begin{figure*}[h]
 %  \centering
   \hspace{5mm}
   \includegraphics[page=2,height=7cm,trim=180 85 185 80,clip=true]{Figures/CO10_intensity.pdf}
   \hspace{3mm}
-  \includegraphics[page=4,height=7cm,trim=205 10 200 40,clip=true]{Figures/PV_diagram_vertical.pdf} \\
-  \includegraphics[page=4,width=7.7cm,trim=30 100 60 100,clip=true]{Figures/PV_diagram_horizontal.pdf}
+  \includegraphics[page=4,height=7cm,trim=205 10 200 40,clip=true]{Figures/PV_diagram_vertical.pdf}
+  \includegraphics[page=4,height=7cm,trim=205 10 200 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
+  \includegraphics[page=4,width=7.7cm,trim=30 100 60 100,clip=true]{Figures/PV_diagram_horizontal.pdf} \\
+  \includegraphics[page=4,width=7.7cm,trim=30 100 60 100,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
+  \caption{}
+\end{figure*}
+
+\begin{figure*}[h]
+%  \centering
+  \hspace{7mm}
+  \includegraphics[width=9cm,trim=130 175 140 175,clip=true]{Figures/Draco2+9_rot_intensity.png}
+  \hspace{3mm}
+  \includegraphics[page=3,height=6cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_vertical.pdf}
+  \includegraphics[page=3,height=6cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
+  \includegraphics[page=3,width=10cm,trim=30 125 50 125,clip=true]{Figures/PV_diagram_horizontal.pdf} \\
+  \includegraphics[page=3,width=10cm,trim=30 125 50 125,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
   \caption{}
 \end{figure*}
 
@@ -554,8 +501,10 @@ The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\d
   \hspace{5mm}
   \includegraphics[page=4,height=8cm,trim=320 85 325 80,clip=true]{Figures/CO10_intensity.pdf}
   \hspace{3mm}
-  \includegraphics[page=5,height=8cm,trim=185 10 170 40,clip=true]{Figures/PV_diagram_vertical.pdf} \\
-  \includegraphics[page=5,width=5.6cm,trim=85 40 110 40,clip=true]{Figures/PV_diagram_horizontal.pdf}
+  \includegraphics[page=5,height=8cm,trim=185 10 170 40,clip=true]{Figures/PV_diagram_vertical.pdf}
+  \includegraphics[page=5,height=8cm,trim=185 10 170 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
+  \includegraphics[page=5,width=5.6cm,trim=85 40 110 40,clip=true]{Figures/PV_diagram_horizontal.pdf} \\
+  \includegraphics[page=5,width=5.6cm,trim=85 40 110 40,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
   \caption{}
 \end{figure*}
 
@@ -576,8 +525,10 @@ The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\d
   \hspace{5mm}
   \includegraphics[page=5,height=8cm,trim=285 85 295 80,clip=true]{Figures/CO10_intensity.pdf}
   \hspace{3mm}
-  \includegraphics[page=6,height=8cm,trim=200 10 185 40,clip=true]{Figures/PV_diagram_vertical.pdf} \\
-  \includegraphics[page=6,width=6.5cm,trim=30 40 45 40,clip=true]{Figures/PV_diagram_horizontal.pdf}
+  \includegraphics[page=6,height=8cm,trim=200 10 185 40,clip=true]{Figures/PV_diagram_vertical.pdf}
+  \includegraphics[page=6,height=8cm,trim=200 10 185 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
+  \includegraphics[page=6,width=6.5cm,trim=30 40 45 40,clip=true]{Figures/PV_diagram_horizontal.pdf} \\
+  \includegraphics[page=6,width=6.5cm,trim=30 40 45 40,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
   \caption{}
 \end{figure*}
 
@@ -598,8 +549,10 @@ The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\d
   \hspace{5mm}
   \includegraphics[page=6,height=8.5cm,trim=335 85 342 80,clip=true]{Figures/CO10_intensity.pdf}
   \hspace{3mm}
-  \includegraphics[page=7,height=8.5cm,trim=165 10 150 40,clip=true]{Figures/PV_diagram_vertical.pdf} \\
-  \includegraphics[page=7,width=5.6cm,trim=125 40 150 40,clip=true]{Figures/PV_diagram_horizontal.pdf}
+  \includegraphics[page=7,height=8.5cm,trim=165 10 150 40,clip=true]{Figures/PV_diagram_vertical.pdf}
+  \includegraphics[page=7,height=8.5cm,trim=165 10 150 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
+  \includegraphics[page=7,width=5.6cm,trim=125 40 150 40,clip=true]{Figures/PV_diagram_horizontal.pdf} \\
+  \includegraphics[page=7,width=5.6cm,trim=125 40 150 40,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
   \caption{}
 \end{figure*}
 
@@ -620,8 +573,10 @@ The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\d
   \hspace{7mm}
   \includegraphics[width=9cm,trim=130 175 140 175,clip=true]{Figures/Draco2+9_rot_intensity.png}
   \hspace{3mm}
-  \includegraphics[page=3,height=6cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_vertical.pdf} \\
-  \includegraphics[page=3,width=10cm,trim=30 125 50 125,clip=true]{Figures/PV_diagram_horizontal.pdf}
+  \includegraphics[page=3,height=6cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_vertical.pdf}
+  \includegraphics[page=3,height=6cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
+  \includegraphics[page=3,width=10cm,trim=30 125 50 125,clip=true]{Figures/PV_diagram_horizontal.pdf} \\
+  \includegraphics[page=3,width=10cm,trim=30 125 50 125,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
   \caption{}
 \end{figure*}
 
@@ -642,8 +597,10 @@ The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\d
   \hspace{5mm}
   \includegraphics[width=9cm,trim=130 295 540 290,clip=true]{Figures/Draco_FRONT_intensity.png}
   \hspace{3mm}
-  \includegraphics[page=2,height=7cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_vertical.pdf} \\
-  \includegraphics[page=2,width=10cm,trim=30 165 50 160,clip=true]{Figures/PV_diagram_horizontal.pdf}
+  \includegraphics[page=2,height=7cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_vertical.pdf}
+  \includegraphics[page=2,height=7cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
+  \includegraphics[page=2,width=10cm,trim=30 165 50 160,clip=true]{Figures/PV_diagram_horizontal.pdf} \\
+  \includegraphics[page=2,width=10cm,trim=30 165 50 160,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
   \caption{}
 \end{figure*}
 
@@ -792,6 +749,45 @@ The velocity map of CO shows a velocity gradient along a "slit" oriented at 45\d
   \hspace{3mm}
   \includegraphics[page=6,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_disp.pdf}
   \caption{Maps of velocity dispersion of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
+\end{figure*}
+
+%==================================================================
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco1_stack.png}
+  \hspace{3mm}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco4_stack.png} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_stack.png}
+  \hspace{3mm}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco5_stack.png} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco3_stack.png}
+  \hspace{3mm}
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco6_stack.png} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_rot_stack.png}
+  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
+\end{figure*}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[page=1,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf}
+  \hspace{3mm}
+  \includegraphics[page=4,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf} \\
+  \includegraphics[page=2,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf}
+  \hspace{3mm}
+  \includegraphics[page=5,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf} \\
+  \includegraphics[page=3,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf}
+  \hspace{3mm}
+  \includegraphics[page=6,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf} \\
+  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_rot_intensity.png}
+  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
+\end{figure*}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_stack.png} \\
+  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_intensity.png}
+  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 \end{figure*}
 
 \end{document}
