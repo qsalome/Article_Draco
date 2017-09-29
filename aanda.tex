@@ -269,7 +269,7 @@ dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \tex
 
    \subsection{CO emission}
 
-\begin{figure*}[h]
+\begin{figure*}[h!]
   \centering
   \includegraphics[page=1,height=7.8cm,trim=25 30 90 75,clip=true]{Figures/CO10_intensity.pdf}
   \hspace{3mm}
@@ -354,7 +354,7 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher than those p
   \includegraphics[page=10,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
   \hspace{3mm}
   \includegraphics[page=12,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
-  \caption{\label{Xco} Correlation between the total column density derived from dust emission and the CO integrated intensity in Draco1 (\emph{left}) and Draco2 (\emph{right}). The slope of the best fitting model (blue line) gives the value of the $X_{CO}$ factor. The red dashed line corresponds to the value found by \cite{Moritz_1998}.}
+  \caption{\label{Xco} Correlation between the molecular gas column density derived from dust and H\rmnum{1} emission, and the CO integrated intensity. The slope of the best fitting model (blue line) gives the value of the $X_{CO}$ factor. The vertical black dotted line indicates the limit $I_{CO}=2.5\: K.km.s^{-1}$ we used to make the fit.}
 \end{figure*}
 
 
@@ -386,23 +386,20 @@ Combined with the low $X_{CO}$ factor previously found, such usual CO excitation
 
    At a resolution of $1'$, dust and H\rmnum{1} emission are spatially coherent (figure \ref{NHI_DHIGLS}). In particular, the DHIGLS shows the Rayleigh-Taylor structure seen by \cite{MAMD_2017b}. We produced a map of the atomic gas fraction $N(H\rmnum{1})/N(H)$. While on average the atomic gas fraction peaks between 0.4 and 0.5, this fraction drops to 0.15-0.2 where the column density of the CNM is higher than $8\times 10^{19}\: cm^{-2}$. This result strengthen the scenario of a intermediate-velocity cloud of WNM that interacted with the WNM of the Galactic plane, producing CNM through the thermal instability at the shock front.
 
+\begin{figure*}[h!]
+  \centering
+  \includegraphics[page=1,width=9.1cm,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
+  \includegraphics[page=2,width=9.1cm,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf} \\
+  \includegraphics[page=3,width=9.1cm,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
+  \includegraphics[page=4,width=9.1cm,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf} \\
+  \includegraphics[page=5,width=9.1cm,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
+  \includegraphics[page=6,width=9.1cm,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
+  \caption{\label{DRAO-CO} Map of the H\rmnum{1} emission in the IVC from DHIGLS. The black contours show the CO(1-0) emission observed with the IRAM 30m telescope in the region represented by the dashed boxes.}
+\end{figure*}
+
    In order to compare the spatial distribution of CO and H\rmnum{1} emission, we overlaid the CO contours on the column density map of the CNM in the IVC (figure \ref{DRAO-CO}). Along the shock front, CO and H\rmnum{1} are spatially correlated, even though the peak of H\rmnum{1} is located slightly before the peak of CO emission. This result suggests that the shock of the Draco nebula progenitor and the WNM of the Milky Way favoured a phase transition between the atomic CNM and the molecular gas.
 Such shift is also observed in Draco1, at the edge of the nose of the nebula. On the opposite, CO and H\rmnum{1} seem to be well mixed in Draco3. We conclude that the nose of the nebula is independant to the shock front.
 We used the CO(1-0) intensity and H\rmnum{1}-CNM column density maps to derive a ratio between the molecular and atomic column density in the IVC. As previously shown by \cite{Planck_XXIV_2011,MAMD_2017b}, the Draco nebula is mostly molecular. We found a ratio $N(H_2)/N(H\rmnum{1},CNM)\sim 1.2-1.3$ along the shock front, while this ratio is about 2.0 in Draco1 and 8.9 in Draco3.
-
-\begin{figure*}[h!]
-  \centering
-  \includegraphics[page=1,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
-  \hspace{3mm}
-  \includegraphics[page=2,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf} \\
-  \includegraphics[page=3,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
-  \hspace{3mm}
-  \includegraphics[page=4,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf} \\
-  \includegraphics[page=5,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
-  \hspace{3mm}
-  \includegraphics[page=6,width=0.48\linewidth,trim=65 30 125 75,clip=true]{Figures/HI-CO.pdf}
-  \caption{\label{DRAO-CO} Map of the H\rmnum{1} emission from DHIGLS, smoothed at a resolution of $1.7'$. The black contours show the CO(1-0) emission observed with the IRAM 30m telescope in the region represented by the dashed boxes. H\rmnum{1} and CO seem to be slightly shifted in projection.}
-\end{figure*}
 
 --------------------------------------
 
@@ -410,13 +407,6 @@ We used the CO(1-0) intensity and H\rmnum{1}-CNM column density maps to derive a
   \item density profiles?
   \item Estimate the mass of molecular gas produced during the shock?
 \end{itemize}
-
-\begin{figure*}[h!]
-  \centering
-  \includegraphics[page=1,width=0.49\linewidth,trim=25 10 55 25,clip=true]{Figures/Column_density_profiles.pdf}
-  \includegraphics[page=4,width=0.49\linewidth,trim=25 10 55 25,clip=true]{Figures/Column_density_profiles.pdf}
-  \caption{\label{Col_density} Density profiles of the total column density $N_H$ (black line), derived from the \emph{Herschel}-SPIRE $250\: \mu m$ emission, the atomic column density $N_{H\rmnum{1}}$ (red line) and the molecular column density $N_{H_2}$ (blue line), derived from the CO emission, along a "slit" oriented at 45\degree. The slit width is $8.5'$, to include all the region observed in CO.}
-\end{figure*}
 
 
       \subsubsection{CO-H\rmnum{1} dynamics}
@@ -432,8 +422,6 @@ In particular, we focused on the region Draco4-5-6.
 
 \textbf{Use gaussian decomposition to separate the different components? Diffuse vs. dense? Histogram of the sigma?}
 
-
-\clearpage
 
 %\begin{figure*}[h]
 %%  \centering
@@ -711,6 +699,15 @@ In particular, we focused on the region Draco4-5-6.
   \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_stack.png} \\
   \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_intensity.png}
   \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
+\end{figure*}
+
+%==================================================================
+
+\begin{figure*}[h!]
+  \centering
+  \includegraphics[page=1,width=0.49\linewidth,trim=25 10 55 25,clip=true]{Figures/Column_density_profiles.pdf}
+  \includegraphics[page=4,width=0.49\linewidth,trim=25 10 55 25,clip=true]{Figures/Column_density_profiles.pdf}
+  \caption{\label{Col_density} Density profiles of the total column density $N_H$ (black line), derived from the \emph{Herschel}-SPIRE $250\: \mu m$ emission, the atomic column density $N_{H\rmnum{1}}$ (red line) and the molecular column density $N_{H_2}$ (blue line), derived from the CO emission, along a "slit" oriented at 45\degree. The slit width is $8.5'$, to include all the region observed in CO.}
 \end{figure*}
 
 \end{document}
