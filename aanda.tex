@@ -24,7 +24,7 @@
 
 \begin{document}
 
-\title{The Draco nebula as seen in CO and H{\Large \Rmnum{1}} \thanks{Based on observations carried out with the IRAM 30m Telescope. IRAM is supported by INSU/CNRS (France), MPG (Germany) and IGN (Spain).}}
+\title{The atomic-to-molecular transition in a colliding flow: \\ \Large{CO and H{\large \Rmnum{1}} observations of the Draco nebula}}
 
 \author{
    Q. Salom\'e\inst{1,2}   \and
@@ -36,9 +36,10 @@
 }
 
 \institute{
-   Institut d’Astrophysique Spatiale, CNRS, Univ. Paris-Sud, Université Paris-Saclay, bâtiment 121, 91405 Orsay cedex, France \\
-   email: quentin.salome@ias.u-psud.fr \and
-   Instituto de Radioastronom\'ia y Astrof\'isica, Universidad Nacional Aut\'onoma de M\'exico, Apdo. Postal 3-72, Morelia 58089, M\'exico \and
+   Institut d’Astrophysique Spatiale, CNRS, Univ. Paris-Sud, Université Paris-Saclay, bâtiment 121, 91405 Orsay cedex, France \and
+%   email: quentin.salome@ias.u-psud.fr \and
+   Instituto de Radioastronom\'ia y Astrof\'isica, Universidad Nacional Aut\'onoma de M\'exico, Apdo. Postal 3-72, Morelia 58089, M\'exico \\
+   email: q.salome@irya.unam.mx \and
 %   Canadian Institute for Theoretical Astrophysics, University of Toronto, 60 St. George Street, Toronto, ON M5S 3H8, Canada \and
 %   D\'epartement de physique, de g\'enie physique et d'optique, Universit\'e Laval, Qu\'ebec, QC G1V 0A6, Canada; Centre de Recherche en Astrophysique du Qu\'ebec (CRAQ), Montr\'eal, QC H3C 3J7, Canada \and
 %   National Radio Astronomy Observatory, P.O. Box 2, Rt. 28/92, Green Bank, WV 24944, USA
@@ -46,7 +47,7 @@
 
 \date{Received ??? / Accepted ??}
 
-\titlerunning{CO observations of the Draco nebula}
+\titlerunning{The Draco nebula as seen in CO and H{\rmnum{1}}}
 \authorrunning{Salomé Q. et al.}
 
 \abstract{}
@@ -129,8 +130,9 @@ The paper is organized as follows. Section \ref{sec:Obs} presents the CO and H\r
 Data reduction was done using the IRAM package CLASS. For each spectra, a linear baseline was subtracted at velocities outside the range of the emission line ($-40$ to $-10\: km.s^{-1}$). The last step consists in the creation of the data-cube by gridding the spectra and applying a convolution with a Gaussian kernel. The resulting data cubes have median noise levels of $350-620\: mK$ for CO(1-0) and $0.6-1.2\: K$ for CO(2-1) at a resolution of $\sim 0.13\: km.s^{-1}$.
 
 \begin{figure*}
-  \includegraphics[page=1,width=0.49\linewidth]{Figures/Test_decomposition.pdf}
-  \includegraphics[page=3,width=0.49\linewidth]{Figures/Test_decomposition.pdf}
+  \centering
+  \includegraphics[page=1,height=7.5cm,trim=35 0 50 20,clip=true]{Figures/Test_decomposition.pdf}
+  \includegraphics[page=3,height=7.5cm,trim=20 0 45 20,clip=true]{Figures/Test_decomposition.pdf}
   \caption{\label{Test} Test of the coherent multi-Gaussian decomposition. \emph{Left:} Plot of the H\rmnum{1} column density recovered by the decomposition as a fonction of the H\rmnum{1} estimated by integrated the GHIGLS data cube between $-73.1<v<24.1\: km.s^{-1}$. \emph{Right:} Plot of the H\rmnum{1} column density recovered by the decomposition for the DHIGLS data as a fonction of the GHIGLS. For both plot, the blue line is the 1:1 correlation.}
 \end{figure*}
 
@@ -164,34 +166,35 @@ We start by applying a coherent multi-Gaussian decomposition (see Marchal et al.
 cold and warm phases (figure \ref{Phases_GHIGLS}).
 
 \begin{figure}
-  \includegraphics[width=\linewidth]{Figures/PDF_sigma_over_A.pdf}
+  \centering
+  \includegraphics[width=\linewidth,trim=30 30 70 70,clip=true]{Figures/PDF_sigma_over_A.pdf}
   \caption{\label{PDF_sigma} PDF of the Gaussian width $\sigma$ weighted by the integral $\sqrt(2\pi)A\sigma$ after the coherent decomposition for the GHIGLS data.}
 \end{figure}
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=1,height=8cm,trim=110 35 130 75,clip=true]{Figures/GHIGLS_NHI.pdf}
+  \includegraphics[page=1,height=8cm,trim=140 20 120 70,clip=true]{Figures/GHIGLS_NHI.pdf}
   \hspace{3mm}
-  \includegraphics[page=4,height=8cm,trim=110 35 130 75,clip=true]{Figures/GHIGLS_NHI.pdf} \\
+  \includegraphics[page=4,height=8cm,trim=140 20 120 70,clip=true]{Figures/GHIGLS_NHI.pdf} \\
   \vspace{3mm}
-  \includegraphics[page=2,height=8cm,trim=110 35 130 75,clip=true]{Figures/GHIGLS_NHI.pdf}
+  \includegraphics[page=2,height=8cm,trim=140 20 120 70,clip=true]{Figures/GHIGLS_NHI.pdf}
   \hspace{3mm}
-  \includegraphics[page=5,height=8cm,trim=110 35 130 75,clip=true]{Figures/GHIGLS_NHI.pdf}
+  \includegraphics[page=5,height=8cm,trim=140 20 120 70,clip=true]{Figures/GHIGLS_NHI.pdf}
   \caption{\label{Phases_GHIGLS} Maps of the H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the GHIGLS data. We separated the cold (\emph{left}) and warm (\emph{right}) phases for the IVC (\emph{top}) and the LVC (\emph{bottom}).}
 \end{figure*}
 
    The DHIGLS data have a high noise level that enables to only recover the signal from the CNM. Moreover, the decomposition method fits noise peaks so that the results are unusable for the DHIGLS data. However, we succeed to infer the two phases using the previous decomposition of the GHIGLS data. To do so, we re-projected the Gaussians on the grid of DHIGLS. This is then provide as the guest parameters for the DHIGLS decomposition. We constrained the parameter space of each Gaussian with $\pm 10\%$ of the initial parameters.
-We thus adjusted the coherent decomposition avoiding to fit noise in the data. The total H\rmnum{1} column density map reconstructed with the Gaussian decomposition of the DHIGLS data for the combination of the LVC and the IVC (hereafter LVC+IVC) is presented figure \ref{NHI_DHIGLS}. By construction, the limit in the gaussian width $\sigma_{lim}$ is the same for GHIGLS and DHIGLS so we also choosed $\sigma_{lim}=4\: km.s^{-1}$ to quantitatively separate between the cold and warm phases.
+We thus adjusted the coherent decomposition avoiding to fit noise in the data. The total H\rmnum{1} column density map reconstructed with the Gaussian decomposition of the DHIGLS data for the combination of the LVC and the IVC (hereafter LVC+IVC) is presented in figure \ref{NHI_DHIGLS}. By construction, the limit in the gaussian width $\sigma_{lim}$ is the same for GHIGLS and DHIGLS so we also choosed $\sigma_{lim}=4\: km.s^{-1}$ to quantitatively separate between the cold and warm phases.
 
 \begin{figure*}[h!]
   \centering
-  \includegraphics[width=0.8\linewidth,trim=45 55 65 105,clip=true]{Figures/DHIGLS_NHI_tot.png}
+  \includegraphics[width=0.8\linewidth,trim=80 35 55 105,clip=true]{Figures/DHIGLS_NHI_tot.png}
   \caption{\label{NHI_DHIGLS} Map of the H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data.}
 \end{figure*}
 
-   The cold phase of the intermediate-velocity component shows a similar morphology to the dust emission observed with \emph{Herschel} \citep{MAMD_2017b}. On the opposite, WNM is present everywhere, while the H\rmnum{1} column density is higher in the north. While the column density of the two phases peaks around $N_{H\rmnum{1}}\sim 2\times 10^{20}\: cm^{-2}$, the mass of the WNM ($M_{WNM}\sim 2.0\times 10^3\: M_\odot$) is about three times higher than that of the CNM ($M_{CNM}\sim 6.5\times 10^2\: M_\odot$).
-Contrary to the IVC, the local H\rmnum{1} component does not show cold neutral medium, except a tail-like structure at the bottom left. However, the WNM is rather homogeneous with column densities of $0.5-1\times 10^{20}\: cm^{-2}$. In particular, at the bottom left, the WNM shows a bubble-like feature. The mass of the WNM is $M_{WNM}\sim 1.4\times 10^3\: M_\odot$, of the same order than that of the WNM in the IVC.
-From the \emph{Herschel} data presented in \cite{MAMD_2017b}, we derived a total gas mass of $1.8\times 10^4\: M_\odot$, about 4-5 times larger than the total H\rmnum{1} mass $M_{H\rmnum{1}}\sim 4\times 10^3\: M_\odot$.
+   The cold phase of the intermediate-velocity component shows a similar morphology to the dust emission observed with \emph{Herschel} \citep{MAMD_2017b}. On the opposite, WNM is present everywhere, while the H\rmnum{1} column density is higher in the north. While the column density of the two phases peaks around $N_{H\rmnum{1}}\sim 2\times 10^{20}\: cm^{-2}$, the mass of the WNM ($M_{WNM}\sim 1.6\times 10^3\: M_\odot$) is about two-three times higher than that of the CNM ($M_{CNM}\sim 6.4\times 10^2\: M_\odot$).
+Contrary to the IVC, the local H\rmnum{1} component shows only little cold neutral medium, including a tail-like structure at the bottom left. However, the WNM is rather homogeneous with column densities of $0.6-1.2\times 10^{20}\: cm^{-2}$. In particular, at the bottom left, the WNM shows a bubble-like feature. The mass of the WNM is $M_{WNM}\sim 1.4\times 10^3\: M_\odot$, of the same order than that of the WNM in the IVC.
+From the \emph{Herschel} data presented in \cite{MAMD_2017b}, we derived a total gas mass of $1.8\times 10^4\: M_\odot$, about 4-5 times larger than the total H\rmnum{1} mass $M_{H\rmnum{1}}\sim 4\times 10^3\: M_\odot$. This strengthens the idea that the Draco nebula is mostly composed of molecular gas.
 
 
 %We applied a coherent multi-Gaussian decomposition (see Marchal et al. in prep. for details) in order to separate them. 
@@ -217,7 +220,10 @@ From the \emph{Herschel} data presented in \cite{MAMD_2017b}, we derived a total
 
       \subsubsection{Dynamics}
 
-   The multi-Gaussian decomposition method provides a list of Gaussians. Each Gaussian is characterised by five parameters (its coordinates $\mathnormal{\alpha_i}$,$\mathnormal{\delta_i}$ and its spectral parameters $\mathnormal{A_i}$, $\mathnormal{v_i}$, $\mathnormal{\sigma_i}$). We used these Gaussians to compute maps of the velocity and velocity dispersion. To do so, we first reconstructed the signal in each pixel:
+   The multi-Gaussian decomposition method provides a list of Gaussians. Each Gaussian is characterised by five parameters (its coordinates $\mathnormal{\alpha_i}$,$\mathnormal{\delta_i}$ and its spectral parameters $\mathnormal{A_i}$, $\mathnormal{v_i}$, $\mathnormal{\sigma_i}$).
+\textbf{New velocity separation v$_{IVC}<-$13$\: $km.s$^{-1}$, based on heatmap}
+
+   We used these Gaussians to compute maps of the velocity and velocity dispersion. To do so, we first reconstructed the signal in each pixel:
 \begin{equation}
   \mathnormal{T_b(v)=\sum_{i=1}^{N_{comp}} A_i \exp\cbra{(v-v_i)^2/2\sigma_i^2}}
 \end{equation}
@@ -235,14 +241,14 @@ where $\mathnormal{dv}$ is the channel width.
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=1,height=6.5cm,trim=45 50 55 95,clip=true]{Figures/DHIGLS_velo.pdf}
+  \includegraphics[page=1,height=6.5cm,trim=80 35 40 90,clip=true]{Figures/DHIGLS_velo.pdf}
   \hspace{3mm}                                
-  \includegraphics[page=3,height=6.5cm,trim=45 50 55 95,clip=true]{Figures/DHIGLS_velo.pdf} \\
+  \includegraphics[page=2,height=6.5cm,trim=80 35 60 90,clip=true]{Figures/DHIGLS_velo.pdf} \\
   \vspace{3mm}                                
-  \includegraphics[page=4,height=7.5cm,trim=110 30 120 75,clip=true]{Figures/GHIGLS_velo.pdf}
+  \includegraphics[page=4,height=7.5cm,trim=140 20 105 70,clip=true]{Figures/GHIGLS_velo.pdf}
   \hspace{3mm}                                
-  \includegraphics[page=5,height=7.5cm,trim=110 30 130 75,clip=true]{Figures/GHIGLS_velo.pdf}
-  \caption{\label{velo_HI} Maps of the H\rmnum{1} central velocity in $km.s^{-1}$ derived for the CNM from DHIGLS (\emph{top}) and the WNM from GHIGLS (\emph{bottom}). For the cold phase, the two maps show the IVC (\emph{left}) and the LVC+IVC (\emph{right}). For the warm phase, the two maps show the intermediate- (\emph{left}) and low-velocity (\emph{right}) components.}
+  \includegraphics[page=5,height=7.5cm,trim=140 20 125 70,clip=true]{Figures/GHIGLS_velo.pdf}
+  \caption{\label{velo_HI} Maps of the H\rmnum{1} central velocity in $km.s^{-1}$ derived for the CNM from DHIGLS (\emph{top}) and the WNM from GHIGLS (\emph{bottom}). We separated between the intermediate- (\emph{left}) and low-velocity (\emph{right}) components.}
 \end{figure*}
 
 -----------
@@ -411,10 +417,14 @@ We used the CO(1-0) intensity and H\rmnum{1}-CNM column density maps to derive a
 
       \subsubsection{CO-H\rmnum{1} dynamics}
 
-   We now aim to compare the dynamics of the CO and H\rmnum{1} emission. First, we compared the velocity of the CO(1-0) and CO(2-1). As expected both CO lines have rather the same velocity, with a relative difference of $2.8-3.8\%$. We then compared the velocity maps of the CO(1-0) and H\rmnum{1} emission at the resolution of the DHIGLS data. The CO and H\rmnum{1} velocity are rather similar with difference of less than $0.5\: km.s^{-1}$, except in Draco4 where this difference is $\sim 2\: km.s^{-1}$. This indicates that the atomic and molecular gas are well mixed in all the regions observed with the IRAM 30m.
+   We now aim to compare the dynamics of the CO and H\rmnum{1} emission. First, we compared the velocity of the CO(1-0) and CO(2-1). As expected both CO lines have rather the same velocity, with a relative difference of $2.8-3.8\%$. We then compared the velocity maps of the CO(1-0) and H\rmnum{1} emission at the resolution of the DHIGLS data. The velocity of the CNM is rather similar to that of CO emission with differences of less than $0.5\: km.s^{-1}$, except in Draco4 where this difference is $\sim 2\: km.s^{-1}$. This indicates that the CNM and the molecular gas are well mixed in all the regions observed with the IRAM 30m.
 
-   We computed position-velocity (PV) diagrams for the H\rmnum{1} and CO(1-0) emission along slit centred on the shock front and oriented at $\pm 45$\degree. To do so, we decreased the spatial and spectral resolution of the CO data to those of the HI data ($1'$ in space and $0.8\: km.s^{-1}$ in velocity). For both emission, we focused on the region where CO has been observed. We finally stacked all the pixels in the direction orthogonal to the "slit".% The resulting PV diagrams are shown in figure \ref{PV-diag}.
+   We computed position-velocity (PV) diagrams for the H\rmnum{1} and CO(1-0) emission. To do so, we first decreased the spatial and spectral resolution of the CO data to those of the HI data ($1'$ in space and $0.8\: km.s^{-1}$ in velocity). For the H\rmnum{1} emission, we only considered the cold phase in the IVC. To compute a PV diagram, we stacked all the pixels in the direction orthogonal to the "slit" we consider.
+
+   For both emission, we focused on the region where CO has been observed. We finally stacked all the pixels in the direction orthogonal to the "slit".% The resulting PV diagrams are shown in figure \ref{PV-diag}.
 In particular, we focused on the region Draco4-5-6. 
+
+along slit centred on the shock front and oriented at $\pm 45$\degree.
 
    For region Draco2, we combuted PV diagrams along four slits: the vertical and horizontal directions, and the $\pm 45$\degree directions. The four PV diagrams show a good correlation between CO and H\rmnum{1}. In the PV diagram, we also seen a high velocity feature in CO. This feature was identified as the bright structure centred at $\alpha=16^h 50^m 56^s.4$, $\delta=+$60:54:18.2.
 
@@ -437,8 +447,8 @@ In particular, we focused on the region Draco4-5-6.
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=5,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams.pdf} \\
-  \includegraphics[page=4,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams.pdf}
+  \includegraphics[page=5,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf} \\
+  \includegraphics[page=4,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf}
   \caption{}
 \end{figure*}
 
@@ -456,8 +466,8 @@ In particular, we focused on the region Draco4-5-6.
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=7,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams.pdf} \\
-  \includegraphics[page=3,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams.pdf}
+  \includegraphics[page=7,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf} \\
+  \includegraphics[page=3,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf}
   \caption{}
 \end{figure*}
 
@@ -475,7 +485,7 @@ In particular, we focused on the region Draco4-5-6.
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=6,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams.pdf}
+  \includegraphics[page=6,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf}
   \caption{}
 \end{figure*}
 
@@ -493,7 +503,7 @@ In particular, we focused on the region Draco4-5-6.
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=8,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams.pdf}
+  \includegraphics[page=8,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf}
   \caption{}
 \end{figure*}
 
@@ -511,7 +521,7 @@ In particular, we focused on the region Draco4-5-6.
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=2,width=\linewidth,trim=30 10 55 30,clip=true]{Figures/PV_diagrams.pdf}
+  \includegraphics[page=2,width=\linewidth,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf}
   \caption{}
 \end{figure*}
 
@@ -552,7 +562,11 @@ In particular, we focused on the region Draco4-5-6.
 \begin{acknowledgements}
    We thank Fr\'ed\'eric Damour and Victor Peula for their support during the observations. We also thank Jérome Pety for his help about the data reduction. \\
 
-%   Herschel is an ESA space observatory with science instruments provided by European-led Principal Investigator consortia and with important participation from NASA. \\
+   This work is based on observations carried out under project numbers 022-16 and 002-127 with the IRAM 30m telescope. IRAM is supported by INSU/CNRS (France), MPG (Germany) and IGN (Spain). \\
+
+   The National Radio Astronomy Observatory is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc. \\
+
+   Herschel is an ESA space observatory with science instruments provided by European-led Principal Investigator consortia and with important participation from NASA.
 %
 %   This research has made use of the NASA/IPAC Extragalactic Database (NED) which is operated by the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration. \\
 %
@@ -663,36 +677,6 @@ In particular, we focused on the region Draco4-5-6.
 \end{figure*}
 
 %==================================================================
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco1_stack.png}
-  \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco4_stack.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_stack.png}
-  \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco5_stack.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco3_stack.png}
-  \hspace{3mm}
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco6_stack.png} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_rot_stack.png}
-  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
-\end{figure*}
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[page=1,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf}
-  \hspace{3mm}
-  \includegraphics[page=4,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf} \\
-  \includegraphics[page=2,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf}
-  \hspace{3mm}
-  \includegraphics[page=5,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf} \\
-  \includegraphics[page=3,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf}
-  \hspace{3mm}
-  \includegraphics[page=6,height=4.5cm,trim=50 40 50 40,clip=true]{Figures/CO10_intensity.pdf} \\
-  \includegraphics[height=4.5cm,trim=50 40 50 40,clip=true]{Figures/Draco2+9_rot_intensity.png}
-  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
-\end{figure*}
 
 \begin{figure*}[h]
   \centering
