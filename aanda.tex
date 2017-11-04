@@ -161,7 +161,7 @@ a new distance contraint of the Draco Nebula.
 
       \subsubsection{Phase separation}
 
-   To understand the structure and dynamics of the neutral material in the Draco nebula is a key point to constrain the formation scenario. To do so, we use the H\rmnum{1} observations to seperate the cold and warm phases of the Draco nebula, for both the LVC and IVC (the HVC is beyond the scope of this paper). In the following, we use the velocity separation of \cite{Planck_XXIV_2011}: $-8.8<v_{LVC}<24.1\: km.s^{-1}$ and $-73.1<v_{IVC}<-8.8\: km.s^{-1}$).
+   To understand the structure and dynamics of the neutral material in the Draco nebula is a key point to constrain the formation scenario. To do so, we use the H\rmnum{1} observations to seperate the cold and warm phases of the Draco nebula, for both the LVC and IVC (the HVC is beyond the scope of this paper). In the following, we use the velocity separation of \cite{Planck_XXIV_2011}, with a different limit between the LVC and IVC (see below): $-13<v_{LVC}<24.1\: km.s^{-1}$ and $-73.1<v_{IVC}<-138\: km.s^{-1}$).
 We start by applying a coherent multi-Gaussian decomposition (see Marchal et al. in prep. for details) to the GHIGLS data. The Gaussian decomposition method well recovers the total column density of the LVC and IVC (figure \ref{Test}). In particular, the distribution of the width $\sigma_v$ indicates that both cold and warm phases are recovered (figure \ref{PDF_sigma}). We adopt a limit in the gaussian width $\sigma_{lim}=4\: km.s^{-1}$ to separate between the
 cold and warm phases (figure \ref{Phases_GHIGLS}).
 
@@ -183,19 +183,33 @@ cold and warm phases (figure \ref{Phases_GHIGLS}).
   \caption{\label{Phases_GHIGLS} Maps of the H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the GHIGLS data. We separated the cold (\emph{left}) and warm (\emph{right}) phases for the IVC (\emph{top}) and the LVC (\emph{bottom}).}
 \end{figure*}
 
-   The DHIGLS data have a high noise level that enables to only recover the signal from the CNM. Moreover, the decomposition method fits noise peaks so that the results are unusable for the DHIGLS data. However, we succeed to infer the two phases using the previous decomposition of the GHIGLS data. To do so, we re-projected the Gaussians on the grid of DHIGLS. This is then provide as the guest parameters for the DHIGLS decomposition. We constrained the parameter space of each Gaussian with $\pm 10\%$ of the initial parameters.
-We thus adjusted the coherent decomposition avoiding to fit noise in the data. The total H\rmnum{1} column density map reconstructed with the Gaussian decomposition of the DHIGLS data for the combination of the LVC and the IVC (hereafter LVC+IVC) is presented in figure \ref{NHI_DHIGLS}. By construction, the limit in the gaussian width $\sigma_{lim}$ is the same for GHIGLS and DHIGLS so we also choosed $\sigma_{lim}=4\: km.s^{-1}$ to quantitatively separate between the cold and warm phases.
+   The DHIGLS data have a high noise level that enables to only recover the signal from the CNM. Moreover, the decomposition method fits noise peaks so that the results are unusable for the DHIGLS data. However, we succeed to infer the two phases using the previous decomposition of the GHIGLS data. To do so, we re-projected the Gaussians on the grid of DHIGLS. This is then given as the guest parameters for the DHIGLS decomposition. We constrained the parameter space of each Gaussian with $\pm 10\%$ of the initial parameters.
+We thus adjusted the coherent decomposition avoiding to fit noise in the data. The H\rmnum{1} column density maps of the CNM and WNM reconstructed with the Gaussian decomposition of the DHIGLS data for the combination of the LVC and the IVC (hereafter LVC+IVC) are presented in figure \ref{NHI_DHIGLS}. By construction, the limit in the gaussian width $\sigma_{lim}$ is the same for GHIGLS and DHIGLS so we also choosed $\sigma_{lim}=4\: km.s^{-1}$ to quantitatively separate between the cold and warm phases.
 
-\begin{figure*}[h!]
+%\begin{figure*}[h!]
+%  \centering
+%  \includegraphics[width=0.8\linewidth,trim=80 35 55 105,clip=true]{Figures/DHIGLS_NHI_tot.png}
+%  \caption{\label{NHI_DHIGLS} Map of the H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data.}
+%\end{figure*}
+
+\begin{figure*}[h]
   \centering
-  \includegraphics[width=0.8\linewidth,trim=80 35 55 105,clip=true]{Figures/DHIGLS_NHI_tot.png}
-  \caption{\label{NHI_DHIGLS} Map of the H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data.}
+  \includegraphics[page=3,height=6.5cm,trim=75 40 55 105,clip=true]{Figures/DHIGLS_NHI.pdf}
+  \hspace{3mm}
+  \includegraphics[page=6,height=6.5cm,trim=75 40 55 105,clip=true]{Figures/DHIGLS_NHI.pdf}
+  \caption{\label{NHI_DHIGLS} Map of the total H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data, for the cold (\emph{left}) and warm (\emph{right}) phases.}
 \end{figure*}
 
    The cold phase of the intermediate-velocity component shows a similar morphology to the dust emission observed with \emph{Herschel} \citep{MAMD_2017b}. On the opposite, WNM is present everywhere, while the H\rmnum{1} column density is higher in the north. While the column density of the two phases peaks around $N_{H\rmnum{1}}\sim 2\times 10^{20}\: cm^{-2}$, the mass of the WNM ($M_{WNM}\sim 1.6\times 10^3\: M_\odot$) is about two-three times higher than that of the CNM ($M_{CNM}\sim 6.4\times 10^2\: M_\odot$).
 Contrary to the IVC, the local H\rmnum{1} component shows only little cold neutral medium, including a tail-like structure at the bottom left. However, the WNM is rather homogeneous with column densities of $0.6-1.2\times 10^{20}\: cm^{-2}$. In particular, at the bottom left, the WNM shows a bubble-like feature. The mass of the WNM is $M_{WNM}\sim 1.4\times 10^3\: M_\odot$, of the same order than that of the WNM in the IVC.
 From the \emph{Herschel} data presented in \cite{MAMD_2017b}, we derived a total gas mass of $1.8\times 10^4\: M_\odot$, about 4-5 times larger than the total H\rmnum{1} mass $M_{H\rmnum{1}}\sim 4\times 10^3\: M_\odot$. This strengthens the idea that the Draco nebula is mostly composed of molecular gas.
 
+\begin{figure*}
+  \centering
+  \includegraphics[width=0.48\linewidth,trim=15 0 30 40,clip=true]{Figures/2Dhisto_GHIGLS.png}
+  \includegraphics[width=0.48\linewidth,trim=15 0 30 40,clip=true]{Figures/2Dhisto_DHIGLS.png}
+  \caption{\label{2Dhisto} 2D histograms of the velocity dispersion $\sigma$ and the central position $v_0$ of the Gaussian sample for the GHIGLS (\emph{left}) and DHIGLS data (\emph{right}). The color bar corresponds to the integrated intensity in logarithmic scale. The vertical white dashed line shows the new separation between the LVC and IVC ($V_0=-13\: km.s^{-1}$.}
+\end{figure*}
 
 %We applied a coherent multi-Gaussian decomposition (see Marchal et al. in prep. for details) in order to separate them. 
 %The high noise level of \textit{DR} enables to only recover the signal from the CNM. Moreover, the Gaussian decomposition 
@@ -220,10 +234,9 @@ From the \emph{Herschel} data presented in \cite{MAMD_2017b}, we derived a total
 
       \subsubsection{Dynamics}
 
-   The multi-Gaussian decomposition method provides a list of Gaussians. Each Gaussian is characterised by five parameters (its coordinates $\mathnormal{\alpha_i}$,$\mathnormal{\delta_i}$ and its spectral parameters $\mathnormal{A_i}$, $\mathnormal{v_i}$, $\mathnormal{\sigma_i}$).
-\textbf{New velocity separation v$_{IVC}<-$13$\: $km.s$^{-1}$, based on heatmap}
+   The multi-Gaussian decomposition method provides a list of Gaussians. Each Gaussian is characterised by five parameters (its coordinates $\mathnormal{\alpha_i}$,$\mathnormal{\delta_i}$ and its spectral parameters $\mathnormal{A_i}$, $\mathnormal{v_i}$, $\mathnormal{\sigma_i}$). The Gaussian decomposition enables to get a new definition of the velocity components. To do so, we built a 2D histogram of the dispersion $\sigma$ and the mean position $v$ of the Gaussians, weighted by the integrated intensity $\sqrt{2}A\sigma$ (Fig. \ref{2Dhisto}). From these two histograms we determined that the separation between the LVC and the IVC occurs around $v_{LSR}<-13\: km.s^{-1}$, slightly higher than that determined by \cite{Planck_XXIV_2011}.
 
-   We used these Gaussians to compute maps of the velocity and velocity dispersion. To do so, we first reconstructed the signal in each pixel:
+   We used the Gaussians from the decomposition to compute maps of the velocity and velocity dispersion. To do so, we first reconstructed the signal in each pixel:
 \begin{equation}
   \mathnormal{T_b(v)=\sum_{i=1}^{N_{comp}} A_i \exp\cbra{(v-v_i)^2/2\sigma_i^2}}
 \end{equation}
@@ -235,9 +248,7 @@ We then computed the emission-weighted mean velocity $\avg{v}$ and the velocity 
 \begin{equation}
   \mathnormal{\sigma_v=\sqrt{\frac{\sum_v v^2\, T_b(v)\, dv}{\sum_v T_b(v)}-\avg{v}^2}}
 \end{equation} 
-where $\mathnormal{dv}$ is the channel width.
-
-   The resulting velocity maps for the GHIGLS data are represented in figure \ref{velo_HI}.
+where $\mathnormal{dv}$ is the channel width. The resulting velocity maps for the GHIGLS data are represented in figure \ref{velo_HI}.
 
 \begin{figure*}[h]
   \centering
@@ -253,18 +264,19 @@ where $\mathnormal{dv}$ is the channel width.
 
 -----------
 
+\textbf{
 \begin{itemize}
   \item Velocity gradient from the shock front to the back
   \item Bubble seen in the WNM in intensity (LVC) and velocity (IVC)
   \item Different regions in the heat map
   \item Scenario of formation
 \end{itemize}
+}
 
-    The velocity gradient observed in H\rmnum{1} at the interface  with the Rayleigh-Taylor instability strengthens the scenario of a shock between the cloud at the origin of Draco and the warm neutral 
- medium (WNM) of the Galactic disc. Surprisingly, the bright structure in the south has velocities larger than the rest of the nebula.
+\textbf{    The velocity gradient observed in H\rmnum{1} at the interface  with the Rayleigh-Taylor instability strengthens the scenario of a shock between the cloud at the origin of Draco and the warm neutral 
+ medium (WNM) of the Galactic disc. Surprisingly, the bright structure in the south has velocities larger than the rest of the nebula.}
 
-Furthermore, in order to understand the dynamics of the gas, an histogram of the 
-dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \textit{DR} is shown figure \ref{heatmap}.
+
 
 %\begin{figure*}
 %  \centering
@@ -291,7 +303,7 @@ dispersion $\sigma$ and the mean position $v_{r}$ of the Gaussian sample of \tex
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_intensity.png}
+  \includegraphics[width=\linewidth,trim=0 245 0 285,clip=true]{Figures/Draco_FRONT_intensity.png}
   \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
 \end{figure*}
 
@@ -329,24 +341,24 @@ We smoothed the so-done total column density and the CO intensity maps at the re
 \begin{equation}
   N(H)-N(H\rmnum{1})=2\times X_{CO}\, I_{CO}
 \end{equation}
-In the southern structure of the Draco nebula, we found $X_{CO}$ factors between $1.9-20\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, typical of what is observed in the Galactic disc\citep{Bolatto_2013}. Note that the plot for Draco1 shows a drop of the slope at $I_{CO}\sim 2.5\: K.km.s^{-1}$. Fitting a second linear regression for $I_{CO}>2.5\: K.km.s^{-1}$ we found $Xco=1.36\times 10^{20}$, indicating that CO may be optically thin.
-On the opposite, molecular gas along the shock front seems to be CO-bright. The plots of $I_{CO}$ vs. $N_{H_2}$ show two regimes, with a change at $I_{CO}\sim 2.5\: K.km.s^{-1}$. For $I_{CO}$ above this limit, the $X_{CO}$ factor varies between $0.5-1.2\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$.
-Such values of the $X_{CO}$ factor are a factor of 3-4 times higher than those previously found by \cite{Herbstmeier_1993} and \cite{Moritz_1998}.
+In the nose of the Draco nebula (Draco1+Draco3), we found $X_{CO}$ factors between $1.9-2.0\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, typical of what is observed in the Galactic disc \citep{Bolatto_2013}. However, we note that the plot of $N(H)-N(H\rmnum{1})$ versus $I_{CO}$ shows a change in the slope for Draco1 at $I_{CO}\sim 2.5\: K.km.s^{-1}$. Such a change of slope is also observed along the front shock. We thus fitted two linear regressions for $I_{CO}\leq 2.5\: K.km.s^{-1}$ and $I_{CO}>2.5\: K.km.s^{-1}$. The result of the fits (Table \ref{table:Xco}) suggests the presence of two regimes.
+At high column density, the molecular gas seems to be CO-bright, indicating that CO may be optically thin. Note that such values of the $X_{CO}$ factor are a factor of 3-4 times higher than those previously found by \cite{Herbstmeier_1993} and \cite{Moritz_1998}.
+In contrast, at lower column density, the $X_{CO}$ factor is higher than the typical value of $2\times 10^{20}$ observed in the Galactic disc. We interpret such high $X_{CO}$ values as the result of CO photodissociation.
 
 \begin{table}[h]
   \centering
   \footnotesize
   \begin{tabular}{lcc}
     \hline \hline
-    Region &  Single regression   &  Double regression   \\ \hline 
-    Draco1 & $1.98\times 10^{20}$ & $1.36\times 10^{20}$ \\
-    Draco2 & $1.16\times 10^{20}$ & $0.88\times 10^{20}$ \\
-    Draco3 & $1.94\times 10^{20}$ &          -           \\
-    Draco4 & $1.70\times 10^{20}$ & $1.17\times 10^{20}$ \\
-    Draco5 & $0.77\times 10^{20}$ & $0.52\times 10^{20}$ \\
-    Draco6 & $1.22\times 10^{20}$ & $0.93\times 10^{20}$ \\ \hline
+    Region &   $I_{CO}\leq 2.5$   &     $I_{CO}>2.5$     \\ \hline 
+    Draco1 & $4.00\times 10^{20}$ & $1.33\times 10^{20}$ \\
+    Draco2 & $2.06\times 10^{20}$ & $0.81\times 10^{20}$ \\
+    Draco3 &          -           & $1.95\times 10^{20}$ \\
+    Draco4 & $4.23\times 10^{20}$ & $1.03\times 10^{20}$ \\
+    Draco5 & $2.19\times 10^{20}$ & $0.46\times 10^{20}$ \\
+    Draco6 & $2.17\times 10^{20}$ & $0.88\times 10^{20}$ \\ \hline
   \end{tabular}
-  \caption{\label{table:Xco} Values of the $X_{CO}$ factor estimated using a single or a double linear regression. For Draco3, the $I_{CO}$ vs. $N_{H_2}$ plot does not show a change of the slope therefore we only made a single regression. With a double regression, the $X_{CO}$ factor is estimated for $I_{CO}>2.5\: K.km.s^{-1}$.}
+  \caption{\label{table:Xco} Values of the $X_{CO}$ factor estimated with a double linear regression for $I_{CO}\leq 2.5\: K.km.s^{-1}$ and $I_{CO}>2.5\: K.km.s^{-1}$. For Draco3, the integrated intensity is always greater than $2.5\: K.km.s^{-1}$ therefore we only made a single regression.}
 \end{table}
 
 \begin{figure*}[h!]
@@ -360,7 +372,7 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher than those p
   \includegraphics[page=10,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
   \hspace{3mm}
   \includegraphics[page=12,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
-  \caption{\label{Xco} Correlation between the molecular gas column density derived from dust and H\rmnum{1} emission, and the CO integrated intensity. The slope of the best fitting model (blue line) gives the value of the $X_{CO}$ factor. The vertical black dotted line indicates the limit $I_{CO}=2.5\: K.km.s^{-1}$ we used to make the fit.}
+  \caption{\label{Xco} Correlation between the molecular gas column density derived from dust and H\rmnum{1} emission, and the CO integrated intensity. The black and blue lines are the best fitting models for the two regimes separated by the vertical black dotted line ($I_{CO}=2.5\: K.km.s^{-1}$).}
 \end{figure*}
 
 
@@ -368,7 +380,7 @@ Such values of the $X_{CO}$ factor are a factor of 3-4 times higher than those p
 
    We simultaneously observed the CO(1-0) and CO(2-1) maps therefore we are able to estimate the intensity line ratio. To do so, we spectrally and spatially smoothed the CO(2-1) maps to the resolution of the CO(1-0) ones. We then computed the CO(2-1)/CO(1-0) ratio of the integrated intensity. The line ratio is rather spatially uniform, except in the eastern part of Draco 5 and the center of Draco 2 where the molecular gas is more excited, maybe due to shocks.
 On average, the ratio CO(2-1)/CO(1-0) of the integrated intensity is $0.72\pm 0.08$, typical to what is found for molecular clouds in the Milky Way and nearby galaxies \textbf{(ref!)}.
-Note that we can distinguish between the nose of the Draco nebula (Draco1+Draco3) and the shock front. The CO(2-1)/CO(1-0) is slightly higher along the shock front (about 0.77) than in the nose (about 0.69).
+However we can distinguish between the nose of the Draco nebula and the shock front. The CO(2-1)/CO(1-0) is slightly higher along the shock front (about 0.77) than in the nose (about 0.69).
 Combined with the low $X_{CO}$ factor previously found, such usual CO excitation indicates that there is little CO-dark gas and that $^{12}CO$ can be used as a reliable tracer of column density and dynamics of the molecular component.
 
 \begin{table}[h]
@@ -390,7 +402,7 @@ Combined with the low $X_{CO}$ factor previously found, such usual CO excitation
 
    \subsection{Molecular gas fraction}
 
-   At a resolution of $1'$, dust and H\rmnum{1} emission are spatially coherent (figure \ref{NHI_DHIGLS}). In particular, the DHIGLS shows the Rayleigh-Taylor structure seen by \cite{MAMD_2017b}. We produced a map of the atomic gas fraction $N(H\rmnum{1})/N(H)$. While on average the atomic gas fraction peaks between 0.4 and 0.5, this fraction drops to 0.15-0.2 where the column density of the CNM is higher than $8\times 10^{19}\: cm^{-2}$. This result strengthen the scenario of a intermediate-velocity cloud of WNM that interacted with the WNM of the Galactic plane, producing CNM through the thermal instability at the shock front.
+   At a resolution of $1'$, dust and H\rmnum{1} emission are spatially coherent (figure \ref{NHI_DHIGLS}). In particular, the DHIGLS shows the same Rayleigh-Taylor structure as seen by \cite{MAMD_2017b} in dust emission. We produced a map of the atomic gas fraction $N(H\rmnum{1})/N(H)$. While on average the atomic gas fraction peaks between 0.4 and 0.5, this fraction drops to 0.15-0.2 when the column density of the CNM is higher than $8\times 10^{19}\: cm^{-2}$. This result strengthen the scenario of a intermediate-velocity cloud of WNM that interacted with the WNM of the Galactic plane, producing CNM through the thermal instability at the shock front.
 
 \begin{figure*}[h!]
   \centering
@@ -409,10 +421,12 @@ We used the CO(1-0) intensity and H\rmnum{1}-CNM column density maps to derive a
 
 --------------------------------------
 
+\textbf{
 \begin{itemize}
   \item density profiles?
   \item Estimate the mass of molecular gas produced during the shock?
 \end{itemize}
+}
 
 
       \subsubsection{CO-H\rmnum{1} dynamics}
@@ -433,36 +447,12 @@ along slit centred on the shock front and oriented at $\pm 45$\degree.
 \textbf{Use gaussian decomposition to separate the different components? Diffuse vs. dense? Histogram of the sigma?}
 
 
-%\begin{figure*}[h]
-%%  \centering
-%  \hspace{5mm}
-%  \includegraphics[page=2,height=7cm,trim=180 85 185 80,clip=true]{Figures/CO10_intensity.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=4,height=7cm,trim=205 10 200 40,clip=true]{Figures/PV_diagram_CO_vertical.pdf}
-%  \includegraphics[page=4,height=7cm,trim=205 10 200 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
-%  \includegraphics[page=4,width=7.7cm,trim=30 100 60 100,clip=true]{Figures/PV_diagram_CO_horizontal.pdf} \\
-%  \includegraphics[page=4,width=7.7cm,trim=30 100 60 100,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
-%  \caption{}
-%\end{figure*}
-
 \begin{figure*}[h]
   \centering
   \includegraphics[page=5,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf} \\
   \includegraphics[page=4,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf}
   \caption{}
 \end{figure*}
-
-%\begin{figure*}[h]
-%%  \centering
-%  \hspace{5mm}
-%  \includegraphics[page=5,height=8cm,trim=285 85 295 80,clip=true]{Figures/CO10_intensity.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=6,height=8cm,trim=200 10 185 40,clip=true]{Figures/PV_diagram_CO_vertical.pdf}
-%  \includegraphics[page=6,height=8cm,trim=200 10 185 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
-%  \includegraphics[page=6,width=6.5cm,trim=30 40 45 40,clip=true]{Figures/PV_diagram_CO_horizontal.pdf} \\
-%  \includegraphics[page=6,width=6.5cm,trim=30 40 45 40,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
-%  \caption{}
-%\end{figure*}
 
 \begin{figure*}[h]
   \centering
@@ -471,53 +461,17 @@ along slit centred on the shock front and oriented at $\pm 45$\degree.
   \caption{}
 \end{figure*}
 
-%\begin{figure*}[h]
-%%  \centering
-%  \hspace{5mm}
-%  \includegraphics[page=4,height=8cm,trim=320 85 325 80,clip=true]{Figures/CO10_intensity.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=5,height=8cm,trim=185 10 170 40,clip=true]{Figures/PV_diagram_CO_vertical.pdf}
-%  \includegraphics[page=5,height=8cm,trim=185 10 170 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
-%  \includegraphics[page=5,width=5.6cm,trim=85 40 110 40,clip=true]{Figures/PV_diagram_CO_horizontal.pdf} \\
-%  \includegraphics[page=5,width=5.6cm,trim=85 40 110 40,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
-%  \caption{}
-%\end{figure*}
-
 \begin{figure*}[h]
   \centering
   \includegraphics[page=6,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf}
   \caption{}
 \end{figure*}
 
-%\begin{figure*}[h]
-%%  \centering
-%  \hspace{5mm}
-%  \includegraphics[page=6,height=8.5cm,trim=335 85 342 80,clip=true]{Figures/CO10_intensity.pdf}
-%  \hspace{3mm}
-%  \includegraphics[page=7,height=8.5cm,trim=165 10 150 40,clip=true]{Figures/PV_diagram_CO_vertical.pdf}
-%  \includegraphics[page=7,height=8.5cm,trim=165 10 150 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
-%  \includegraphics[page=7,width=5.6cm,trim=125 40 150 40,clip=true]{Figures/PV_diagram_CO_horizontal.pdf} \\
-%  \includegraphics[page=7,width=5.6cm,trim=125 40 150 40,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
-%  \caption{}
-%\end{figure*}
-
 \begin{figure*}[h]
   \centering
   \includegraphics[page=8,width=14cm,trim=30 10 55 30,clip=true]{Figures/PV_diagrams_CO.pdf}
   \caption{}
 \end{figure*}
-
-%\begin{figure*}[h]
-%%  \centering
-%  \hspace{5mm}
-%  \includegraphics[width=9cm,trim=130 295 540 290,clip=true]{Figures/Draco_FRONT_intensity.png}
-%  \hspace{3mm}
-%  \includegraphics[page=2,height=7cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_CO_vertical.pdf}
-%  \includegraphics[page=2,height=7cm,trim=233 10 220 40,clip=true]{Figures/PV_diagram_HI_vertical.pdf} \\
-%  \includegraphics[page=2,width=10cm,trim=30 165 50 160,clip=true]{Figures/PV_diagram_CO_horizontal.pdf} \\
-%  \includegraphics[page=2,width=10cm,trim=30 165 50 160,clip=true]{Figures/PV_diagram_HI_horizontal.pdf}
-%  \caption{}
-%\end{figure*}
 
 \begin{figure*}[h]
   \centering
@@ -530,16 +484,19 @@ along slit centred on the shock front and oriented at $\pm 45$\degree.
 \section{Discussion}
 \label{sec:discussion}
 
-   \subsection{Mach number an temperature}
+   \subsection{Mach number and temperature}
 
+\textbf{
 \begin{eqnarray}
   \sigma_{H\rmnum{1}}^2 &=& \sigma_{turb}^2+\frac{k T_{H\rmnum{1}}}{\mu_{H\rmnum{1}} m_H} \\
   \sigma_{CO}^2         &=& \sigma_{turb}^2+\frac{k T_{CO}}{\mu_{CO} m_H}
 \end{eqnarray}
+}
 
 
    \subsection{Statistical properties of turbulence}
-   \textit{VCS (Lazarian et al.)?}
+
+\textbf{VCS (Lazarian et al.)?}
 
 
 
@@ -547,7 +504,7 @@ along slit centred on the shock front and oriented at $\pm 45$\degree.
 \section{Conclusions}
 \label{sec:conclusion}
 
-   We used the IRAM 30m-telescope to observe the CO emission in the shock front of the Draco nebula. Our observations consist in two maps of dusty bright regions, covering an area of $830''\times 700''$ and $420''\times 300''$, respectively.
+   We used the IRAM 30m-telescope to observe the CO emission in the nose of the Draco nebula, and along the front shock. Our observations consist in six maps of dusty bright regions, covering a total area of about $820\: arcmin^2$.
 
 %   NGC 541 was detected in CO(2-1). The CO(1-0) emission line is marginally visible when our observations are combined with the non-detection from \cite{Ocana_2010} on the same object. \\
 %We derived a total molecular gas mass of $\sim 10^8\: M_\odot$, leading to a gas fraction smaller than 1\%. With a very small star formation rate, this object thus appears like a typical read and dead galaxy. However its depletion timescale ($\sim 1\: Gyr$) is typical of normal star forming galaxies. So the very small star formation rate is mostly due to the small gas fraction in this object. The CO line profile has a typical double-horn shape that indicates a possible rotating disc or ring. In order to reproduce the molecular gas velocity profile, we ran simplified analytical models, constrained by estimates of the stellar mass of the system, its effective radius and its inclination. These models managed to reproduce the CO line profiles with a rather compact ring-like distribution ($\sim 1-2\: kpc$). \\
@@ -567,34 +524,12 @@ along slit centred on the shock front and oriented at $\pm 45$\degree.
    The National Radio Astronomy Observatory is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc. \\
 
    Herschel is an ESA space observatory with science instruments provided by European-led Principal Investigator consortia and with important participation from NASA.
-%
-%   This research has made use of the NASA/IPAC Extragalactic Database (NED) which is operated by the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration. \\
-%
-%   This research has made use of the NASA/IPAC Infrared Science Archive, which is operated by the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration. \\
-%
-%   This publication makes use of data products from the Wide-field Infrared Survey Explorer, which is a joint project of the University of California, Los Angeles, and the Jet Propulsion Laboratory/California Institute of Technology, funded by the National Aeronautics and Space Administration.
 \end{acknowledgements}
 
 
 \bibliography{Biblio}%,Biblio_Antoine}
 \bibliographystyle{aa}
 
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[page=1,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_NHI.pdf}
-  \hspace{3mm}
-  \includegraphics[page=4,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_NHI.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=2,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_NHI.pdf}
-  \hspace{3mm}
-  \includegraphics[page=5,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_NHI.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=3,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_NHI.pdf}
-  \hspace{3mm}
-  \includegraphics[page=6,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_NHI.pdf}
-  \caption{Column density maps of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
-\end{figure*}
 
 \begin{figure*}[h]
   \centering
@@ -612,78 +547,6 @@ along slit centred on the shock front and oriented at $\pm 45$\degree.
   \caption{Maps of the central velocity of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
 \end{figure*}
 
-\begin{figure*}[h]
-  \centering
-  \includegraphics[page=1,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_disp.pdf}
-  \hspace{3mm}
-  \includegraphics[page=4,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_disp.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=2,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_disp.pdf}
-  \hspace{3mm}
-  \includegraphics[page=5,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_disp.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=3,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_disp.pdf}
-  \hspace{3mm}
-  \includegraphics[page=6,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/GHIGLS_disp.pdf}
-  \caption{Maps of velocity dispersion of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
-\end{figure*}
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[page=1,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_NHI.pdf}
-  \hspace{3mm}
-  \includegraphics[page=4,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_NHI.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=2,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_NHI.pdf}
-  \hspace{3mm}
-  \includegraphics[page=5,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_NHI.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=3,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_NHI.pdf}
-  \hspace{3mm}
-  \includegraphics[page=6,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_NHI.pdf}
-  \caption{Column density maps of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
-\end{figure*}
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[page=1,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_velo.pdf}
-  \hspace{3mm}
-  \includegraphics[page=4,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_velo.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=2,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_velo.pdf}
-  \hspace{3mm}
-  \includegraphics[page=5,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_velo.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=3,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_velo.pdf}
-  \hspace{3mm}
-  \includegraphics[page=6,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_velo.pdf}
-  \caption{Maps of the central velocity of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
-\end{figure*}
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[page=1,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_disp.pdf}
-  \hspace{3mm}
-  \includegraphics[page=4,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_disp.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=2,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_disp.pdf}
-  \hspace{3mm}
-  \includegraphics[page=5,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_disp.pdf} \\
-  \vspace{3mm}
-  \includegraphics[page=3,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_disp.pdf}
-  \hspace{3mm}
-  \includegraphics[page=6,height=7.5cm,trim=45 5 65 35,clip=true]{Figures/DHIGLS_disp.pdf}
-  \caption{Maps of velocity dispersion of the cold (\emph{left}) and warm (\emph{right}) phases of H\rmnum{1}. We separated the velocity components (from top to bottom: LVC+IVC, LVC, IVC).}
-\end{figure*}
-
-%==================================================================
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_stack.png} \\
-  \includegraphics[width=\linewidth,trim=0 250 0 250,clip=true]{Figures/Draco_FRONT_intensity.png}
-  \caption{\label{Draco_CO10} Intensity maps in $K.km.s^{-1}$ of the CO(1-0) emission in the different regions observed with the IRAM 30m. The black contours are the dust emission observed at $250\: mu m$ with \emph{Herschel}-SPIRE.}
-\end{figure*}
 
 %==================================================================
 
