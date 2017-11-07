@@ -186,17 +186,11 @@ cold and warm phases (figure \ref{Phases_GHIGLS}).
    The DHIGLS data have a high noise level that enables to only recover the signal from the CNM. Moreover, the decomposition method fits noise peaks so that the results are unusable for the DHIGLS data. However, we succeed to infer the two phases using the previous decomposition of the GHIGLS data. To do so, we re-projected the Gaussians on the grid of DHIGLS. This is then given as the guest parameters for the DHIGLS decomposition. We constrained the parameter space of each Gaussian with $\pm 10\%$ of the initial parameters.
 We thus adjusted the coherent decomposition avoiding to fit noise in the data. The H\rmnum{1} column density maps of the CNM and WNM reconstructed with the Gaussian decomposition of the DHIGLS data for the combination of the LVC and the IVC (hereafter LVC+IVC) are presented in figure \ref{NHI_DHIGLS}. By construction, the limit in the gaussian width $\sigma_{lim}$ is the same for GHIGLS and DHIGLS so we also choosed $\sigma_{lim}=4\: km.s^{-1}$ to quantitatively separate between the cold and warm phases.
 
-%\begin{figure*}[h!]
-%  \centering
-%  \includegraphics[width=0.8\linewidth,trim=80 35 55 105,clip=true]{Figures/DHIGLS_NHI_tot.png}
-%  \caption{\label{NHI_DHIGLS} Map of the H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data.}
-%\end{figure*}
-
 \begin{figure*}[h]
   \centering
-  \includegraphics[page=3,height=6.5cm,trim=75 40 55 105,clip=true]{Figures/DHIGLS_NHI.pdf}
+  \includegraphics[page=3,height=6.8cm,trim=75 40 55 90,clip=true]{Figures/DHIGLS_NHI.pdf}
   \hspace{3mm}
-  \includegraphics[page=6,height=6.5cm,trim=75 40 55 105,clip=true]{Figures/DHIGLS_NHI.pdf}
+  \includegraphics[page=6,height=6.8cm,trim=75 40 55 90,clip=true]{Figures/DHIGLS_NHI.pdf}
   \caption{\label{NHI_DHIGLS} Map of the total H\rmnum{1} column density in units of $10^{20}\: cm^{-2}$ recovered by the coherent multi-Gaussian decomposition applied on the DHIGLS data, for the cold (\emph{left}) and warm (\emph{right}) phases.}
 \end{figure*}
 
@@ -341,13 +335,20 @@ We smoothed the so-done total column density and the CO intensity maps at the re
 \begin{equation}
   N(H)-N(H\rmnum{1})=2\times X_{CO}\, I_{CO}
 \end{equation}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[page=2,width=\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
+  \caption{\label{Xco} Correlation between the molecular gas column density derived from dust and H\rmnum{1} emission, and the CO integrated intensity in Draco1. The black and blue lines are the best fitting models for the two regimes separated by the vertical black dotted line ($I_{CO}=2.5\: K.km.s^{-1}$).}
+\end{figure}
+
 In the nose of the Draco nebula (Draco1+Draco3), we found $X_{CO}$ factors between $1.9-2.0\times 10^{20}\: cm^{-1}.(K.km.s^{-1})^{-1}$, typical of what is observed in the Galactic disc \citep{Bolatto_2013}. However, we note that the plot of $N(H)-N(H\rmnum{1})$ versus $I_{CO}$ shows a change in the slope for Draco1 at $I_{CO}\sim 2.5\: K.km.s^{-1}$. Such a change of slope is also observed along the front shock. We thus fitted two linear regressions for $I_{CO}\leq 2.5\: K.km.s^{-1}$ and $I_{CO}>2.5\: K.km.s^{-1}$. The result of the fits (Table \ref{table:Xco}) suggests the presence of two regimes.
 At high column density, the molecular gas seems to be CO-bright, indicating that CO may be optically thin. Note that such values of the $X_{CO}$ factor are a factor of 3-4 times higher than those previously found by \cite{Herbstmeier_1993} and \cite{Moritz_1998}.
 In contrast, at lower column density, the $X_{CO}$ factor is higher than the typical value of $2\times 10^{20}$ observed in the Galactic disc. We interpret such high $X_{CO}$ values as the result of CO photodissociation.
 
 \begin{table}[h]
   \centering
-  \footnotesize
+%  \footnotesize
   \begin{tabular}{lcc}
     \hline \hline
     Region &   $I_{CO}\leq 2.5$   &     $I_{CO}>2.5$     \\ \hline 
@@ -358,22 +359,22 @@ In contrast, at lower column density, the $X_{CO}$ factor is higher than the typ
     Draco5 & $2.19\times 10^{20}$ & $0.46\times 10^{20}$ \\
     Draco6 & $2.17\times 10^{20}$ & $0.88\times 10^{20}$ \\ \hline
   \end{tabular}
-  \caption{\label{table:Xco} Values of the $X_{CO}$ factor estimated with a double linear regression for $I_{CO}\leq 2.5\: K.km.s^{-1}$ and $I_{CO}>2.5\: K.km.s^{-1}$. For Draco3, the integrated intensity is always greater than $2.5\: K.km.s^{-1}$ therefore we only made a single regression.}
+  \caption{\label{table:Xco} Values of the $X_{CO}$ factor estimated with a double linear regression for $I_{CO}\leq 2.5\: K.km.s^{-1}$ and $I_{CO}>2.5\: K.km.s^{-1}$. For Draco3, the integrated intensity is always greater than $2.5\: K.km.s^{-1}$.}
 \end{table}
 
-\begin{figure*}[h!]
-  \centering
-  \includegraphics[page=2,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
-  \hspace{3mm}
-  \includegraphics[page=4,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf} \\
-  \includegraphics[page=6,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
-  \hspace{3mm}
-  \includegraphics[page=8,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf} \\
-  \includegraphics[page=10,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
-  \hspace{3mm}
-  \includegraphics[page=12,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
-  \caption{\label{Xco} Correlation between the molecular gas column density derived from dust and H\rmnum{1} emission, and the CO integrated intensity. The black and blue lines are the best fitting models for the two regimes separated by the vertical black dotted line ($I_{CO}=2.5\: K.km.s^{-1}$).}
-\end{figure*}
+%\begin{figure*}[h!]
+%  \centering
+%  \includegraphics[page=2,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
+%  \hspace{3mm}
+%  \includegraphics[page=4,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf} \\
+%  \includegraphics[page=6,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
+%  \hspace{3mm}
+%  \includegraphics[page=8,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf} \\
+%  \includegraphics[page=10,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
+%  \hspace{3mm}
+%  \includegraphics[page=12,width=0.48\linewidth,trim=30 10 50 25,clip=true]{Figures/dust-CO_comparison.pdf}
+%  \caption{\label{Xco} Correlation between the molecular gas column density derived from dust and H\rmnum{1} emission, and the CO integrated intensity. The black and blue lines are the best fitting models for the two regimes separated by the vertical black dotted line ($I_{CO}=2.5\: K.km.s^{-1}$).}
+%\end{figure*}
 
 
       \subsubsection{CO line ratios}
@@ -385,7 +386,7 @@ Combined with the low $X_{CO}$ factor previously found, such usual CO excitation
 
 \begin{table}[h]
   \centering
-  \footnotesize
+%  \footnotesize
   \caption{Average CO(2-1)/CO(1-0) intensity line ratio}
   \begin{tabular}{lcccccc}
     \hline \hline
@@ -402,7 +403,9 @@ Combined with the low $X_{CO}$ factor previously found, such usual CO excitation
 
    \subsection{Molecular gas fraction}
 
-   At a resolution of $1'$, dust and H\rmnum{1} emission are spatially coherent (figure \ref{NHI_DHIGLS}). In particular, the DHIGLS shows the same Rayleigh-Taylor structure as seen by \cite{MAMD_2017b} in dust emission. We produced a map of the atomic gas fraction $N(H\rmnum{1})/N(H)$. While on average the atomic gas fraction peaks between 0.4 and 0.5, this fraction drops to 0.15-0.2 when the column density of the CNM is higher than $8\times 10^{19}\: cm^{-2}$. This result strengthen the scenario of a intermediate-velocity cloud of WNM that interacted with the WNM of the Galactic plane, producing CNM through the thermal instability at the shock front.
+   At a resolution of $1'$, dust and H\rmnum{1} emission are spatially coherent (figure \ref{NHI_DHIGLS}). In particular, the DHIGLS shows the same Rayleigh-Taylor structure as seen by \cite{MAMD_2017b} in dust emission. We produced a map of the atomic gas fraction $N(H\rmnum{1})/N(H)$. While on average the atomic gas fraction peaks between 0.4 and 0.5, this fraction drops to 0.15-0.2 when the column density of the CNM is higher than $8\times 10^{19}\: cm^{-2}$.
+We then compared the column density of the CNM to that of the WNM in the intermediate-velocity component. This gives a CNM-to-WNM ratio $N_{CNM}/N_{WNM}\sim 0.4$. If we select only the region where $N_{CNM}\geq 8\times 10^{19}\: cm^{-2}$, then this ratio becomes larger than unity, with an average value of 1.2.
+This result suggests that the structure of the cold phase was produced by the interaction of a former intermediate-velocity cloud of WNM with the WNM of the Galactic plane, producing CNM through the thermal instability at the shock front.
 
 \begin{figure*}[h!]
   \centering
@@ -415,9 +418,9 @@ Combined with the low $X_{CO}$ factor previously found, such usual CO excitation
   \caption{\label{DRAO-CO} Map of the H\rmnum{1} emission in the IVC from DHIGLS. The black contours show the CO(1-0) emission observed with the IRAM 30m telescope in the region represented by the dashed boxes.}
 \end{figure*}
 
-   In order to compare the spatial distribution of CO and H\rmnum{1} emission, we overlaid the CO contours on the column density map of the CNM in the IVC (figure \ref{DRAO-CO}). Along the shock front, CO and H\rmnum{1} are spatially correlated, even though the peak of H\rmnum{1} is located slightly before the peak of CO emission. This result suggests that the shock of the Draco nebula progenitor and the WNM of the Milky Way favoured a phase transition between the atomic CNM and the molecular gas.
+   In order to compare the spatial distribution of CO and H\rmnum{1} emission, we overlaid the CO contours on the column density map of the CNM in the IVC (figure \ref{DRAO-CO}). Along the shock front, CO and H\rmnum{1} are spatially correlated, even though the peak of H\rmnum{1} appears to be located slightly before the peak of CO emission.
 Such shift is also observed in Draco1, at the edge of the nose of the nebula. On the opposite, CO and H\rmnum{1} seem to be well mixed in Draco3. We conclude that the nose of the nebula is independant to the shock front.
-We used the CO(1-0) intensity and H\rmnum{1}-CNM column density maps to derive a ratio between the molecular and atomic column density in the IVC. As previously shown by \cite{Planck_XXIV_2011,MAMD_2017b}, the Draco nebula is mostly molecular. We found a ratio $N(H_2)/N(H\rmnum{1},CNM)\sim 1.2-1.3$ along the shock front, while this ratio is about 2.0 in Draco1 and 8.9 in Draco3.
+We used the CO(1-0) intensity and H\rmnum{1}-CNM column density maps to derive a ratio between the molecular and atomic column density in the IVC. As previously shown by \cite{Planck_XXIV_2011,MAMD_2017bx}, the Draco nebula is mostly molecular. We found a ratio $N(H_2,CO)/N(H\rmnum{1},CNM)\sim 5$ along the shock front and in Draco1. In Draco3, this ratio is higher, with a peak around 13. This result suggests that the shock of the Draco nebula progenitor and the WNM of the Milky Way also favoured a phase transition between the atomic CNM and the molecular gas.
 
 --------------------------------------
 
